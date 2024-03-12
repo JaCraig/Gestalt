@@ -1,0 +1,54 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "fix"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
+    ignore:
+      - dependency-name: "coverlet.collector"
+      - dependency-name: "Mecha.xUnit"
+      - dependency-name: "Microsoft.NET.Test.Sdk"
+      - dependency-name: "xunit"
+      - dependency-name: "xunit.runner.visualstudio"
+      - dependency-name: "Microsoft.CodeAnalysis.NetAnalyzers"
+      - dependency-name: "husky"
+      - dependency-name: "BenchmarkDotNet"
+
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/Gestalt.Tests/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
+    allow:
+      - dependency-name: "coverlet.collector"
+      - dependency-name: "Mecha.xUnit"
+      - dependency-name: "Microsoft.NET.Test.Sdk"
+      - dependency-name: "xunit"
+      - dependency-name: "xunit.runner.visualstudio"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
