@@ -5,7 +5,6 @@ namespace Gestalt.Tests
         [Fact]
         public void Test1()
         {
-
         }
     }
 }
