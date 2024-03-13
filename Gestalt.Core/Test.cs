@@ -2,7 +2,12 @@
 {
     /// <summary>
     /// </summary>
-    public class Test
+    public static class Test
     {
+        /// <summary>
+        /// </summary>
+        public static void Test1()
+        {
+        }
     }
 }
