@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "files": ["Gestalt/Gestalt.csproj"],
+          "files": ["Gestalt/Gestalt.Core.csproj"],
           "src": "../"
         }
       ],
