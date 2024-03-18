@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Gestalt.Core\Gestalt.Core.csproj" />
+    <ProjectReference Include="..\Gestalt.ASPNet.MVC\Gestalt.ASPNet.MVC.csproj" />
   </ItemGroup>
 
 </Project>

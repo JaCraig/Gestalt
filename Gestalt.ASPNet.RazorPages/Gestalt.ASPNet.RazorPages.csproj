@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>This is the core abstractions library for Gestalt that includes interfaces and base classes. Gestalt is a comprehensive ASP.NET application framework designed to streamline the development and packaging process with its modular architecture. With Gestalt, effortlessly construct robust ASP.NET applications using modular design principles and leverage the power of dependency injection for seamless integration of reusable components. Incorporate plugins effortlessly, configuring them via a flexible configuration system. Gestalt empowers developers to craft scalable and maintainable applications, focusing on building reusable modules and extensions. Whether you're developing a small-scale project or a large enterprise application, Gestalt provides the foundation for modular, extensible ASP.NET solutions.</Description>
-    <AssemblyTitle>Gestalt.Core</AssemblyTitle>
+    <Description>This adds the razor pages framework specific functionality to Gestalt. Gestalt is a comprehensive application framework designed to streamline the development and packaging process with its modular architecture. With Gestalt, effortlessly construct robust applications using modular design principles and leverage the power of dependency injection for seamless integration of reusable components. Incorporate plugins effortlessly, configuring them via a flexible configuration system. Gestalt empowers developers to craft scalable and maintainable applications, focusing on building reusable modules and extensions. Whether you're developing a small-scale project or a large enterprise application, Gestalt provides the foundation for modular, extensible solutions.</Description>
+    <AssemblyTitle>Gestalt.ASPNet.RazorPages</AssemblyTitle>
     <Authors>James Craig</Authors>
     <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AssemblyName>Gestalt.Core</AssemblyName>
-    <PackageId>Gestalt.Core</PackageId>
-    <PackageTags>Gestalt;Modules;ASP.Net;Application Framework;Modular Design;Dependency Injection;Plugin;Reusable Components;Configuration</PackageTags>
+    <AssemblyName>Gestalt.ASPNet.RazorPages</AssemblyName>
+    <PackageId>Gestalt.ASPNet.RazorPages</PackageId>
+    <PackageTags>Gestalt;Modules;ASP.Net;RazorPages;Application Framework;Modular Design;Dependency Injection;Plugin;Reusable Components;Configuration</PackageTags>
     <PackageProjectUrl>https://github.com/JaCraig/Gestalt</PackageProjectUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -22,7 +22,7 @@
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <Title>Gestalt.Core</Title>
+    <Title>Gestalt.ASPNet.RazorPages</Title>
     <Copyright>Copyright © James Craig 2024</Copyright>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -53,16 +53,20 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BigBook" Version="5.1.21" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gestalt.ASPNet\Gestalt.ASPNet.csproj" />
+    <ProjectReference Include="..\Gestalt.Core\Gestalt.Core.csproj" />
   </ItemGroup>
   <Target Name="Husky" BeforeTargets="Restore;CollectPackageReferences" Condition="'$(HUSKY)' != 0">
     <Exec Command="dotnet tool restore" StandardOutputImportance="Low" StandardErrorImportance="High" />

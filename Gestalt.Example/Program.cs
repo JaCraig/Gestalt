@@ -1,36 +1,38 @@
+using Gestalt.ASPNet.ExtensionMethods;
+
 namespace Gestalt.Example
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            WebApplicationBuilder Builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            builder.Services.AddControllersWithViews();
-
-            var app = builder.Build();
+            WebApplication? App = Builder.UseGestalt(args);
+            if (App is null)
+                return;
 
             // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
+            if (!App.Environment.IsDevelopment())
             {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                _ = App.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production
+                // scenarios, see https://aka.ms/aspnetcore-hsts.
+                _ = App.UseHsts();
             }
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            _ = App.UseHttpsRedirection();
+            _ = App.UseStaticFiles();
 
-            app.UseRouting();
+            _ = App.UseRouting();
 
-            app.UseAuthorization();
+            _ = App.UseAuthorization();
 
-            app.MapControllerRoute(
+            _ = App.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            app.Run();
+            App.Run();
         }
     }
 }
