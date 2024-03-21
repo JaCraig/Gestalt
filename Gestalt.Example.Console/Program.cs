@@ -114,7 +114,7 @@ namespace Gestalt.Example.Console
         public override void OnStopped() => System.Console.WriteLine("Application has stopped.");
 
         /// <summary>
-        /// This method is called when the application is stopping.
+        /// This method is called when the application is stopping (not used in console applications).
         /// </summary>
         public override void OnStopping() => System.Console.WriteLine("Application is stopping.");
     }

@@ -14,7 +14,7 @@ namespace Gestalt.Core.BaseClasses
     /// Application framework base class
     /// </summary>
     /// <seealso cref="IApplicationFramework"/>
-    public abstract class ApplicationFrameworkBaseClass<TApplicationFramework, TModule> : IEquatable<TApplicationFramework>, IApplicationFramework
+    public abstract class ApplicationFrameworkBaseClass<TApplicationFramework, TModule> : IEquatable<IApplicationFramework>, IApplicationFramework
         where TApplicationFramework : ApplicationFrameworkBaseClass<TApplicationFramework, TModule>, new()
         where TModule : IApplicationModule
     {
@@ -80,6 +80,38 @@ namespace Gestalt.Core.BaseClasses
         public static bool operator !=(ApplicationFrameworkBaseClass<TApplicationFramework, TModule>? class1, ApplicationFrameworkBaseClass<TApplicationFramework, TModule>? class2) => !(class1 == class2);
 
         /// <summary>
+        /// Implements the operator !=.
+        /// </summary>
+        /// <param name="class1">The class1.</param>
+        /// <param name="class2">The class2.</param>
+        /// <returns>The result of the operator.</returns>
+        public static bool operator !=(ApplicationFrameworkBaseClass<TApplicationFramework, TModule>? class1, IApplicationFramework? class2) => !(class1 == class2);
+
+        /// <summary>
+        /// Implements the operator !=.
+        /// </summary>
+        /// <param name="class1">The class1.</param>
+        /// <param name="class2">The class2.</param>
+        /// <returns>The result of the operator.</returns>
+        public static bool operator !=(IApplicationFramework? class1, ApplicationFrameworkBaseClass<TApplicationFramework, TModule>? class2) => !(class1 == class2);
+
+        /// <summary>
+        /// Implements the operator ==.
+        /// </summary>
+        /// <param name="class1">The class1.</param>
+        /// <param name="class2">The class2.</param>
+        /// <returns>The result of the operator.</returns>
+        public static bool operator ==(ApplicationFrameworkBaseClass<TApplicationFramework, TModule>? class1, IApplicationFramework? class2) => class1 == (class2 as ApplicationFrameworkBaseClass<TApplicationFramework, TModule>);
+
+        /// <summary>
+        /// Implements the operator ==.
+        /// </summary>
+        /// <param name="class1">The class1.</param>
+        /// <param name="class2">The class2.</param>
+        /// <returns>The result of the operator.</returns>
+        public static bool operator ==(IApplicationFramework? class1, ApplicationFrameworkBaseClass<TApplicationFramework, TModule>? class2) => (class1 as ApplicationFrameworkBaseClass<TApplicationFramework, TModule>) == class2;
+
+        /// <summary>
         /// Implements the operator ==.
         /// </summary>
         /// <param name="class1">The class1.</param>
@@ -112,18 +144,11 @@ namespace Gestalt.Core.BaseClasses
         public override bool Equals(object? obj) => Equals(obj as TApplicationFramework);
 
         /// <summary>
-        /// Indicates whether the current object is equal to another object of the same type.
+        /// Determines whether the specified <see cref="IApplicationFramework"/>, is equal to this instance.
         /// </summary>
-        /// <param name="other">An object to compare with this object.</param>
-        /// <returns>
-        /// true if the current object is equal to the <paramref name="other">other</paramref>
-        /// parameter; otherwise, false.
-        /// </returns>
-        public bool Equals(TApplicationFramework? other)
-        {
-            return other is not null
-                   && ID == other.ID;
-        }
+        /// <param name="other">The other object.</param>
+        /// <returns>True if they are equal, false otherwise.</returns>
+        public bool Equals(IApplicationFramework? other) => ReferenceEquals(this, other) || (other is not null && ID == other.ID);
 
         /// <summary>
         /// Returns a hash code for this instance.
@@ -132,7 +157,7 @@ namespace Gestalt.Core.BaseClasses
         /// A hash code for this instance, suitable for use in hashing algorithms and data
         /// structures like a hash table.
         /// </returns>
-        public override int GetHashCode() => HashCode.Combine(ID);
+        public override int GetHashCode() => ID.GetHashCode();
 
         /// <summary>
         /// Calls the appropriate methods on the modules to configure the application.

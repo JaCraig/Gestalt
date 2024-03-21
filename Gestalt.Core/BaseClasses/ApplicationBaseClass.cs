@@ -26,7 +26,18 @@ namespace Gestalt.Core.BaseClasses
         /// </param>
         protected ApplicationBaseClass(IConfiguration? configuration, IHostEnvironment? env, params Assembly?[]? assemblies)
         {
-            InternalLogger = LoggerFactory.Create(builder => builder.AddConsole()).CreateLogger("Gestalt");
+            configuration ??= new ConfigurationBuilder().Build();
+            var LoggingConfiguration = configuration.GetSection("Logging");
+            InternalLogger = LoggerFactory.Create(builder =>
+            {
+                try
+                {
+                    if (LoggingConfiguration is not null)
+                        builder = builder.AddConfiguration(LoggingConfiguration);
+                }
+                catch { }
+                builder.AddConsole();
+            }).CreateLogger("Gestalt");
             var EntryAssembly = Assembly.GetEntryAssembly();
             if (assemblies is null || assemblies.Length == 0)
                 assemblies = EntryAssembly.FindAssemblies();
@@ -50,7 +61,7 @@ namespace Gestalt.Core.BaseClasses
             if (Frameworks.Length > 0)
                 InternalLogger.LogInformation("Using frameworks {frameworks}", Frameworks.ToString(x => x?.Name ?? "", ", "));
 
-            Name = EntryAssembly?.FullName ?? "";
+            Name = EntryAssembly?.GetName().Name ?? "";
         }
 
         /// <summary>
