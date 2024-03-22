@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RazorPagesModuleBaseClass&lt;TModule&gt; | Gestalt API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RazorPagesModuleBaseClass&lt;TModule&gt; | Gestalt API Reference ">
+      
+      <meta name="description" content="Razor Pages Module base class">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JaCraig/Gestalt/new/main/apiSpec/new?filename=Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1.md&amp;value=---%0Auid%3A%20Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/Icon.png" alt="Gestalt">
+            Gestalt
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1">
+
+
+
+  <h1 id="Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1" data-uid="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1" class="text-break">
+Class RazorPagesModuleBaseClass&lt;TModule&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.RazorPages/BaseClasses/RazorPagesModuleBaseClass.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Gestalt.html">Gestalt</a>.<a class="xref" href="Gestalt.ASPNet.html">ASPNet</a>.<a class="xref" href="Gestalt.ASPNet.RazorPages.html">RazorPages</a>.<a class="xref" href="Gestalt.ASPNet.RazorPages.BaseClasses.html">BaseClasses</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Gestalt.ASPNet.RazorPages.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Razor Pages Module base class</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class RazorPagesModuleBaseClass&lt;TModule&gt; : AspNetModuleBaseClass&lt;TModule&gt;, IEquatable&lt;TModule&gt;, IRazorPagesModule, IAspNetModule, IApplicationModule where TModule : RazorPagesModuleBaseClass&lt;TModule&gt;, new()</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TModule</code></dt>
+    <dd><p>The type of the module.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html">ApplicationModuleBaseClass</a>&lt;TModule&gt;</div>
+      <div><a class="xref" href="Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.html">AspNetModuleBaseClass</a>&lt;TModule&gt;</div>
+      <div><span class="xref">RazorPagesModuleBaseClass&lt;TModule&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;TModule&gt;</div>
+      <div><a class="xref" href="Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.html">IRazorPagesModule</a></div>
+      <div><a class="xref" href="Gestalt.ASPNet.Interfaces.IAspNetModule.html">IAspNetModule</a></div>
+      <div><a class="xref" href="Gestalt.Core.Interfaces.IApplicationModule.html">IApplicationModule</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.html#Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1_ConfigureApplication_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_">AspNetModuleBaseClass&lt;TModule&gt;.ConfigureApplication(IApplicationBuilder, IConfiguration, IHostEnvironment)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.html#Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1_ConfigureRoutes_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_">AspNetModuleBaseClass&lt;TModule&gt;.ConfigureRoutes(IEndpointRouteBuilder, IConfiguration, IHostEnvironment)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.html#Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1_ConfigureWebHostSettings_Microsoft_AspNetCore_Hosting_IWebHostBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_">AspNetModuleBaseClass&lt;TModule&gt;.ConfigureWebHostSettings(IWebHostBuilder, IConfiguration, IHostEnvironment)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_Category">ApplicationModuleBaseClass&lt;TModule&gt;.Category</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_ContentPath">ApplicationModuleBaseClass&lt;TModule&gt;.ContentPath</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_ID">ApplicationModuleBaseClass&lt;TModule&gt;.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_LastModified">ApplicationModuleBaseClass&lt;TModule&gt;.LastModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_Name">ApplicationModuleBaseClass&lt;TModule&gt;.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_Order">ApplicationModuleBaseClass&lt;TModule&gt;.Order</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_Tags">ApplicationModuleBaseClass&lt;TModule&gt;.Tags</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_Version">ApplicationModuleBaseClass&lt;TModule&gt;.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_ConfigureConfigurationSettings_Microsoft_Extensions_Configuration_IConfigurationBuilder_Microsoft_Extensions_Hosting_IHostEnvironment_System_String___">ApplicationModuleBaseClass&lt;TModule&gt;.ConfigureConfigurationSettings(IConfigurationBuilder, IHostEnvironment, string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_ConfigureHostSettings_Microsoft_Extensions_Hosting_IHostBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_">ApplicationModuleBaseClass&lt;TModule&gt;.ConfigureHostSettings(IHostBuilder, IConfiguration, IHostEnvironment)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_ConfigureLoggingSettings_Microsoft_Extensions_Logging_ILoggingBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_">ApplicationModuleBaseClass&lt;TModule&gt;.ConfigureLoggingSettings(ILoggingBuilder, IConfiguration, IHostEnvironment)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_ConfigureMetrics_Microsoft_Extensions_Diagnostics_Metrics_IMetricsBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_">ApplicationModuleBaseClass&lt;TModule&gt;.ConfigureMetrics(IMetricsBuilder, IConfiguration, IHostEnvironment)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_ConfigureServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_">ApplicationModuleBaseClass&lt;TModule&gt;.ConfigureServices(IServiceCollection, IConfiguration, IHostEnvironment)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_Equals_System_Object_">ApplicationModuleBaseClass&lt;TModule&gt;.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_Equals__0_">ApplicationModuleBaseClass&lt;TModule&gt;.Equals(TModule)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_GetHashCode">ApplicationModuleBaseClass&lt;TModule&gt;.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_OnStarted">ApplicationModuleBaseClass&lt;TModule&gt;.OnStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_OnStopped">ApplicationModuleBaseClass&lt;TModule&gt;.OnStopped()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html#Gestalt_Core_BaseClasses_ApplicationModuleBaseClass_1_OnStopping">ApplicationModuleBaseClass&lt;TModule&gt;.OnStopping()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Gestalt.Core.ExtensionMethods.GenericExtensions.html#Gestalt_Core_ExtensionMethods_GenericExtensions_When__1___0_System_Boolean_System_Func___0___0__">GenericExtensions.When&lt;TObject&gt;(TObject?, bool, Func&lt;TObject?, TObject?&gt;?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1__ctor_" data-uid="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.#ctor*"></a>
+
+  <h3 id="Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1__ctor" data-uid="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.#ctor">
+  RazorPagesModuleBaseClass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.RazorPages/BaseClasses/RazorPagesModuleBaseClass.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass-1.html">RazorPagesModuleBaseClass&lt;TModule&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RazorPagesModuleBaseClass()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1__ctor_" data-uid="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.#ctor*"></a>
+
+  <h3 id="Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1__ctor_System_String_System_String_System_String_System_String___" data-uid="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])">
+  RazorPagesModuleBaseClass(string?, string?, string?, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.RazorPages/BaseClasses/RazorPagesModuleBaseClass.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass-1.html">RazorPagesModuleBaseClass&lt;TModule&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RazorPagesModuleBaseClass(string? name, string? category, string? contentPath, params string[] tags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name.</p>
+</dd>
+    <dt><code>category</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The category.</p>
+</dd>
+    <dt><code>contentPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The content path.</p>
+</dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>The tags.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1_ConfigureRazorPages_" data-uid="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.ConfigureRazorPages*"></a>
+
+  <h3 id="Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1_ConfigureRazorPages_Microsoft_Extensions_DependencyInjection_IMvcBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.ConfigureRazorPages(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
+  ConfigureRazorPages(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.RazorPages/BaseClasses/RazorPagesModuleBaseClass.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configures the Razor Pages framework.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IMvcBuilder? ConfigureRazorPages(IMvcBuilder? mVCBuilder, IConfiguration configuration, IHostEnvironment environment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mVCBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder">IMvcBuilder</a></dt>
+    <dd><p>Razor Pages builder.</p>
+</dd>
+    <dt><code>configuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
+    <dd><p>Configuration</p>
+</dd>
+    <dt><code>environment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostenvironment">IHostEnvironment</a></dt>
+    <dd><p>Host environment.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder">IMvcBuilder</a></dt>
+    <dd><p>The Razor Pages builder</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1_Options_" data-uid="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.Options*"></a>
+
+  <h3 id="Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1_Options_Microsoft_AspNetCore_Mvc_RazorPages_RazorPagesOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.Options(Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
+  Options(RazorPagesOptions, IConfiguration, IHostEnvironment)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.RazorPages/BaseClasses/RazorPagesModuleBaseClass.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configures the Razor Pages options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RazorPagesOptions Options(RazorPagesOptions options, IConfiguration configuration, IHostEnvironment environment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.razorpages.razorpagesoptions">RazorPagesOptions</a></dt>
+    <dd><p>Razor Pages options.</p>
+</dd>
+    <dt><code>configuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
+    <dd><p>Configuration</p>
+</dd>
+    <dt><code>environment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostenvironment">IHostEnvironment</a></dt>
+    <dd><p>Host environment.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.razorpages.razorpagesoptions">RazorPagesOptions</a></dt>
+    <dd><p>The Razor Pages options</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.html">AspNetModuleBaseClass</a>&lt;TModule&gt;</div>
+      <div><a class="xref" href="Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.html">IRazorPagesModule</a></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.RazorPages/BaseClasses/RazorPagesModuleBaseClass.cs/#L16" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <strong><a href='https://github.com/JaCraig/Gestalt'>Open in Github</a></strong>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

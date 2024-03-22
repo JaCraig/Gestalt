@@ -11,11 +11,574 @@
       }
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.AspNetApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.AspNetApplication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.BaseClasses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.BaseClasses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.Controllers.BaseClasses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.Controllers.BaseClasses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.Controllers.ControllerFramework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.Controllers.ControllerFramework.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.Controllers.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.Controllers.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.Controllers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.ExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.ExtensionMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.Interfaces.IAspNetModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.Interfaces.IAspNetModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.MVC.BaseClasses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.MVC.BaseClasses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.MVC.Interfaces.IMvcModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.MVC.Interfaces.IMvcModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.MVC.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.MVC.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.MVC.MvcFramework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.MVC.MvcFramework.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.MVC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.MVC.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.RazorPages.BaseClasses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.RazorPages.BaseClasses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.RazorPages.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.RazorPages.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.RazorPages.RazorPagesFramework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.RazorPages.RazorPagesFramework.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.RazorPages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.RazorPages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.SignalR.BaseClasses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.SignalR.BaseClasses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.SignalR.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.SignalR.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.SignalR.SignalRFramework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.SignalR.SignalRFramework.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.SignalR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.SignalR.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.ASPNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.ASPNet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Console.ConsoleApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Console.ConsoleApplication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Console.ExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Console.ExtensionMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Console.InternalHostedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Console.InternalHostedService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Console.Modules.InternalModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Console.Modules.InternalModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Console.Modules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Console.Modules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Console.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Console.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.ApplicationFrameworkDefaults.Order.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.ApplicationFrameworkDefaults.Order.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.ApplicationFrameworkDefaults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.ApplicationFrameworkDefaults.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.ApplicationModuleDefaults.Order.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.ApplicationModuleDefaults.Order.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.ApplicationModuleDefaults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.ApplicationModuleDefaults.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.BaseClasses.ApplicationBaseClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.BaseClasses.ApplicationBaseClass.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.BaseClasses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.BaseClasses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.ExtensionMethods.AssemblyExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.ExtensionMethods.AssemblyExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.ExtensionMethods.GenericExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.ExtensionMethods.GenericExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.ExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.ExtensionMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.Interfaces.IApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.Interfaces.IApplication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.Interfaces.IApplicationFramework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.Interfaces.IApplicationFramework.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.Interfaces.IApplicationModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.Interfaces.IApplicationModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gestalt.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gestalt.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""

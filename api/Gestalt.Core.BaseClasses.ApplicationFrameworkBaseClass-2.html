@@ -1,0 +1,900 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt; | Gestalt API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt; | Gestalt API Reference ">
+      
+      <meta name="description" content="Application framework base class">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JaCraig/Gestalt/new/main/apiSpec/new?filename=Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2.md&amp;value=---%0Auid%3A%20Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/Icon.png" alt="Gestalt">
+            Gestalt
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2">
+
+
+
+  <h1 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2" class="text-break">
+Class ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Gestalt.html">Gestalt</a>.<a class="xref" href="Gestalt.Core.html">Core</a>.<a class="xref" href="Gestalt.Core.BaseClasses.html">BaseClasses</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Gestalt.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Application framework base class</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt; : IEquatable&lt;IApplicationFramework&gt;, IApplicationFramework where TApplicationFramework : ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;, new() where TModule : IApplicationModule</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TApplicationFramework</code></dt>
+    <dd>Application framework base class</dd>
+    <dt><code>TModule</code></dt>
+    <dd>Application framework base class</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Gestalt.Core.Interfaces.IApplicationFramework.html">IApplicationFramework</a>&gt;</div>
+      <div><a class="xref" href="Gestalt.Core.Interfaces.IApplicationFramework.html">IApplicationFramework</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Gestalt.ASPNet.Controllers.ControllerFramework.html">ControllerFramework</a></div>
+      <div><a class="xref" href="Gestalt.ASPNet.MVC.MvcFramework.html">MvcFramework</a></div>
+      <div><a class="xref" href="Gestalt.ASPNet.RazorPages.RazorPagesFramework.html">RazorPagesFramework</a></div>
+      <div><a class="xref" href="Gestalt.ASPNet.SignalR.SignalRFramework.html">SignalRFramework</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Gestalt.Core.ExtensionMethods.GenericExtensions.html#Gestalt_Core_ExtensionMethods_GenericExtensions_When__1___0_System_Boolean_System_Func___0___0__">GenericExtensions.When&lt;TObject&gt;(TObject?, bool, Func&lt;TObject?, TObject?&gt;?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2__ctor_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.#ctor*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2__ctor" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.#ctor">
+  ApplicationFrameworkBaseClass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html">ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ApplicationFrameworkBaseClass()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2__ctor_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.#ctor*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2__ctor_System_String_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.#ctor(System.String)">
+  ApplicationFrameworkBaseClass(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html">ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ApplicationFrameworkBaseClass(string? name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the application framework.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_ID_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.ID*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_ID" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.ID">
+  ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ID { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The identifier.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_LastModified_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.LastModified*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_LastModified" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.LastModified">
+  LastModified
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the last modified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime LastModified { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The last modified.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Name_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Name*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Name" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Application framework name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Order_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Order*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Order" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Order">
+  Order
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Order { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The order.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Version_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Version*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Version" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Version">
+  Version
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Version { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The version.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Configure_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Configure*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Configure_Gestalt_Core_Interfaces_IApplicationModule___Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Configure(Gestalt.Core.Interfaces.IApplicationModule[],Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
+  Configure(IApplicationModule?[]?, IServiceCollection?, IConfiguration?, IHostEnvironment?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calls the appropriate methods on the modules to configure the application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IServiceCollection? Configure(IApplicationModule?[]? modules, IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modules</code> <a class="xref" href="Gestalt.Core.Interfaces.IApplicationModule.html">IApplicationModule</a>[]</dt>
+    <dd><p>The modules.</p>
+</dd>
+    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+    <dd><p>The services.</p>
+</dd>
+    <dt><code>configuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
+    <dd><p>The application configuration.</p>
+</dd>
+    <dt><code>environment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostenvironment">IHostEnvironment</a></dt>
+    <dd><p>The host environment.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+    <dd><p>The modules.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_ConfigureModules_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.ConfigureModules*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_ConfigureModules__1___Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.ConfigureModules(`1[],Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
+  ConfigureModules(TModule[], IServiceCollection?, IConfiguration?, IHostEnvironment?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calls the appropriate methods on the modules to configure the application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void ConfigureModules(TModule[] modules, IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modules</code> TModule[]</dt>
+    <dd><p>The modules.</p>
+</dd>
+    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+    <dd><p>The services.</p>
+</dd>
+    <dt><code>configuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
+    <dd><p>The application configuration.</p>
+</dd>
+    <dt><code>environment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostenvironment">IHostEnvironment</a></dt>
+    <dd><p>The host environment.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Equals_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Equals*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Equals_Gestalt_Core_Interfaces_IApplicationFramework_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Equals(Gestalt.Core.Interfaces.IApplicationFramework)">
+  Equals(IApplicationFramework?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified <a class="xref" href="Gestalt.Core.Interfaces.IApplicationFramework.html">IApplicationFramework</a>, is equal to this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IApplicationFramework? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Gestalt.Core.Interfaces.IApplicationFramework.html">IApplicationFramework</a></dt>
+    <dd><p>The other object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if they are equal, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Equals_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Equals*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_Equals_System_Object_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, is equal to this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> to compare with this instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> is equal to this instance; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_GetHashCode_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.GetHashCode*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_GetHashCode" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for this instance, suitable for use in hashing algorithms and data
+structures like a hash table.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Equality_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Equality*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Equality_Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass__0__1__Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass__0__1__" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Equality(Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass{`0,`1},Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass{`0,`1})">
+  operator ==(ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;?, ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implements the operator ==.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;? class1, ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;? class2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>class1</code> <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html">ApplicationFrameworkBaseClass</a>&lt;TApplicationFramework, TModule&gt;</dt>
+    <dd><p>The class1.</p>
+</dd>
+    <dt><code>class2</code> <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html">ApplicationFrameworkBaseClass</a>&lt;TApplicationFramework, TModule&gt;</dt>
+    <dd><p>The class2.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The result of the operator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Equality_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Equality*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Equality_Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass__0__1__Gestalt_Core_Interfaces_IApplicationFramework_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Equality(Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass{`0,`1},Gestalt.Core.Interfaces.IApplicationFramework)">
+  operator ==(ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;?, IApplicationFramework?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implements the operator ==.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;? class1, IApplicationFramework? class2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>class1</code> <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html">ApplicationFrameworkBaseClass</a>&lt;TApplicationFramework, TModule&gt;</dt>
+    <dd><p>The class1.</p>
+</dd>
+    <dt><code>class2</code> <a class="xref" href="Gestalt.Core.Interfaces.IApplicationFramework.html">IApplicationFramework</a></dt>
+    <dd><p>The class2.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The result of the operator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Equality_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Equality*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Equality_Gestalt_Core_Interfaces_IApplicationFramework_Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass__0__1__" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Equality(Gestalt.Core.Interfaces.IApplicationFramework,Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass{`0,`1})">
+  operator ==(IApplicationFramework?, ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implements the operator ==.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(IApplicationFramework? class1, ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;? class2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>class1</code> <a class="xref" href="Gestalt.Core.Interfaces.IApplicationFramework.html">IApplicationFramework</a></dt>
+    <dd><p>The class1.</p>
+</dd>
+    <dt><code>class2</code> <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html">ApplicationFrameworkBaseClass</a>&lt;TApplicationFramework, TModule&gt;</dt>
+    <dd><p>The class2.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The result of the operator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Inequality_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Inequality*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Inequality_Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass__0__1__Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass__0__1__" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Inequality(Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass{`0,`1},Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass{`0,`1})">
+  operator !=(ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;?, ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implements the operator !=.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;? class1, ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;? class2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>class1</code> <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html">ApplicationFrameworkBaseClass</a>&lt;TApplicationFramework, TModule&gt;</dt>
+    <dd><p>The class1.</p>
+</dd>
+    <dt><code>class2</code> <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html">ApplicationFrameworkBaseClass</a>&lt;TApplicationFramework, TModule&gt;</dt>
+    <dd><p>The class2.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The result of the operator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Inequality_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Inequality*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Inequality_Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass__0__1__Gestalt_Core_Interfaces_IApplicationFramework_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Inequality(Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass{`0,`1},Gestalt.Core.Interfaces.IApplicationFramework)">
+  operator !=(ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;?, IApplicationFramework?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implements the operator !=.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;? class1, IApplicationFramework? class2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>class1</code> <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html">ApplicationFrameworkBaseClass</a>&lt;TApplicationFramework, TModule&gt;</dt>
+    <dd><p>The class1.</p>
+</dd>
+    <dt><code>class2</code> <a class="xref" href="Gestalt.Core.Interfaces.IApplicationFramework.html">IApplicationFramework</a></dt>
+    <dd><p>The class2.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The result of the operator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Inequality_" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Inequality*"></a>
+
+  <h3 id="Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass_2_op_Inequality_Gestalt_Core_Interfaces_IApplicationFramework_Gestalt_Core_BaseClasses_ApplicationFrameworkBaseClass__0__1__" data-uid="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass`2.op_Inequality(Gestalt.Core.Interfaces.IApplicationFramework,Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass{`0,`1})">
+  operator !=(IApplicationFramework?, ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implements the operator !=.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(IApplicationFramework? class1, ApplicationFrameworkBaseClass&lt;TApplicationFramework, TModule&gt;? class2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>class1</code> <a class="xref" href="Gestalt.Core.Interfaces.IApplicationFramework.html">IApplicationFramework</a></dt>
+    <dd><p>The class1.</p>
+</dd>
+    <dt><code>class2</code> <a class="xref" href="Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html">ApplicationFrameworkBaseClass</a>&lt;TApplicationFramework, TModule&gt;</dt>
+    <dd><p>The class2.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The result of the operator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Gestalt.Core.Interfaces.IApplicationFramework.html">IApplicationFramework</a></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.Core/BaseClasses/ApplicationFrameworkBaseClass.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <strong><a href='https://github.com/JaCraig/Gestalt'>Open in Github</a></strong>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
