@@ -26,7 +26,7 @@ updates:
       - dependency-name: "BenchmarkDotNet"
 
   - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.Tests/" # Location of package manifests
+    directory: "/Gestalt.Core.Tests/" # Location of package manifests
     schedule:
       interval: "daily"
     commit-message:

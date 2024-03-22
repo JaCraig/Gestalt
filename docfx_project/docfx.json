@@ -3,7 +3,13 @@
     {
       "src": [
         {
-          "files": ["Gestalt/Gestalt.Core.csproj"],
+          "files": ["Gestalt.Core/Gestalt.Core.csproj",
+            "Gestalt.Console/Gestalt.Console.csproj",
+            "Gestalt.ASPNet/Gestalt.ASPNet.csproj",
+            "Gestalt.ASPNet.Controllers/Gestalt.ASPNet.Controllers.csproj",
+            "Gestalt.ASPNet.MVC/Gestalt.ASPNet.MVC.csproj",
+            "Gestalt.ASPNet.RazorPages/Gestalt.ASPNet.RazorPages.csproj",
+            "Gestalt.ASPNet.SignalR/Gestalt.ASPNet.SignalR.csproj"],
           "src": "../"
         }
       ],
