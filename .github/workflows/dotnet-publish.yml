@@ -62,6 +62,7 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         files: ./Gestalt.Core.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info
+        format: lcov
       
     - name: Upload NuGet package
       uses: actions/upload-artifact@v4
