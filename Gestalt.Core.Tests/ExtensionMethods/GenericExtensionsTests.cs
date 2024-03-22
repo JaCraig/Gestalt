@@ -1,14 +1,14 @@
+using Gestalt.Core.ExtensionMethods;
+using Gestalt.Tests.Helpers;
+using System;
+using Xunit;
+using TObject = System.String;
+
 namespace Gestalt.Core.Tests.ExtensionMethods
 {
-    using Gestalt.Core.ExtensionMethods;
-    using Gestalt.Tests.Helpers;
-    using System;
-    using Xunit;
-    using TObject = System.String;
-
     public class GenericExtensionsTests : TestBaseClass
     {
-        protected override Type ObjectType { get; set; } = typeof(GenericExtensions);
+        protected override Type? ObjectType { get; set; } = typeof(GenericExtensions);
 
         [Fact]
         public void CanCallWhen()
@@ -17,7 +17,10 @@ namespace Gestalt.Core.Tests.ExtensionMethods
             const TObject Obj = "TestValue1468559414";
             const bool FalsePredicate = false;
             const bool TruePredicate = true;
-            Func<TObject, TObject> Method = _ => "TestValue651528331";
+            static string? Method(string? _)
+            {
+                return "TestValue651528331";
+            }
 
             // Act
             var FalseResult = Obj.When(FalsePredicate, Method);

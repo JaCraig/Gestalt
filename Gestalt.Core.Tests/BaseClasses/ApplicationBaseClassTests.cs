@@ -1,159 +1,137 @@
+using Gestalt.Core.BaseClasses;
+using Gestalt.Core.Interfaces;
+using Gestalt.Tests.Helpers;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using NSubstitute;
+using System;
+using System.Reflection;
+using Xunit;
+
 namespace Gestalt.Core.Tests.BaseClasses
 {
-    using Gestalt.Core.BaseClasses;
-    using Gestalt.Core.Interfaces;
-    using Gestalt.Tests.Helpers;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Hosting;
-    using Microsoft.Extensions.Logging;
-    using NSubstitute;
-    using System;
-    using System.Reflection;
-    using Xunit;
-
     public class ApplicationBaseClassTests : TestBaseClass
     {
         public ApplicationBaseClassTests()
         {
-            _configuration = new ConfigurationBuilder().Build();
-            _env = Substitute.For<IHostEnvironment>();
-            _assemblies = new[] { Assembly.GetAssembly(typeof(string)), Assembly.GetAssembly(typeof(string)), Assembly.GetAssembly(typeof(string)) };
-            _testClass = new TestApplicationBaseClass(_configuration, _env, _assemblies);
+            _Configuration = new ConfigurationBuilder().Build();
+            _Env = Substitute.For<IHostEnvironment>();
+            _Assemblies = new[] { Assembly.GetAssembly(typeof(string)), Assembly.GetAssembly(typeof(string)), Assembly.GetAssembly(typeof(string)) };
+            _TestClass = new TestApplicationBaseClass(_Configuration, _Env, _Assemblies);
         }
 
-        private Assembly[] _assemblies;
+        protected override Type? ObjectType { get; set; } = typeof(TestApplicationBaseClass);
+        private readonly Assembly?[] _Assemblies;
 
-        private IConfiguration _configuration;
-        private IHostEnvironment _env;
+        private readonly IConfiguration _Configuration;
+        private readonly IHostEnvironment _Env;
 
-        private TestApplicationBaseClass _testClass;
-
-        protected override Type ObjectType { get; set; } = typeof(TestApplicationBaseClass);
+        private readonly TestApplicationBaseClass _TestClass;
 
         [Fact]
         public void CanCallConfigureConfigurationSettings()
         {
             // Arrange
-            var Configuration = Substitute.For<IConfigurationBuilder>();
+            IConfigurationBuilder Configuration = Substitute.For<IConfigurationBuilder>();
             var Args = new[] { "TestValue1452827348", "TestValue1719450934", "TestValue1098954403" };
 
             // Act
-            var Result = _testClass.ConfigureConfigurationSettings(Configuration, Args);
+            IConfigurationBuilder? Result = _TestClass.ConfigureConfigurationSettings(Configuration, Args);
 
             // Assert
             Assert.Same(Configuration, Result);
         }
 
         [Fact]
-        public void CanCallConfigureConfigurationSettingsWithNullArgs()
-        {
-            _testClass.ConfigureConfigurationSettings(Substitute.For<IConfigurationBuilder>(), default(string[]));
-        }
+        public void CanCallConfigureConfigurationSettingsWithNullArgs() => _TestClass.ConfigureConfigurationSettings(Substitute.For<IConfigurationBuilder>(), default);
 
         [Fact]
         public void CanCallConfigureFrameworks()
         {
             // Arrange
-            var Services = Substitute.For<IServiceCollection>();
+            IServiceCollection Services = Substitute.For<IServiceCollection>();
 
             // Act
-            var Result = _testClass.ConfigureFrameworks(Services);
+            IServiceCollection? Result = _TestClass.ConfigureFrameworks(Services);
 
             // Assert
             Assert.Same(Services, Result);
         }
 
         [Fact]
-        public void CanCallConfigureFrameworksWithNullServices()
-        {
-            _testClass.ConfigureFrameworks(default);
-        }
+        public void CanCallConfigureFrameworksWithNullServices() => _TestClass.ConfigureFrameworks(default);
 
         [Fact]
         public void CanCallConfigureHostSettings()
         {
             // Arrange
-            var Host = Substitute.For<IHostBuilder>();
+            IHostBuilder Host = Substitute.For<IHostBuilder>();
 
             // Act
-            var Result = _testClass.ConfigureHostSettings(Host);
+            IHostBuilder? Result = _TestClass.ConfigureHostSettings(Host);
 
             // Assert
             Assert.Same(Host, Result);
         }
 
         [Fact]
-        public void CanCallConfigureHostSettingsWithNullHost()
-        {
-            _testClass.ConfigureHostSettings(default);
-        }
+        public void CanCallConfigureHostSettingsWithNullHost() => _TestClass.ConfigureHostSettings(default);
 
         [Fact]
         public void CanCallConfigureLoggingSettings()
         {
             // Arrange
-            var Logging = Substitute.For<ILoggingBuilder>();
+            ILoggingBuilder Logging = Substitute.For<ILoggingBuilder>();
 
             // Act
-            var Result = _testClass.ConfigureLoggingSettings(Logging);
+            ILoggingBuilder? Result = _TestClass.ConfigureLoggingSettings(Logging);
 
             // Assert
             Assert.Same(Logging, Result);
         }
 
         [Fact]
-        public void CanCallConfigureLoggingSettingsWithNullLogging()
-        {
-            _testClass.ConfigureLoggingSettings(default);
-        }
+        public void CanCallConfigureLoggingSettingsWithNullLogging() => _TestClass.ConfigureLoggingSettings(default);
 
         [Fact]
         public void CanCallConfigureServices()
         {
             // Arrange
-            var Services = Substitute.For<IServiceCollection>();
+            IServiceCollection Services = Substitute.For<IServiceCollection>();
 
             // Act
-            var Result = _testClass.ConfigureServices(Services);
+            IServiceCollection? Result = _TestClass.ConfigureServices(Services);
 
             // Assert
             Assert.Same(Services, Result);
         }
 
         [Fact]
-        public void CanCallConfigureServicesWithNullServices()
-        {
-            _testClass.ConfigureServices(default);
-        }
+        public void CanCallConfigureServicesWithNullServices() => _TestClass.ConfigureServices(default);
 
         [Fact]
-        public void CanCallOnStarted()
-        {
+        public void CanCallOnStarted() =>
             // Act
-            _testClass.OnStarted();
-        }
+            _TestClass.OnStarted();
 
         [Fact]
-        public void CanCallOnStopped()
-        {
+        public void CanCallOnStopped() =>
             // Act
-            _testClass.OnStopped();
-        }
+            _TestClass.OnStopped();
 
         [Fact]
-        public void CanCallOnStopping()
-        {
+        public void CanCallOnStopping() =>
             // Act
-            _testClass.OnStopping();
-        }
+            _TestClass.OnStopping();
 
         [Fact]
         public void CanGetName()
         {
             // Assert
-            Assert.IsType<string>(_testClass.Name);
-            Assert.Equal("testhost", _testClass.Name);
+            _ = Assert.IsType<string>(_TestClass.Name);
+            Assert.Equal("testhost", _TestClass.Name);
         }
 
         private class TestApplicationBaseClass : ApplicationBaseClass
@@ -162,13 +140,13 @@ namespace Gestalt.Core.Tests.BaseClasses
             {
             }
 
-            public IConfiguration PublicConfiguration => base.Configuration;
+            public IConfiguration? PublicConfiguration => base.Configuration;
 
-            public IHostEnvironment PublicEnvironment => base.Environment;
+            public IHostEnvironment? PublicEnvironment => base.Environment;
 
             public IApplicationFramework[] PublicFrameworks => base.Frameworks;
 
-            public ILogger PublicInternalLogger => base.InternalLogger;
+            public ILogger? PublicInternalLogger => base.InternalLogger;
 
             public IApplicationModule[] PublicModules => base.Modules;
         }

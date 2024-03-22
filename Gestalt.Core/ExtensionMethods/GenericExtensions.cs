@@ -15,9 +15,9 @@ namespace Gestalt.Core.ExtensionMethods
         /// <param name="predicate">if set to <c>true</c> run the method.</param>
         /// <param name="method">The method to run if true.</param>
         /// <returns>The object.</returns>
-        public static TObject When<TObject>(
-            this TObject obj,
+        public static TObject? When<TObject>(
+            this TObject? obj,
             bool predicate,
-            Func<TObject, TObject> method) => method is not null && predicate ? method(obj) : obj;
+            Func<TObject?, TObject?>? method) => method is not null && predicate ? method(obj) : obj;
     }
 }

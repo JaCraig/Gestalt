@@ -27,7 +27,7 @@ namespace Gestalt.Core.BaseClasses
         protected ApplicationBaseClass(IConfiguration? configuration, IHostEnvironment? env, params Assembly?[]? assemblies)
         {
             configuration ??= new ConfigurationBuilder().Build();
-            var LoggingConfiguration = configuration.GetSection("Logging");
+            IConfigurationSection? LoggingConfiguration = configuration.GetSection("Logging");
             InternalLogger = LoggerFactory.Create(builder =>
             {
                 try
@@ -36,7 +36,7 @@ namespace Gestalt.Core.BaseClasses
                         builder = builder.AddConfiguration(LoggingConfiguration);
                 }
                 catch { }
-                builder.AddConsole();
+                _ = builder.AddConsole();
             }).CreateLogger("Gestalt");
             var EntryAssembly = Assembly.GetEntryAssembly();
             if (assemblies is null || assemblies.Length == 0)
@@ -105,12 +105,12 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="configuration">The configuration.</param>
         /// <param name="args">The command line arguments</param>
         /// <returns>The configuration builder.</returns>
-        public IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, string[] args)
+        public IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, string?[]? args)
         {
             if (configuration is null)
                 return configuration;
 
-            args ??= Array.Empty<string>();
+            args ??= Array.Empty<string?>();
 
             InternalLogger?.LogInformation("Configuring configuration settings");
 

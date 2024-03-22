@@ -1,17 +1,17 @@
+using Gestalt.Core.BaseClasses;
+using Gestalt.Core.Interfaces;
+using Gestalt.Tests.Helpers;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.Metrics;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using NSubstitute;
+using System;
+using Xunit;
+
 namespace Gestalt.Core.Tests.BaseClasses
 {
-    using Gestalt.Core.BaseClasses;
-    using Gestalt.Core.Interfaces;
-    using Gestalt.Tests.Helpers;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Diagnostics.Metrics;
-    using Microsoft.Extensions.Hosting;
-    using Microsoft.Extensions.Logging;
-    using NSubstitute;
-    using System;
-    using Xunit;
-
     public class ApplicationFrameworkBaseClass_2Tests : TestBaseClass
     {
         public ApplicationFrameworkBaseClass_2Tests()
@@ -20,23 +20,22 @@ namespace Gestalt.Core.Tests.BaseClasses
             _TestClass = new TestApplicationFrameworkBaseClass(_Name);
         }
 
+        protected override Type? ObjectType { get; set; } = typeof(TestApplicationFrameworkBaseClass);
         private readonly string _Name;
 
         private readonly TestApplicationFrameworkBaseClass _TestClass;
-
-        protected override Type ObjectType { get; set; } = typeof(TestApplicationFrameworkBaseClass);
 
         [Fact]
         public void CanCallConfigure()
         {
             // Arrange
-            var Modules = new[] { Substitute.For<IApplicationModule>(), Substitute.For<IApplicationModule>(), Substitute.For<IApplicationModule>() };
-            var Services = Substitute.For<IServiceCollection>();
-            var Configuration = Substitute.For<IConfiguration>();
-            var Environment = Substitute.For<IHostEnvironment>();
+            IApplicationModule[] Modules = new[] { Substitute.For<IApplicationModule>(), Substitute.For<IApplicationModule>(), Substitute.For<IApplicationModule>() };
+            IServiceCollection Services = Substitute.For<IServiceCollection>();
+            IConfiguration Configuration = Substitute.For<IConfiguration>();
+            IHostEnvironment Environment = Substitute.For<IHostEnvironment>();
 
             // Act
-            var Result = _TestClass.Configure(Modules, Services, Configuration, Environment);
+            IServiceCollection? Result = _TestClass.Configure(Modules, Services, Configuration, Environment);
 
             // Assert
             Assert.NotNull(Result);
@@ -46,8 +45,8 @@ namespace Gestalt.Core.Tests.BaseClasses
         [Fact]
         public void CanCallConfigureWithNullModules()
         {
-            _TestClass.Configure(default(IApplicationModule[]), Substitute.For<IServiceCollection>(), Substitute.For<IConfiguration>(), Substitute.For<IHostEnvironment>());
-            _TestClass.Configure(null, null, null, null);
+            _ = _TestClass.Configure(default, Substitute.For<IServiceCollection>(), Substitute.For<IConfiguration>(), Substitute.For<IHostEnvironment>());
+            _ = _TestClass.Configure(null, null, null, null);
         }
 
         [Fact]
@@ -111,7 +110,7 @@ namespace Gestalt.Core.Tests.BaseClasses
             var Result = _TestClass.GetHashCode();
 
             // Assert
-            Assert.IsType<int>(Result);
+            _ = Assert.IsType<int>(Result);
         }
 
         [Fact]
@@ -182,7 +181,7 @@ namespace Gestalt.Core.Tests.BaseClasses
         public void CanGetLastModified()
         {
             // Assert
-            Assert.IsType<DateTime>(_TestClass.LastModified);
+            _ = Assert.IsType<DateTime>(_TestClass.LastModified);
 
             Assert.NotEqual(default, _TestClass.LastModified);
         }
@@ -208,11 +207,9 @@ namespace Gestalt.Core.Tests.BaseClasses
         }
 
         [Fact]
-        public void CanGetVersion()
-        {
+        public void CanGetVersion() =>
             // Assert
             Assert.IsType<string>(_TestClass.Version);
-        }
 
         [Fact]
         public void ImplementsIEquatable_TApplicationFramework()
@@ -237,10 +234,7 @@ namespace Gestalt.Core.Tests.BaseClasses
         }
 
         [Fact]
-        public void NameIsInitializedCorrectly()
-        {
-            Assert.Equal(_Name, _TestClass.Name);
-        }
+        public void NameIsInitializedCorrectly() => Assert.Equal(_Name, _TestClass.Name);
 
         private class TestApplicationFrameworkBaseClass : ApplicationFrameworkBaseClass<TestApplicationFrameworkBaseClass, TestModule>
         {
@@ -252,7 +246,7 @@ namespace Gestalt.Core.Tests.BaseClasses
             {
             }
 
-            protected override void ConfigureModules(TestModule[] modules, IServiceCollection services, IConfiguration configuration, IHostEnvironment environment)
+            protected override void ConfigureModules(TestModule[] modules, IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment)
             {
             }
         }
@@ -267,31 +261,31 @@ namespace Gestalt.Core.Tests.BaseClasses
             {
             }
 
-            protected override void ConfigureModules(TestModule[] modules, IServiceCollection services, IConfiguration configuration, IHostEnvironment environment)
+            protected override void ConfigureModules(TestModule[] modules, IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment)
             {
             }
         }
 
         private class TestModule : IApplicationModule
         {
-            public string Category { get; }
-            public string ContentPath { get; }
-            public string ID { get; set; }
+            public string Category { get; } = "";
+            public string ContentPath { get; } = "";
+            public string ID { get; set; } = "";
             public DateTime LastModified { get; set; }
-            public string Name { get; set; }
+            public string Name { get; set; } = "";
             public int Order { get; set; }
-            public string[] Tags { get; }
-            public string Version { get; set; }
+            public string[] Tags { get; } = Array.Empty<string>();
+            public string Version { get; set; } = "";
 
-            public IConfigurationBuilder ConfigureConfigurationSettings(IConfigurationBuilder configuration, IHostEnvironment environment, string[] args) => configuration;
+            public IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, IHostEnvironment? environment, string?[]? args) => configuration;
 
-            public IHostBuilder ConfigureHostSettings(IHostBuilder host, IConfiguration configuration, IHostEnvironment environment) => host;
+            public IHostBuilder? ConfigureHostSettings(IHostBuilder? host, IConfiguration? configuration, IHostEnvironment? environment) => host;
 
-            public ILoggingBuilder ConfigureLoggingSettings(ILoggingBuilder logging, IConfiguration configuration, IHostEnvironment environment) => logging;
+            public ILoggingBuilder? ConfigureLoggingSettings(ILoggingBuilder? logging, IConfiguration? configuration, IHostEnvironment? environment) => logging;
 
-            public IMetricsBuilder ConfigureMetrics(IMetricsBuilder metrics, IConfiguration configuration, IHostEnvironment environment) => metrics;
+            public IMetricsBuilder? ConfigureMetrics(IMetricsBuilder? metrics, IConfiguration? configuration, IHostEnvironment? environment) => metrics;
 
-            public IServiceCollection ConfigureServices(IServiceCollection services, IConfiguration configuration, IHostEnvironment environment) => services;
+            public IServiceCollection? ConfigureServices(IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment) => services;
 
             public void OnStarted()
             { }

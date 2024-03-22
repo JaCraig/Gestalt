@@ -84,7 +84,7 @@ namespace Gestalt.Example.Console
         /// The command line arguments that are passed in from the UseGestalt extension method.
         /// </param>
         /// <returns>The configuration builder.</returns>
-        public override IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, IHostEnvironment? environment, string[] args) => configuration?.AddCommandLine(args);
+        public override IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, IHostEnvironment? environment, string?[]? args) => configuration?.AddCommandLine(args!);
 
         /// <summary>
         /// This method is called when setting up the services needed for the module. This is where

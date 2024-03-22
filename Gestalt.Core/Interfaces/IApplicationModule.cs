@@ -52,7 +52,7 @@ namespace Gestalt.Core.Interfaces
         /// Gets the tags.
         /// </summary>
         /// <value>The tags.</value>
-        string[] Tags { get; }
+        string?[] Tags { get; }
 
         /// <summary>
         /// Gets the version.
@@ -67,7 +67,7 @@ namespace Gestalt.Core.Interfaces
         /// <param name="environment">The host environment</param>
         /// <param name="args">The command line arguments</param>
         /// <returns>The configuration builder.</returns>
-        IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, IHostEnvironment? environment, string[] args);
+        IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, IHostEnvironment? environment, string?[]? args);
 
         /// <summary>
         /// Configures the host settings.
@@ -94,7 +94,7 @@ namespace Gestalt.Core.Interfaces
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>The metrics builder</returns>
-        IMetricsBuilder ConfigureMetrics(IMetricsBuilder metrics, IConfiguration? configuration, IHostEnvironment? environment);
+        IMetricsBuilder? ConfigureMetrics(IMetricsBuilder? metrics, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
         /// Configures the services for the module.

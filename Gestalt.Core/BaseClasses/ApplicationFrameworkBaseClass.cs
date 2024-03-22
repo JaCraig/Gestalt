@@ -127,7 +127,7 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="configuration">The application configuration.</param>
         /// <param name="environment">The host environment.</param>
         /// <returns>The modules.</returns>
-        public IServiceCollection? Configure(IApplicationModule[] modules, IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment)
+        public IServiceCollection? Configure(IApplicationModule?[]? modules, IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment)
         {
             modules ??= Array.Empty<IApplicationModule>();
             ConfigureModules(modules.OfType<TModule>().ToArray(), services, configuration, environment);

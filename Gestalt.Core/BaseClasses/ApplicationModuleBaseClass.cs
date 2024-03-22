@@ -30,11 +30,11 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="category">The category for the module.</param>
         /// <param name="contentPath">The content path for the module.</param>
         /// <param name="tags">The tags associated with the module.</param>
-        protected ApplicationModuleBaseClass(string? name, string? category, string? contentPath, params string[] tags)
+        protected ApplicationModuleBaseClass(string? name, string? category, string? contentPath, params string?[]? tags)
         {
             Name = name ?? typeof(TModule).GetName().Replace((typeof(TModule).Namespace ?? "") + ".", "");
             Category = category ?? typeof(TModule).Namespace?.Split(".", StringSplitOptions.RemoveEmptyEntries).Skip(1).FirstOrDefault() ?? "";
-            Tags = tags ?? Array.Empty<string>();
+            Tags = tags ?? Array.Empty<string?>();
             ContentPath = contentPath ?? $"wwwroot/Content/{ID}/";
         }
 
@@ -50,13 +50,13 @@ namespace Gestalt.Core.BaseClasses
         /// Gets the type.
         /// </summary>
         /// <value>The type.</value>
-        public string Category { get; protected set; }
+        public string Category { get; protected set; } = "";
 
         /// <summary>
         /// The content path
         /// </summary>
         /// <value>The content path.</value>
-        public string ContentPath { get; protected set; }
+        public string ContentPath { get; protected set; } = "";
 
         /// <summary>
         /// Gets the identifier.
@@ -78,7 +78,7 @@ namespace Gestalt.Core.BaseClasses
         /// Gets the name.
         /// </summary>
         /// <value>The name.</value>
-        public string Name { get; protected set; }
+        public string Name { get; protected set; } = "";
 
         /// <summary>
         /// Gets the order that they are initialized in.
@@ -90,7 +90,7 @@ namespace Gestalt.Core.BaseClasses
         /// Gets the tags.
         /// </summary>
         /// <value>The tags.</value>
-        public string[] Tags { get; protected set; } = Array.Empty<string>();
+        public string?[] Tags { get; protected set; } = Array.Empty<string?>();
 
         /// <summary>
         /// Gets the version.
@@ -121,7 +121,7 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="environment">The host environment</param>
         /// <param name="args">The command line arguments</param>
         /// <returns>The configuration builder</returns>
-        public virtual IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, IHostEnvironment? environment, string[] args) => configuration;
+        public virtual IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, IHostEnvironment? environment, string?[]? args) => configuration;
 
         /// <summary>
         /// Configures the host settings.
@@ -148,7 +148,7 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>The metrics builder</returns>
-        public virtual IMetricsBuilder ConfigureMetrics(IMetricsBuilder metrics, IConfiguration? configuration, IHostEnvironment? environment) => metrics;
+        public virtual IMetricsBuilder? ConfigureMetrics(IMetricsBuilder? metrics, IConfiguration? configuration, IHostEnvironment? environment) => metrics;
 
         /// <summary>
         /// Configures the services for the module.
