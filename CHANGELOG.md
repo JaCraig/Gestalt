@@ -1,5 +1,12 @@
 
 
+<a name="1.0.2"></a>
+## [1.0.2](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.2) (2024-03-26)
+
+### Bug Fixes
+
+* Fixing some issues found by added tests ([fe0265c](https://www.github.com/JaCraig/Gestalt/commit/fe0265cae1906707c4c0fa7054402dd2388b942c))
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.1) (2024-03-22)
 
