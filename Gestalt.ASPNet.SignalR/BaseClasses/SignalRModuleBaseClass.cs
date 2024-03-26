@@ -22,7 +22,7 @@ namespace Gestalt.ASPNet.SignalR.BaseClasses
         /// <param name="category">The category.</param>
         /// <param name="contentPath">The content path.</param>
         /// <param name="tags">The tags.</param>
-        protected SignalRModuleBaseClass(string? name, string? category, string? contentPath, params string[] tags)
+        protected SignalRModuleBaseClass(string? name, string? category, string? contentPath, params string?[]? tags)
             : base(name, category, contentPath, tags)
         {
         }
@@ -41,7 +41,7 @@ namespace Gestalt.ASPNet.SignalR.BaseClasses
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The SignalR builder</returns>
-        public virtual ISignalRServerBuilder? ConfigureSignalR(ISignalRServerBuilder? builder, IConfiguration configuration, IHostEnvironment environment) => builder;
+        public virtual ISignalRServerBuilder? ConfigureSignalR(ISignalRServerBuilder? builder, IConfiguration? configuration, IHostEnvironment? environment) => builder;
 
         /// <summary>
         /// Configures the SignalR options.
@@ -50,6 +50,6 @@ namespace Gestalt.ASPNet.SignalR.BaseClasses
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The SignalR options</returns>
-        public virtual HubOptions Options(HubOptions options, IConfiguration configuration, IHostEnvironment environment) => options;
+        public virtual HubOptions? Options(HubOptions? options, IConfiguration? configuration, IHostEnvironment? environment) => options;
     }
 }

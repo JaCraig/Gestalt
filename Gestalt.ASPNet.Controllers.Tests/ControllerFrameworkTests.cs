@@ -1,6 +1,7 @@
 namespace Gestalt.ASPNet.Controllers.Tests
 {
     using Gestalt.ASPNet.Controllers;
+    using Gestalt.ASPNet.Controllers.BaseClasses;
     using Gestalt.ASPNet.Controllers.Interfaces;
     using Gestalt.Tests.Helpers;
     using Microsoft.Extensions.Configuration;
@@ -44,6 +45,36 @@ namespace Gestalt.ASPNet.Controllers.Tests
             _TestClass.Configure(new[] { Substitute.For<IControllerModule>(), Substitute.For<IControllerModule>(), Substitute.For<IControllerModule>() }, Substitute.For<IServiceCollection>(), default, Substitute.For<IHostEnvironment>());
             _TestClass.Configure(new[] { Substitute.For<IControllerModule>(), Substitute.For<IControllerModule>(), Substitute.For<IControllerModule>() }, Substitute.For<IServiceCollection>(), Substitute.For<IConfiguration>(), default);
             _TestClass.Configure(default, default, default, default);
+        }
+
+        [Fact]
+        public void CanCallWithModule()
+        {
+            // Arrange
+            var Services = new ServiceCollection();
+            var Configuration = Substitute.For<IConfiguration>();
+            var Environment = Substitute.For<IHostEnvironment>();
+
+            // Act
+            var Result = _TestClass.Configure(new[] { new TestModule() }, Services, Configuration, Environment);
+
+            // Assert
+            Assert.NotNull(Result);
+            Assert.Same(Services, Result);
+        }
+
+        [Fact]
+        public void CanConstruct()
+        {
+            // Act
+            var Instance = new ControllerFramework();
+
+            // Assert
+            Assert.NotNull(Instance);
+        }
+
+        public class TestModule : ControllerModuleBaseClass<TestModule>
+        {
         }
     }
 }

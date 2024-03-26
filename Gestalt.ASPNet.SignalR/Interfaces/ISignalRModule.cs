@@ -18,7 +18,7 @@ namespace Gestalt.ASPNet.SignalR.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The SignalR builder</returns>
-        ISignalRServerBuilder? ConfigureSignalR(ISignalRServerBuilder? builder, IConfiguration configuration, IHostEnvironment environment);
+        ISignalRServerBuilder? ConfigureSignalR(ISignalRServerBuilder? builder, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
         /// Configures the SignalR options.
@@ -27,6 +27,6 @@ namespace Gestalt.ASPNet.SignalR.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The SignalR options</returns>
-        HubOptions Options(HubOptions options, IConfiguration configuration, IHostEnvironment environment);
+        HubOptions? Options(HubOptions? options, IConfiguration? configuration, IHostEnvironment? environment);
     }
 }

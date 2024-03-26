@@ -43,9 +43,11 @@ namespace Gestalt.ASPNet.RazorPages
                 IRazorPagesModule Module = modules[I];
                 if (Module is null)
                     continue;
+                var ModuleAssembly = Module.GetType().Assembly;
+                var ModuleName = ModuleAssembly.FullName;
                 MVCBuilder = Module.ConfigureRazorPages(MVCBuilder, configuration, environment);
-                if (MVCBuilder?.PartManager.ApplicationParts.Any(x => x.Name == Module.GetType().Assembly.FullName) == false)
-                    _ = MVCBuilder?.AddApplicationPart(Module.GetType().Assembly);
+                if (MVCBuilder?.PartManager?.ApplicationParts.Any(x => x.Name == ModuleName) == false)
+                    _ = MVCBuilder?.AddApplicationPart(ModuleAssembly);
             }
         }
     }

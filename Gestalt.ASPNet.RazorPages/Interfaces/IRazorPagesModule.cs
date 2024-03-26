@@ -19,7 +19,7 @@ namespace Gestalt.ASPNet.RazorPages.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The RazorPages builder</returns>
-        IMvcBuilder? ConfigureRazorPages(IMvcBuilder? mVCBuilder, IConfiguration configuration, IHostEnvironment environment);
+        IMvcBuilder? ConfigureRazorPages(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
         /// Configures the RazorPages options.
@@ -28,6 +28,6 @@ namespace Gestalt.ASPNet.RazorPages.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The RazorPages options</returns>
-        RazorPagesOptions Options(RazorPagesOptions options, IConfiguration configuration, IHostEnvironment environment);
+        RazorPagesOptions? Options(RazorPagesOptions? options, IConfiguration? configuration, IHostEnvironment? environment);
     }
 }

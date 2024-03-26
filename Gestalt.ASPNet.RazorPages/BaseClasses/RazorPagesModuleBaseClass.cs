@@ -42,7 +42,7 @@ namespace Gestalt.ASPNet.RazorPages.BaseClasses
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The Razor Pages builder</returns>
-        public virtual IMvcBuilder? ConfigureRazorPages(IMvcBuilder? mVCBuilder, IConfiguration configuration, IHostEnvironment environment) => mVCBuilder;
+        public virtual IMvcBuilder? ConfigureRazorPages(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment) => mVCBuilder;
 
         /// <summary>
         /// Configures the Razor Pages options.
@@ -51,6 +51,6 @@ namespace Gestalt.ASPNet.RazorPages.BaseClasses
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The Razor Pages options</returns>
-        public virtual RazorPagesOptions Options(RazorPagesOptions options, IConfiguration configuration, IHostEnvironment environment) => options;
+        public virtual RazorPagesOptions? Options(RazorPagesOptions? options, IConfiguration? configuration, IHostEnvironment? environment) => options;
     }
 }

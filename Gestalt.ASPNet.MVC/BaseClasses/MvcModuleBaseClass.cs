@@ -23,7 +23,7 @@ namespace Gestalt.ASPNet.MVC.BaseClasses
         /// <param name="category">The category.</param>
         /// <param name="contentPath">The content path.</param>
         /// <param name="tags">The tags.</param>
-        protected MvcModuleBaseClass(string? name, string? category, string? contentPath, params string[] tags)
+        protected MvcModuleBaseClass(string? name, string? category, string? contentPath, params string?[]? tags)
             : base(name, category, contentPath, tags)
         {
         }
@@ -42,7 +42,7 @@ namespace Gestalt.ASPNet.MVC.BaseClasses
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The MVC builder</returns>
-        public virtual IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration configuration, IHostEnvironment environment) => mVCBuilder;
+        public virtual IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment) => mVCBuilder;
 
         /// <summary>
         /// Configures the MVC options.
@@ -51,6 +51,6 @@ namespace Gestalt.ASPNet.MVC.BaseClasses
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The MVC options</returns>
-        public virtual MvcOptions Options(MvcOptions options, IConfiguration configuration, IHostEnvironment environment) => options;
+        public virtual MvcOptions? Options(MvcOptions? options, IConfiguration? configuration, IHostEnvironment? environment) => options;
     }
 }

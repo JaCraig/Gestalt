@@ -19,7 +19,7 @@ namespace Gestalt.ASPNet.MVC.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The MVC builder</returns>
-        IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration configuration, IHostEnvironment environment);
+        IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
         /// Configures the MVC options.
@@ -28,6 +28,6 @@ namespace Gestalt.ASPNet.MVC.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The MVC options</returns>
-        MvcOptions Options(MvcOptions options, IConfiguration configuration, IHostEnvironment environment);
+        MvcOptions? Options(MvcOptions? options, IConfiguration? configuration, IHostEnvironment? environment);
     }
 }
