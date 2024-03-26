@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Gestalt.ASPNet.MVC\Gestalt.ASPNet.MVC.csproj" />
+    <ProjectReference Include="..\Gestalt.ASPNet.RazorPages\Gestalt.ASPNet.RazorPages.csproj" />
+    <ProjectReference Include="..\Gestalt.ASPNet.SignalR\Gestalt.ASPNet.SignalR.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,7 @@
 namespace Gestalt.ASPNet.SignalR.Tests
 {
     using Gestalt.ASPNet.SignalR;
+    using Gestalt.ASPNet.SignalR.BaseClasses;
     using Gestalt.ASPNet.SignalR.Interfaces;
     using Gestalt.Core.Interfaces;
     using Gestalt.Tests.Helpers;
@@ -45,6 +46,36 @@ namespace Gestalt.ASPNet.SignalR.Tests
             _TestClass.Configure(new IApplicationModule[] { Substitute.For<ISignalRModule>(), Substitute.For<ISignalRModule>(), Substitute.For<ISignalRModule>() }, Substitute.For<IServiceCollection>(), default, Substitute.For<IHostEnvironment>());
             _TestClass.Configure(new IApplicationModule[] { Substitute.For<ISignalRModule>(), Substitute.For<ISignalRModule>(), Substitute.For<ISignalRModule>() }, Substitute.For<IServiceCollection>(), Substitute.For<IConfiguration>(), default);
             _TestClass.Configure(default, default, default, default);
+        }
+
+        [Fact]
+        public void CanCallWithModule()
+        {
+            // Arrange
+            var Services = new ServiceCollection();
+            var Configuration = Substitute.For<IConfiguration>();
+            var Environment = Substitute.For<IHostEnvironment>();
+
+            // Act
+            var Result = _TestClass.Configure(new[] { new TestModule() }, Services, Configuration, Environment);
+
+            // Assert
+            Assert.NotNull(Result);
+            Assert.Same(Services, Result);
+        }
+
+        [Fact]
+        public void CanConstruct()
+        {
+            // Act
+            var Instance = new SignalRFramework();
+
+            // Assert
+            Assert.NotNull(Instance);
+        }
+
+        public class TestModule : SignalRModuleBaseClass<TestModule>
+        {
         }
     }
 }
