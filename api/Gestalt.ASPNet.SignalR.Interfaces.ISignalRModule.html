@@ -192,7 +192,7 @@ Interface ISignalRModule  <a class="header-action link-secondary" title="View so
   <a id="Gestalt_ASPNet_SignalR_Interfaces_ISignalRModule_ConfigureSignalR_" data-uid="Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.ConfigureSignalR*"></a>
 
   <h3 id="Gestalt_ASPNet_SignalR_Interfaces_ISignalRModule_ConfigureSignalR_Microsoft_AspNetCore_SignalR_ISignalRServerBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
-  ConfigureSignalR(ISignalRServerBuilder?, IConfiguration, IHostEnvironment)
+  ConfigureSignalR(ISignalRServerBuilder?, IConfiguration?, IHostEnvironment?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.SignalR/Interfaces/ISignalRModule.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -201,7 +201,7 @@ Interface ISignalRModule  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ISignalRServerBuilder? ConfigureSignalR(ISignalRServerBuilder? builder, IConfiguration configuration, IHostEnvironment environment)</code></pre>
+    <pre><code class="lang-csharp hljs">ISignalRServerBuilder? ConfigureSignalR(ISignalRServerBuilder? builder, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -237,7 +237,7 @@ Interface ISignalRModule  <a class="header-action link-secondary" title="View so
   <a id="Gestalt_ASPNet_SignalR_Interfaces_ISignalRModule_Options_" data-uid="Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.Options*"></a>
 
   <h3 id="Gestalt_ASPNet_SignalR_Interfaces_ISignalRModule_Options_Microsoft_AspNetCore_SignalR_HubOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.Options(Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
-  Options(HubOptions, IConfiguration, IHostEnvironment)
+  Options(HubOptions?, IConfiguration?, IHostEnvironment?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.SignalR/Interfaces/ISignalRModule.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -246,7 +246,7 @@ Interface ISignalRModule  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HubOptions Options(HubOptions options, IConfiguration configuration, IHostEnvironment environment)</code></pre>
+    <pre><code class="lang-csharp hljs">HubOptions? Options(HubOptions? options, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

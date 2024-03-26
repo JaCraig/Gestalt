@@ -447,13 +447,13 @@ references:
   nameWithType: MvcModuleBaseClass<TModule>.MvcModuleBaseClass()
   nameWithType.vb: MvcModuleBaseClass(Of TModule).New()
 - uid: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])
-  name: MvcModuleBaseClass(string?, string?, string?, params string[])
+  name: MvcModuleBaseClass(string?, string?, string?, params string?[]?)
   href: api/Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass-1.html#Gestalt_ASPNet_MVC_BaseClasses_MvcModuleBaseClass_1__ctor_System_String_System_String_System_String_System_String___
   commentId: M:Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])
   name.vb: New(String, String, String, ParamArray String())
-  fullName: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass<TModule>.MvcModuleBaseClass(string?, string?, string?, params string[])
+  fullName: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass<TModule>.MvcModuleBaseClass(string?, string?, string?, params string?[]?)
   fullName.vb: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass(Of TModule).New(String, String, String, ParamArray String())
-  nameWithType: MvcModuleBaseClass<TModule>.MvcModuleBaseClass(string?, string?, string?, params string[])
+  nameWithType: MvcModuleBaseClass<TModule>.MvcModuleBaseClass(string?, string?, string?, params string?[]?)
   nameWithType.vb: MvcModuleBaseClass(Of TModule).New(String, String, String, ParamArray String())
 - uid: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass`1.#ctor*
   name: MvcModuleBaseClass
@@ -466,13 +466,13 @@ references:
   nameWithType: MvcModuleBaseClass<TModule>.MvcModuleBaseClass
   nameWithType.vb: MvcModuleBaseClass(Of TModule).New
 - uid: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass`1.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: ConfigureMVC(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  name: ConfigureMVC(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass-1.html#Gestalt_ASPNet_MVC_BaseClasses_MvcModuleBaseClass_1_ConfigureMVC_Microsoft_Extensions_DependencyInjection_IMvcBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass`1.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
   name.vb: ConfigureMVC(IMvcBuilder, IConfiguration, IHostEnvironment)
-  fullName: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass<TModule>.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  fullName: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass<TModule>.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass(Of TModule).ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: MvcModuleBaseClass<TModule>.ConfigureMVC(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  nameWithType: MvcModuleBaseClass<TModule>.ConfigureMVC(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: MvcModuleBaseClass(Of TModule).ConfigureMVC(IMvcBuilder, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass`1.ConfigureMVC*
   name: ConfigureMVC
@@ -484,12 +484,13 @@ references:
   nameWithType: MvcModuleBaseClass<TModule>.ConfigureMVC
   nameWithType.vb: MvcModuleBaseClass(Of TModule).ConfigureMVC
 - uid: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass`1.Options(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: Options(MvcOptions, IConfiguration, IHostEnvironment)
+  name: Options(MvcOptions?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass-1.html#Gestalt_ASPNet_MVC_BaseClasses_MvcModuleBaseClass_1_Options_Microsoft_AspNetCore_Mvc_MvcOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass`1.Options(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  fullName: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass<TModule>.Options(Microsoft.AspNetCore.Mvc.MvcOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  name.vb: Options(MvcOptions, IConfiguration, IHostEnvironment)
+  fullName: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass<TModule>.Options(Microsoft.AspNetCore.Mvc.MvcOptions?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass(Of TModule).Options(Microsoft.AspNetCore.Mvc.MvcOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: MvcModuleBaseClass<TModule>.Options(MvcOptions, IConfiguration, IHostEnvironment)
+  nameWithType: MvcModuleBaseClass<TModule>.Options(MvcOptions?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: MvcModuleBaseClass(Of TModule).Options(MvcOptions, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass`1.Options*
   name: Options
@@ -513,13 +514,13 @@ references:
   fullName: Gestalt.ASPNet.MVC.Interfaces.IMvcModule
   nameWithType: IMvcModule
 - uid: Gestalt.ASPNet.MVC.Interfaces.IMvcModule.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: ConfigureMVC(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  name: ConfigureMVC(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.MVC.Interfaces.IMvcModule.html#Gestalt_ASPNet_MVC_Interfaces_IMvcModule_ConfigureMVC_Microsoft_Extensions_DependencyInjection_IMvcBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.MVC.Interfaces.IMvcModule.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
   name.vb: ConfigureMVC(IMvcBuilder, IConfiguration, IHostEnvironment)
-  fullName: Gestalt.ASPNet.MVC.Interfaces.IMvcModule.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  fullName: Gestalt.ASPNet.MVC.Interfaces.IMvcModule.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.MVC.Interfaces.IMvcModule.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: IMvcModule.ConfigureMVC(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  nameWithType: IMvcModule.ConfigureMVC(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: IMvcModule.ConfigureMVC(IMvcBuilder, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.MVC.Interfaces.IMvcModule.ConfigureMVC*
   name: ConfigureMVC
@@ -529,11 +530,14 @@ references:
   fullName: Gestalt.ASPNet.MVC.Interfaces.IMvcModule.ConfigureMVC
   nameWithType: IMvcModule.ConfigureMVC
 - uid: Gestalt.ASPNet.MVC.Interfaces.IMvcModule.Options(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: Options(MvcOptions, IConfiguration, IHostEnvironment)
+  name: Options(MvcOptions?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.MVC.Interfaces.IMvcModule.html#Gestalt_ASPNet_MVC_Interfaces_IMvcModule_Options_Microsoft_AspNetCore_Mvc_MvcOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.MVC.Interfaces.IMvcModule.Options(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  fullName: Gestalt.ASPNet.MVC.Interfaces.IMvcModule.Options(Microsoft.AspNetCore.Mvc.MvcOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: IMvcModule.Options(MvcOptions, IConfiguration, IHostEnvironment)
+  name.vb: Options(MvcOptions, IConfiguration, IHostEnvironment)
+  fullName: Gestalt.ASPNet.MVC.Interfaces.IMvcModule.Options(Microsoft.AspNetCore.Mvc.MvcOptions?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
+  fullName.vb: Gestalt.ASPNet.MVC.Interfaces.IMvcModule.Options(Microsoft.AspNetCore.Mvc.MvcOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  nameWithType: IMvcModule.Options(MvcOptions?, IConfiguration?, IHostEnvironment?)
+  nameWithType.vb: IMvcModule.Options(MvcOptions, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.MVC.Interfaces.IMvcModule.Options*
   name: Options
   href: api/Gestalt.ASPNet.MVC.Interfaces.IMvcModule.html#Gestalt_ASPNet_MVC_Interfaces_IMvcModule_Options_
@@ -613,13 +617,13 @@ references:
   nameWithType: RazorPagesModuleBaseClass<TModule>.RazorPagesModuleBaseClass
   nameWithType.vb: RazorPagesModuleBaseClass(Of TModule).New
 - uid: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.ConfigureRazorPages(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: ConfigureRazorPages(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  name: ConfigureRazorPages(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass-1.html#Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1_ConfigureRazorPages_Microsoft_Extensions_DependencyInjection_IMvcBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.ConfigureRazorPages(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
   name.vb: ConfigureRazorPages(IMvcBuilder, IConfiguration, IHostEnvironment)
-  fullName: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass<TModule>.ConfigureRazorPages(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  fullName: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass<TModule>.ConfigureRazorPages(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass(Of TModule).ConfigureRazorPages(Microsoft.Extensions.DependencyInjection.IMvcBuilder, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: RazorPagesModuleBaseClass<TModule>.ConfigureRazorPages(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  nameWithType: RazorPagesModuleBaseClass<TModule>.ConfigureRazorPages(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: RazorPagesModuleBaseClass(Of TModule).ConfigureRazorPages(IMvcBuilder, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.ConfigureRazorPages*
   name: ConfigureRazorPages
@@ -631,12 +635,13 @@ references:
   nameWithType: RazorPagesModuleBaseClass<TModule>.ConfigureRazorPages
   nameWithType.vb: RazorPagesModuleBaseClass(Of TModule).ConfigureRazorPages
 - uid: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.Options(Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: Options(RazorPagesOptions, IConfiguration, IHostEnvironment)
+  name: Options(RazorPagesOptions?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass-1.html#Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1_Options_Microsoft_AspNetCore_Mvc_RazorPages_RazorPagesOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.Options(Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  fullName: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass<TModule>.Options(Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  name.vb: Options(RazorPagesOptions, IConfiguration, IHostEnvironment)
+  fullName: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass<TModule>.Options(Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass(Of TModule).Options(Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: RazorPagesModuleBaseClass<TModule>.Options(RazorPagesOptions, IConfiguration, IHostEnvironment)
+  nameWithType: RazorPagesModuleBaseClass<TModule>.Options(RazorPagesOptions?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: RazorPagesModuleBaseClass(Of TModule).Options(RazorPagesOptions, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.Options*
   name: Options
@@ -660,13 +665,13 @@ references:
   fullName: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule
   nameWithType: IRazorPagesModule
 - uid: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.ConfigureRazorPages(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: ConfigureRazorPages(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  name: ConfigureRazorPages(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.html#Gestalt_ASPNet_RazorPages_Interfaces_IRazorPagesModule_ConfigureRazorPages_Microsoft_Extensions_DependencyInjection_IMvcBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.ConfigureRazorPages(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
   name.vb: ConfigureRazorPages(IMvcBuilder, IConfiguration, IHostEnvironment)
-  fullName: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.ConfigureRazorPages(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  fullName: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.ConfigureRazorPages(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.ConfigureRazorPages(Microsoft.Extensions.DependencyInjection.IMvcBuilder, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: IRazorPagesModule.ConfigureRazorPages(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  nameWithType: IRazorPagesModule.ConfigureRazorPages(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: IRazorPagesModule.ConfigureRazorPages(IMvcBuilder, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.ConfigureRazorPages*
   name: ConfigureRazorPages
@@ -676,11 +681,14 @@ references:
   fullName: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.ConfigureRazorPages
   nameWithType: IRazorPagesModule.ConfigureRazorPages
 - uid: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.Options(Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: Options(RazorPagesOptions, IConfiguration, IHostEnvironment)
+  name: Options(RazorPagesOptions?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.html#Gestalt_ASPNet_RazorPages_Interfaces_IRazorPagesModule_Options_Microsoft_AspNetCore_Mvc_RazorPages_RazorPagesOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.Options(Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  fullName: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.Options(Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: IRazorPagesModule.Options(RazorPagesOptions, IConfiguration, IHostEnvironment)
+  name.vb: Options(RazorPagesOptions, IConfiguration, IHostEnvironment)
+  fullName: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.Options(Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
+  fullName.vb: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.Options(Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  nameWithType: IRazorPagesModule.Options(RazorPagesOptions?, IConfiguration?, IHostEnvironment?)
+  nameWithType.vb: IRazorPagesModule.Options(RazorPagesOptions, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.Options*
   name: Options
   href: api/Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.html#Gestalt_ASPNet_RazorPages_Interfaces_IRazorPagesModule_Options_
@@ -741,13 +749,13 @@ references:
   nameWithType: SignalRModuleBaseClass<TModule>.SignalRModuleBaseClass()
   nameWithType.vb: SignalRModuleBaseClass(Of TModule).New()
 - uid: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])
-  name: SignalRModuleBaseClass(string?, string?, string?, params string[])
+  name: SignalRModuleBaseClass(string?, string?, string?, params string?[]?)
   href: api/Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass-1.html#Gestalt_ASPNet_SignalR_BaseClasses_SignalRModuleBaseClass_1__ctor_System_String_System_String_System_String_System_String___
   commentId: M:Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])
   name.vb: New(String, String, String, ParamArray String())
-  fullName: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass<TModule>.SignalRModuleBaseClass(string?, string?, string?, params string[])
+  fullName: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass<TModule>.SignalRModuleBaseClass(string?, string?, string?, params string?[]?)
   fullName.vb: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass(Of TModule).New(String, String, String, ParamArray String())
-  nameWithType: SignalRModuleBaseClass<TModule>.SignalRModuleBaseClass(string?, string?, string?, params string[])
+  nameWithType: SignalRModuleBaseClass<TModule>.SignalRModuleBaseClass(string?, string?, string?, params string?[]?)
   nameWithType.vb: SignalRModuleBaseClass(Of TModule).New(String, String, String, ParamArray String())
 - uid: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.#ctor*
   name: SignalRModuleBaseClass
@@ -760,13 +768,13 @@ references:
   nameWithType: SignalRModuleBaseClass<TModule>.SignalRModuleBaseClass
   nameWithType.vb: SignalRModuleBaseClass(Of TModule).New
 - uid: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: ConfigureSignalR(ISignalRServerBuilder?, IConfiguration, IHostEnvironment)
+  name: ConfigureSignalR(ISignalRServerBuilder?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass-1.html#Gestalt_ASPNet_SignalR_BaseClasses_SignalRModuleBaseClass_1_ConfigureSignalR_Microsoft_AspNetCore_SignalR_ISignalRServerBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
   name.vb: ConfigureSignalR(ISignalRServerBuilder, IConfiguration, IHostEnvironment)
-  fullName: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass<TModule>.ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder?, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  fullName: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass<TModule>.ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass(Of TModule).ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: SignalRModuleBaseClass<TModule>.ConfigureSignalR(ISignalRServerBuilder?, IConfiguration, IHostEnvironment)
+  nameWithType: SignalRModuleBaseClass<TModule>.ConfigureSignalR(ISignalRServerBuilder?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: SignalRModuleBaseClass(Of TModule).ConfigureSignalR(ISignalRServerBuilder, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.ConfigureSignalR*
   name: ConfigureSignalR
@@ -778,12 +786,13 @@ references:
   nameWithType: SignalRModuleBaseClass<TModule>.ConfigureSignalR
   nameWithType.vb: SignalRModuleBaseClass(Of TModule).ConfigureSignalR
 - uid: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.Options(Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: Options(HubOptions, IConfiguration, IHostEnvironment)
+  name: Options(HubOptions?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass-1.html#Gestalt_ASPNet_SignalR_BaseClasses_SignalRModuleBaseClass_1_Options_Microsoft_AspNetCore_SignalR_HubOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.Options(Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  fullName: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass<TModule>.Options(Microsoft.AspNetCore.SignalR.HubOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  name.vb: Options(HubOptions, IConfiguration, IHostEnvironment)
+  fullName: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass<TModule>.Options(Microsoft.AspNetCore.SignalR.HubOptions?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass(Of TModule).Options(Microsoft.AspNetCore.SignalR.HubOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: SignalRModuleBaseClass<TModule>.Options(HubOptions, IConfiguration, IHostEnvironment)
+  nameWithType: SignalRModuleBaseClass<TModule>.Options(HubOptions?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: SignalRModuleBaseClass(Of TModule).Options(HubOptions, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.Options*
   name: Options
@@ -807,13 +816,13 @@ references:
   fullName: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule
   nameWithType: ISignalRModule
 - uid: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: ConfigureSignalR(ISignalRServerBuilder?, IConfiguration, IHostEnvironment)
+  name: ConfigureSignalR(ISignalRServerBuilder?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.html#Gestalt_ASPNet_SignalR_Interfaces_ISignalRModule_ConfigureSignalR_Microsoft_AspNetCore_SignalR_ISignalRServerBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
   name.vb: ConfigureSignalR(ISignalRServerBuilder, IConfiguration, IHostEnvironment)
-  fullName: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder?, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  fullName: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: ISignalRModule.ConfigureSignalR(ISignalRServerBuilder?, IConfiguration, IHostEnvironment)
+  nameWithType: ISignalRModule.ConfigureSignalR(ISignalRServerBuilder?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: ISignalRModule.ConfigureSignalR(ISignalRServerBuilder, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.ConfigureSignalR*
   name: ConfigureSignalR
@@ -823,11 +832,14 @@ references:
   fullName: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.ConfigureSignalR
   nameWithType: ISignalRModule.ConfigureSignalR
 - uid: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.Options(Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: Options(HubOptions, IConfiguration, IHostEnvironment)
+  name: Options(HubOptions?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.html#Gestalt_ASPNet_SignalR_Interfaces_ISignalRModule_Options_Microsoft_AspNetCore_SignalR_HubOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.Options(Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  fullName: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.Options(Microsoft.AspNetCore.SignalR.HubOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: ISignalRModule.Options(HubOptions, IConfiguration, IHostEnvironment)
+  name.vb: Options(HubOptions, IConfiguration, IHostEnvironment)
+  fullName: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.Options(Microsoft.AspNetCore.SignalR.HubOptions?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
+  fullName.vb: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.Options(Microsoft.AspNetCore.SignalR.HubOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  nameWithType: ISignalRModule.Options(HubOptions?, IConfiguration?, IHostEnvironment?)
+  nameWithType.vb: ISignalRModule.Options(HubOptions, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.Options*
   name: Options
   href: api/Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.html#Gestalt_ASPNet_SignalR_Interfaces_ISignalRModule_Options_

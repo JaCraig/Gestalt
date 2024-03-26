@@ -267,7 +267,7 @@ Class SignalRModuleBaseClass&lt;TModule&gt;  <a class="header-action link-second
   <a id="Gestalt_ASPNet_SignalR_BaseClasses_SignalRModuleBaseClass_1__ctor_" data-uid="Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.#ctor*"></a>
 
   <h3 id="Gestalt_ASPNet_SignalR_BaseClasses_SignalRModuleBaseClass_1__ctor_System_String_System_String_System_String_System_String___" data-uid="Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])">
-  SignalRModuleBaseClass(string?, string?, string?, params string[])
+  SignalRModuleBaseClass(string?, string?, string?, params string?[]?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.SignalR/BaseClasses/SignalRModuleBaseClass.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -276,7 +276,7 @@ Class SignalRModuleBaseClass&lt;TModule&gt;  <a class="header-action link-second
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected SignalRModuleBaseClass(string? name, string? category, string? contentPath, params string[] tags)</code></pre>
+    <pre><code class="lang-csharp hljs">protected SignalRModuleBaseClass(string? name, string? category, string? contentPath, params string?[]? tags)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -313,7 +313,7 @@ Class SignalRModuleBaseClass&lt;TModule&gt;  <a class="header-action link-second
   <a id="Gestalt_ASPNet_SignalR_BaseClasses_SignalRModuleBaseClass_1_ConfigureSignalR_" data-uid="Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.ConfigureSignalR*"></a>
 
   <h3 id="Gestalt_ASPNet_SignalR_BaseClasses_SignalRModuleBaseClass_1_ConfigureSignalR_Microsoft_AspNetCore_SignalR_ISignalRServerBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.ConfigureSignalR(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
-  ConfigureSignalR(ISignalRServerBuilder?, IConfiguration, IHostEnvironment)
+  ConfigureSignalR(ISignalRServerBuilder?, IConfiguration?, IHostEnvironment?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.SignalR/BaseClasses/SignalRModuleBaseClass.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -322,7 +322,7 @@ Class SignalRModuleBaseClass&lt;TModule&gt;  <a class="header-action link-second
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual ISignalRServerBuilder? ConfigureSignalR(ISignalRServerBuilder? builder, IConfiguration configuration, IHostEnvironment environment)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual ISignalRServerBuilder? ConfigureSignalR(ISignalRServerBuilder? builder, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -358,7 +358,7 @@ Class SignalRModuleBaseClass&lt;TModule&gt;  <a class="header-action link-second
   <a id="Gestalt_ASPNet_SignalR_BaseClasses_SignalRModuleBaseClass_1_Options_" data-uid="Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.Options*"></a>
 
   <h3 id="Gestalt_ASPNet_SignalR_BaseClasses_SignalRModuleBaseClass_1_Options_Microsoft_AspNetCore_SignalR_HubOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass`1.Options(Microsoft.AspNetCore.SignalR.HubOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
-  Options(HubOptions, IConfiguration, IHostEnvironment)
+  Options(HubOptions?, IConfiguration?, IHostEnvironment?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.SignalR/BaseClasses/SignalRModuleBaseClass.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -367,7 +367,7 @@ Class SignalRModuleBaseClass&lt;TModule&gt;  <a class="header-action link-second
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual HubOptions Options(HubOptions options, IConfiguration configuration, IHostEnvironment environment)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual HubOptions? Options(HubOptions? options, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
