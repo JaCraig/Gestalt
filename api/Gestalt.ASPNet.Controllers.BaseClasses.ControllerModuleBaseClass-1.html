@@ -267,7 +267,7 @@ Class ControllerModuleBaseClass&lt;TModule&gt;  <a class="header-action link-sec
   <a id="Gestalt_ASPNet_Controllers_BaseClasses_ControllerModuleBaseClass_1__ctor_" data-uid="Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.#ctor*"></a>
 
   <h3 id="Gestalt_ASPNet_Controllers_BaseClasses_ControllerModuleBaseClass_1__ctor_System_String_System_String_System_String_System_String___" data-uid="Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])">
-  ControllerModuleBaseClass(string?, string?, string?, params string[])
+  ControllerModuleBaseClass(string?, string?, string?, params string?[]?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.Controllers/BaseClasses/ControllerModuleBaseClass.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -276,7 +276,7 @@ Class ControllerModuleBaseClass&lt;TModule&gt;  <a class="header-action link-sec
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ControllerModuleBaseClass(string? name, string? category, string? contentPath, params string[] tags)</code></pre>
+    <pre><code class="lang-csharp hljs">protected ControllerModuleBaseClass(string? name, string? category, string? contentPath, params string?[]? tags)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -313,7 +313,7 @@ Class ControllerModuleBaseClass&lt;TModule&gt;  <a class="header-action link-sec
   <a id="Gestalt_ASPNet_Controllers_BaseClasses_ControllerModuleBaseClass_1_ConfigureMVC_" data-uid="Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.ConfigureMVC*"></a>
 
   <h3 id="Gestalt_ASPNet_Controllers_BaseClasses_ControllerModuleBaseClass_1_ConfigureMVC_Microsoft_Extensions_DependencyInjection_IMvcBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
-  ConfigureMVC(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  ConfigureMVC(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.Controllers/BaseClasses/ControllerModuleBaseClass.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -322,7 +322,7 @@ Class ControllerModuleBaseClass&lt;TModule&gt;  <a class="header-action link-sec
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration configuration, IHostEnvironment environment)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -358,7 +358,7 @@ Class ControllerModuleBaseClass&lt;TModule&gt;  <a class="header-action link-sec
   <a id="Gestalt_ASPNet_Controllers_BaseClasses_ControllerModuleBaseClass_1_Options_" data-uid="Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.Options*"></a>
 
   <h3 id="Gestalt_ASPNet_Controllers_BaseClasses_ControllerModuleBaseClass_1_Options_Microsoft_AspNetCore_Mvc_MvcOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.Options(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
-  Options(MvcOptions, IConfiguration, IHostEnvironment)
+  Options(MvcOptions?, IConfiguration?, IHostEnvironment?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.Controllers/BaseClasses/ControllerModuleBaseClass.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -367,7 +367,7 @@ Class ControllerModuleBaseClass&lt;TModule&gt;  <a class="header-action link-sec
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual MvcOptions Options(MvcOptions options, IConfiguration configuration, IHostEnvironment environment)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual MvcOptions? Options(MvcOptions? options, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

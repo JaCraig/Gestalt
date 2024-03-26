@@ -192,7 +192,7 @@ Interface IControllerModule  <a class="header-action link-secondary" title="View
   <a id="Gestalt_ASPNet_Controllers_Interfaces_IControllerModule_ConfigureMVC_" data-uid="Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.ConfigureMVC*"></a>
 
   <h3 id="Gestalt_ASPNet_Controllers_Interfaces_IControllerModule_ConfigureMVC_Microsoft_Extensions_DependencyInjection_IMvcBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
-  ConfigureMVC(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  ConfigureMVC(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.Controllers/Interfaces/IControllerModule.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -201,7 +201,7 @@ Interface IControllerModule  <a class="header-action link-secondary" title="View
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration configuration, IHostEnvironment environment)</code></pre>
+    <pre><code class="lang-csharp hljs">IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -237,7 +237,7 @@ Interface IControllerModule  <a class="header-action link-secondary" title="View
   <a id="Gestalt_ASPNet_Controllers_Interfaces_IControllerModule_Options_" data-uid="Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.Options*"></a>
 
   <h3 id="Gestalt_ASPNet_Controllers_Interfaces_IControllerModule_Options_Microsoft_AspNetCore_Mvc_MvcOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.Options(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
-  Options(MvcOptions, IConfiguration, IHostEnvironment)
+  Options(MvcOptions?, IConfiguration?, IHostEnvironment?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet.Controllers/Interfaces/IControllerModule.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -246,7 +246,7 @@ Interface IControllerModule  <a class="header-action link-secondary" title="View
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">MvcOptions Options(MvcOptions options, IConfiguration configuration, IHostEnvironment environment)</code></pre>
+    <pre><code class="lang-csharp hljs">MvcOptions? Options(MvcOptions? options, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

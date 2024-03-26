@@ -208,13 +208,13 @@ references:
   nameWithType: ControllerModuleBaseClass<TModule>.ControllerModuleBaseClass()
   nameWithType.vb: ControllerModuleBaseClass(Of TModule).New()
 - uid: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])
-  name: ControllerModuleBaseClass(string?, string?, string?, params string[])
+  name: ControllerModuleBaseClass(string?, string?, string?, params string?[]?)
   href: api/Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass-1.html#Gestalt_ASPNet_Controllers_BaseClasses_ControllerModuleBaseClass_1__ctor_System_String_System_String_System_String_System_String___
   commentId: M:Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])
   name.vb: New(String, String, String, ParamArray String())
-  fullName: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass<TModule>.ControllerModuleBaseClass(string?, string?, string?, params string[])
+  fullName: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass<TModule>.ControllerModuleBaseClass(string?, string?, string?, params string?[]?)
   fullName.vb: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass(Of TModule).New(String, String, String, ParamArray String())
-  nameWithType: ControllerModuleBaseClass<TModule>.ControllerModuleBaseClass(string?, string?, string?, params string[])
+  nameWithType: ControllerModuleBaseClass<TModule>.ControllerModuleBaseClass(string?, string?, string?, params string?[]?)
   nameWithType.vb: ControllerModuleBaseClass(Of TModule).New(String, String, String, ParamArray String())
 - uid: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.#ctor*
   name: ControllerModuleBaseClass
@@ -227,13 +227,13 @@ references:
   nameWithType: ControllerModuleBaseClass<TModule>.ControllerModuleBaseClass
   nameWithType.vb: ControllerModuleBaseClass(Of TModule).New
 - uid: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: ConfigureMVC(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  name: ConfigureMVC(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass-1.html#Gestalt_ASPNet_Controllers_BaseClasses_ControllerModuleBaseClass_1_ConfigureMVC_Microsoft_Extensions_DependencyInjection_IMvcBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
   name.vb: ConfigureMVC(IMvcBuilder, IConfiguration, IHostEnvironment)
-  fullName: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass<TModule>.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  fullName: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass<TModule>.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass(Of TModule).ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: ControllerModuleBaseClass<TModule>.ConfigureMVC(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  nameWithType: ControllerModuleBaseClass<TModule>.ConfigureMVC(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: ControllerModuleBaseClass(Of TModule).ConfigureMVC(IMvcBuilder, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.ConfigureMVC*
   name: ConfigureMVC
@@ -245,12 +245,13 @@ references:
   nameWithType: ControllerModuleBaseClass<TModule>.ConfigureMVC
   nameWithType.vb: ControllerModuleBaseClass(Of TModule).ConfigureMVC
 - uid: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.Options(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: Options(MvcOptions, IConfiguration, IHostEnvironment)
+  name: Options(MvcOptions?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass-1.html#Gestalt_ASPNet_Controllers_BaseClasses_ControllerModuleBaseClass_1_Options_Microsoft_AspNetCore_Mvc_MvcOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.Options(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  fullName: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass<TModule>.Options(Microsoft.AspNetCore.Mvc.MvcOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  name.vb: Options(MvcOptions, IConfiguration, IHostEnvironment)
+  fullName: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass<TModule>.Options(Microsoft.AspNetCore.Mvc.MvcOptions?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass(Of TModule).Options(Microsoft.AspNetCore.Mvc.MvcOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: ControllerModuleBaseClass<TModule>.Options(MvcOptions, IConfiguration, IHostEnvironment)
+  nameWithType: ControllerModuleBaseClass<TModule>.Options(MvcOptions?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: ControllerModuleBaseClass(Of TModule).Options(MvcOptions, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass`1.Options*
   name: Options
@@ -296,13 +297,13 @@ references:
   fullName: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule
   nameWithType: IControllerModule
 - uid: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: ConfigureMVC(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  name: ConfigureMVC(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.html#Gestalt_ASPNet_Controllers_Interfaces_IControllerModule_ConfigureMVC_Microsoft_Extensions_DependencyInjection_IMvcBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
   name.vb: ConfigureMVC(IMvcBuilder, IConfiguration, IHostEnvironment)
-  fullName: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  fullName: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.ConfigureMVC(Microsoft.Extensions.DependencyInjection.IMvcBuilder, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: IControllerModule.ConfigureMVC(IMvcBuilder?, IConfiguration, IHostEnvironment)
+  nameWithType: IControllerModule.ConfigureMVC(IMvcBuilder?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: IControllerModule.ConfigureMVC(IMvcBuilder, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.ConfigureMVC*
   name: ConfigureMVC
@@ -312,11 +313,14 @@ references:
   fullName: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.ConfigureMVC
   nameWithType: IControllerModule.ConfigureMVC
 - uid: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.Options(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: Options(MvcOptions, IConfiguration, IHostEnvironment)
+  name: Options(MvcOptions?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.html#Gestalt_ASPNet_Controllers_Interfaces_IControllerModule_Options_Microsoft_AspNetCore_Mvc_MvcOptions_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.Options(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  fullName: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.Options(Microsoft.AspNetCore.Mvc.MvcOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: IControllerModule.Options(MvcOptions, IConfiguration, IHostEnvironment)
+  name.vb: Options(MvcOptions, IConfiguration, IHostEnvironment)
+  fullName: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.Options(Microsoft.AspNetCore.Mvc.MvcOptions?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
+  fullName.vb: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.Options(Microsoft.AspNetCore.Mvc.MvcOptions, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
+  nameWithType: IControllerModule.Options(MvcOptions?, IConfiguration?, IHostEnvironment?)
+  nameWithType.vb: IControllerModule.Options(MvcOptions, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.Options*
   name: Options
   href: api/Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.html#Gestalt_ASPNet_Controllers_Interfaces_IControllerModule_Options_
