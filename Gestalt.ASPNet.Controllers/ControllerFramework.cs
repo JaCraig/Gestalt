@@ -22,8 +22,6 @@ namespace Gestalt.ASPNet.Controllers
 
             modules ??= Array.Empty<IControllerModule>();
 
-            //services.AddSignalR();
-
             // MVC Builder, setup the options.
             IMvcBuilder? MVCBuilder = services.AddControllers(options =>
             {
@@ -32,7 +30,7 @@ namespace Gestalt.ASPNet.Controllers
                     IControllerModule Module = modules[I];
                     if (Module is null)
                         continue;
-                    options = Module.Options(options, configuration, environment);
+                    options = Module.Options(options, configuration, environment) ?? options;
                 }
             });
 
@@ -42,9 +40,11 @@ namespace Gestalt.ASPNet.Controllers
                 IControllerModule Module = modules[I];
                 if (Module is null)
                     continue;
+                var ModuleAssembly = Module.GetType().Assembly;
+                var ModuleName = ModuleAssembly.FullName;
                 MVCBuilder = Module.ConfigureMVC(MVCBuilder, configuration, environment);
-                if (MVCBuilder?.PartManager.ApplicationParts.Any(x => x.Name == Module.GetType().Assembly.FullName) == false)
-                    _ = MVCBuilder?.AddApplicationPart(Module.GetType().Assembly);
+                if (MVCBuilder?.PartManager?.ApplicationParts.Any(x => x.Name == ModuleName) == false)
+                    _ = MVCBuilder?.AddApplicationPart(ModuleAssembly);
             }
         }
     }

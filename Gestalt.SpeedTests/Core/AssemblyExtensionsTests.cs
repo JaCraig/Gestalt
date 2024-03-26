@@ -1,24 +1,14 @@
-﻿using BigBook;
+﻿using BenchmarkDotNet.Attributes;
+using BigBook;
+using Gestalt.Core.ExtensionMethods;
 using Gestalt.Core.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Reflection;
 
-namespace Gestalt.Core.ExtensionMethods
+namespace Gestalt.SpeedTests.Core
 {
-    /// <summary>
-    /// Assembly Extension Methods
-    /// </summary>
-    public static class AssemblyExtensions
+    public static class TestExtensions
     {
-        /// <summary>
-        /// Finds the assemblies in the application directory.
-        /// </summary>
-        /// <param name="entryAssembly">The entry assembly.</param>
-        /// <returns>The list of assemblies in the same directory as the entry assembly.</returns>
-        public static Assembly[] FindAssemblies(this Assembly? entryAssembly)
+        public static Assembly[] FindAssembliesNew(this Assembly? entryAssembly)
         {
             if (entryAssembly is null)
                 return Array.Empty<Assembly>();
@@ -47,12 +37,13 @@ namespace Gestalt.Core.ExtensionMethods
         /// </summary>
         /// <param name="assemblies">The assemblies to search.</param>
         /// <returns>The application frameworks.</returns>
-        public static IApplicationFramework[] FindFrameworks(this Assembly?[]? assemblies)
+        public static IApplicationFramework[] FindFrameworksNew(this Assembly?[]? assemblies)
         {
             if (assemblies is null || assemblies.Length == 0)
                 return Array.Empty<IApplicationFramework>();
 
             var ReturnValue = new HashSet<IApplicationFramework>();
+            var ApplicationFrameworkType = typeof(IApplicationFramework);
             for (int I = 0, AssembliesLength = assemblies.Length; I < AssembliesLength; I++)
             {
                 Assembly? TempAssembly = assemblies[I];
@@ -61,38 +52,30 @@ namespace Gestalt.Core.ExtensionMethods
                 try
                 {
                     var ModuleTypes = TempAssembly.GetTypes()
-                        .Where(x => typeof(IApplicationFramework).IsAssignableFrom(x) && x.GetConstructor(Type.EmptyTypes) != null);
+                        .Where(x => ApplicationFrameworkType.IsAssignableFrom(x) && x.GetConstructor(Type.EmptyTypes) != null);
                     ReturnValue.Add(ModuleTypes.Create<IApplicationFramework>());
                 }
                 catch { }
             }
             return ReturnValue.OrderBy(x => x.Order).ToArray();
         }
+    }
 
-        /// <summary>
-        /// Finds the modules in a list of assemblies.
-        /// </summary>
-        /// <returns>The application modules.</returns>
-        public static IApplicationModule[] FindModules(this Assembly?[]? assemblies)
+    [RankColumn, MemoryDiagnoser]
+    public class AssemblyExtensionsTests
+    {
+        private Assembly?[] EntryAssembly { get; } = Assembly.GetEntryAssembly().FindAssemblies();
+
+        [Benchmark(Baseline = true)]
+        public void CurrentImplementation()
         {
-            if (assemblies is null || assemblies.Length == 0)
-                return Array.Empty<IApplicationModule>();
+            _ = EntryAssembly.FindFrameworks();
+        }
 
-            var ReturnValue = new HashSet<IApplicationModule>();
-            for (int I = 0, AssembliesLength = assemblies.Length; I < AssembliesLength; I++)
-            {
-                Assembly? TempAssembly = assemblies[I];
-                if (TempAssembly is null)
-                    continue;
-                try
-                {
-                    var ModuleTypes = TempAssembly.GetTypes()
-                        .Where(x => typeof(IApplicationModule).IsAssignableFrom(x) && x.GetConstructor(Type.EmptyTypes) != null);
-                    ReturnValue.Add(ModuleTypes.Create<IApplicationModule>());
-                }
-                catch { }
-            }
-            return ReturnValue.OrderBy(x => x.Order).ToArray();
+        [Benchmark]
+        public void NewImplementation()
+        {
+            _ = EntryAssembly.FindFrameworksNew();
         }
     }
 }

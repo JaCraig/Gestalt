@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gestalt.ASPNet.Controllers\Gestalt.ASPNet.Controllers.csproj" />
+    <ProjectReference Include="..\Gestalt.ASPNet.MVC\Gestalt.ASPNet.MVC.csproj" />
+    <ProjectReference Include="..\Gestalt.ASPNet.RazorPages\Gestalt.ASPNet.RazorPages.csproj" />
+    <ProjectReference Include="..\Gestalt.ASPNet.SignalR\Gestalt.ASPNet.SignalR.csproj" />
+    <ProjectReference Include="..\Gestalt.ASPNet\Gestalt.ASPNet.csproj" />
+    <ProjectReference Include="..\Gestalt.Console\Gestalt.Console.csproj" />
+    <ProjectReference Include="..\Gestalt.Core\Gestalt.Core.csproj" />
+  </ItemGroup>
+
+</Project>

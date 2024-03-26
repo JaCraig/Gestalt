@@ -9,8 +9,14 @@ namespace Gestalt.Console.Tests
     using System.Threading.Tasks;
     using Xunit;
 
+    /// <summary>
+    /// Represents a test class for the InternalHostedService class.
+    /// </summary>
     public class InternalHostedServiceTests : TestBaseClass<InternalHostedService>
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="InternalHostedServiceTests"/> class.
+        /// </summary>
         public InternalHostedServiceTests()
         {
             _Application = Substitute.For<IApplication>();
@@ -20,6 +26,10 @@ namespace Gestalt.Console.Tests
         private readonly IApplication _Application;
         private readonly InternalHostedService _TestClass;
 
+        /// <summary>
+        /// Tests the <see cref="InternalHostedService.StartAsync(CancellationToken)"/> method.
+        /// </summary>
+        /// <returns>A task representing the asynchronous operation.</returns>
         [Fact]
         public async Task CanCallStartAsync()
         {
@@ -30,6 +40,10 @@ namespace Gestalt.Console.Tests
             await _TestClass.StartAsync(CancellationToken);
         }
 
+        /// <summary>
+        /// Tests the <see cref="InternalHostedService.StopAsync(CancellationToken)"/> method.
+        /// </summary>
+        /// <returns>A task representing the asynchronous operation.</returns>
         [Fact]
         public async Task CanCallStopAsync()
         {
@@ -40,6 +54,9 @@ namespace Gestalt.Console.Tests
             await _TestClass.StopAsync(CancellationToken);
         }
 
+        /// <summary>
+        /// Tests the constructor of the <see cref="InternalHostedService"/> class.
+        /// </summary>
         [Fact]
         public void CanConstruct()
         {
@@ -50,6 +67,9 @@ namespace Gestalt.Console.Tests
             Assert.NotNull(Instance);
         }
 
+        /// <summary>
+        /// Tests the constructor of the <see cref="InternalHostedService"/> class with a null application.
+        /// </summary>
         [Fact]
         public void CanConstructWithNullApplication()
         {
