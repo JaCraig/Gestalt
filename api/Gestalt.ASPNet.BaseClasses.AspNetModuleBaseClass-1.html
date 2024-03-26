@@ -265,7 +265,7 @@ Class AspNetModuleBaseClass&lt;TModule&gt;  <a class="header-action link-seconda
   <a id="Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1__ctor_" data-uid="Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.#ctor*"></a>
 
   <h3 id="Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1__ctor_System_String_System_String_System_String_System_String___" data-uid="Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])">
-  AspNetModuleBaseClass(string?, string?, string?, params string[])
+  AspNetModuleBaseClass(string?, string?, string?, params string?[]?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet/BaseClasses/AspNetModuleBaseClass.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -274,7 +274,7 @@ Class AspNetModuleBaseClass&lt;TModule&gt;  <a class="header-action link-seconda
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected AspNetModuleBaseClass(string? name, string? category, string? contentPath, params string[] tags)</code></pre>
+    <pre><code class="lang-csharp hljs">protected AspNetModuleBaseClass(string? name, string? category, string? contentPath, params string?[]? tags)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -356,7 +356,7 @@ Class AspNetModuleBaseClass&lt;TModule&gt;  <a class="header-action link-seconda
   <a id="Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1_ConfigureRoutes_" data-uid="Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.ConfigureRoutes*"></a>
 
   <h3 id="Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1_ConfigureRoutes_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.ConfigureRoutes(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
-  ConfigureRoutes(IEndpointRouteBuilder, IConfiguration?, IHostEnvironment?)
+  ConfigureRoutes(IEndpointRouteBuilder?, IConfiguration?, IHostEnvironment?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet/BaseClasses/AspNetModuleBaseClass.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -365,7 +365,7 @@ Class AspNetModuleBaseClass&lt;TModule&gt;  <a class="header-action link-seconda
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEndpointRouteBuilder? ConfigureRoutes(IEndpointRouteBuilder endpoints, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IEndpointRouteBuilder? ConfigureRoutes(IEndpointRouteBuilder? endpoints, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -401,7 +401,7 @@ Class AspNetModuleBaseClass&lt;TModule&gt;  <a class="header-action link-seconda
   <a id="Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1_ConfigureWebHostSettings_" data-uid="Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.ConfigureWebHostSettings*"></a>
 
   <h3 id="Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1_ConfigureWebHostSettings_Microsoft_AspNetCore_Hosting_IWebHostBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.ConfigureWebHostSettings(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)">
-  ConfigureWebHostSettings(IWebHostBuilder, IConfiguration?, IHostEnvironment?)
+  ConfigureWebHostSettings(IWebHostBuilder?, IConfiguration?, IHostEnvironment?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Gestalt/blob/main/Gestalt.ASPNet/BaseClasses/AspNetModuleBaseClass.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -410,7 +410,7 @@ Class AspNetModuleBaseClass&lt;TModule&gt;  <a class="header-action link-seconda
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IWebHostBuilder ConfigureWebHostSettings(IWebHostBuilder webHost, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IWebHostBuilder? ConfigureWebHostSettings(IWebHostBuilder? webHost, IConfiguration? configuration, IHostEnvironment? environment)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

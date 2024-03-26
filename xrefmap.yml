@@ -33,11 +33,14 @@ references:
   nameWithType: AspNetApplication.AspNetApplication
   nameWithType.vb: AspNetApplication.New
 - uid: Gestalt.ASPNet.AspNetApplication.ConfigureApplication(Microsoft.AspNetCore.Builder.WebApplication)
-  name: ConfigureApplication(WebApplication)
+  name: ConfigureApplication(WebApplication?)
   href: api/Gestalt.ASPNet.AspNetApplication.html#Gestalt_ASPNet_AspNetApplication_ConfigureApplication_Microsoft_AspNetCore_Builder_WebApplication_
   commentId: M:Gestalt.ASPNet.AspNetApplication.ConfigureApplication(Microsoft.AspNetCore.Builder.WebApplication)
-  fullName: Gestalt.ASPNet.AspNetApplication.ConfigureApplication(Microsoft.AspNetCore.Builder.WebApplication)
-  nameWithType: AspNetApplication.ConfigureApplication(WebApplication)
+  name.vb: ConfigureApplication(WebApplication)
+  fullName: Gestalt.ASPNet.AspNetApplication.ConfigureApplication(Microsoft.AspNetCore.Builder.WebApplication?)
+  fullName.vb: Gestalt.ASPNet.AspNetApplication.ConfigureApplication(Microsoft.AspNetCore.Builder.WebApplication)
+  nameWithType: AspNetApplication.ConfigureApplication(WebApplication?)
+  nameWithType.vb: AspNetApplication.ConfigureApplication(WebApplication)
 - uid: Gestalt.ASPNet.AspNetApplication.ConfigureApplication*
   name: ConfigureApplication
   href: api/Gestalt.ASPNet.AspNetApplication.html#Gestalt_ASPNet_AspNetApplication_ConfigureApplication_
@@ -46,11 +49,14 @@ references:
   fullName: Gestalt.ASPNet.AspNetApplication.ConfigureApplication
   nameWithType: AspNetApplication.ConfigureApplication
 - uid: Gestalt.ASPNet.AspNetApplication.ConfigureMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder)
-  name: ConfigureMetrics(IMetricsBuilder)
+  name: ConfigureMetrics(IMetricsBuilder?)
   href: api/Gestalt.ASPNet.AspNetApplication.html#Gestalt_ASPNet_AspNetApplication_ConfigureMetrics_Microsoft_Extensions_Diagnostics_Metrics_IMetricsBuilder_
   commentId: M:Gestalt.ASPNet.AspNetApplication.ConfigureMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder)
-  fullName: Gestalt.ASPNet.AspNetApplication.ConfigureMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder)
-  nameWithType: AspNetApplication.ConfigureMetrics(IMetricsBuilder)
+  name.vb: ConfigureMetrics(IMetricsBuilder)
+  fullName: Gestalt.ASPNet.AspNetApplication.ConfigureMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder?)
+  fullName.vb: Gestalt.ASPNet.AspNetApplication.ConfigureMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder)
+  nameWithType: AspNetApplication.ConfigureMetrics(IMetricsBuilder?)
+  nameWithType.vb: AspNetApplication.ConfigureMetrics(IMetricsBuilder)
 - uid: Gestalt.ASPNet.AspNetApplication.ConfigureMetrics*
   name: ConfigureMetrics
   href: api/Gestalt.ASPNet.AspNetApplication.html#Gestalt_ASPNet_AspNetApplication_ConfigureMetrics_
@@ -99,13 +105,13 @@ references:
   nameWithType: AspNetModuleBaseClass<TModule>.AspNetModuleBaseClass()
   nameWithType.vb: AspNetModuleBaseClass(Of TModule).New()
 - uid: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])
-  name: AspNetModuleBaseClass(string?, string?, string?, params string[])
+  name: AspNetModuleBaseClass(string?, string?, string?, params string?[]?)
   href: api/Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.html#Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1__ctor_System_String_System_String_System_String_System_String___
   commentId: M:Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])
   name.vb: New(String, String, String, ParamArray String())
-  fullName: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass<TModule>.AspNetModuleBaseClass(string?, string?, string?, params string[])
+  fullName: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass<TModule>.AspNetModuleBaseClass(string?, string?, string?, params string?[]?)
   fullName.vb: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass(Of TModule).New(String, String, String, ParamArray String())
-  nameWithType: AspNetModuleBaseClass<TModule>.AspNetModuleBaseClass(string?, string?, string?, params string[])
+  nameWithType: AspNetModuleBaseClass<TModule>.AspNetModuleBaseClass(string?, string?, string?, params string?[]?)
   nameWithType.vb: AspNetModuleBaseClass(Of TModule).New(String, String, String, ParamArray String())
 - uid: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.#ctor*
   name: AspNetModuleBaseClass
@@ -136,13 +142,13 @@ references:
   nameWithType: AspNetModuleBaseClass<TModule>.ConfigureApplication
   nameWithType.vb: AspNetModuleBaseClass(Of TModule).ConfigureApplication
 - uid: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.ConfigureRoutes(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: ConfigureRoutes(IEndpointRouteBuilder, IConfiguration?, IHostEnvironment?)
+  name: ConfigureRoutes(IEndpointRouteBuilder?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.html#Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1_ConfigureRoutes_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.ConfigureRoutes(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
   name.vb: ConfigureRoutes(IEndpointRouteBuilder, IConfiguration, IHostEnvironment)
-  fullName: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass<TModule>.ConfigureRoutes(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
+  fullName: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass<TModule>.ConfigureRoutes(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass(Of TModule).ConfigureRoutes(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: AspNetModuleBaseClass<TModule>.ConfigureRoutes(IEndpointRouteBuilder, IConfiguration?, IHostEnvironment?)
+  nameWithType: AspNetModuleBaseClass<TModule>.ConfigureRoutes(IEndpointRouteBuilder?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: AspNetModuleBaseClass(Of TModule).ConfigureRoutes(IEndpointRouteBuilder, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.ConfigureRoutes*
   name: ConfigureRoutes
@@ -154,13 +160,13 @@ references:
   nameWithType: AspNetModuleBaseClass<TModule>.ConfigureRoutes
   nameWithType.vb: AspNetModuleBaseClass(Of TModule).ConfigureRoutes
 - uid: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.ConfigureWebHostSettings(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: ConfigureWebHostSettings(IWebHostBuilder, IConfiguration?, IHostEnvironment?)
+  name: ConfigureWebHostSettings(IWebHostBuilder?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.html#Gestalt_ASPNet_BaseClasses_AspNetModuleBaseClass_1_ConfigureWebHostSettings_Microsoft_AspNetCore_Hosting_IWebHostBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.ConfigureWebHostSettings(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
   name.vb: ConfigureWebHostSettings(IWebHostBuilder, IConfiguration, IHostEnvironment)
-  fullName: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass<TModule>.ConfigureWebHostSettings(Microsoft.AspNetCore.Hosting.IWebHostBuilder, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
+  fullName: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass<TModule>.ConfigureWebHostSettings(Microsoft.AspNetCore.Hosting.IWebHostBuilder?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass(Of TModule).ConfigureWebHostSettings(Microsoft.AspNetCore.Hosting.IWebHostBuilder, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: AspNetModuleBaseClass<TModule>.ConfigureWebHostSettings(IWebHostBuilder, IConfiguration?, IHostEnvironment?)
+  nameWithType: AspNetModuleBaseClass<TModule>.ConfigureWebHostSettings(IWebHostBuilder?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: AspNetModuleBaseClass(Of TModule).ConfigureWebHostSettings(IWebHostBuilder, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass`1.ConfigureWebHostSettings*
   name: ConfigureWebHostSettings
@@ -331,13 +337,13 @@ references:
   fullName: Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions
   nameWithType: WebApplicationBuilderExtensions
 - uid: Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions.UseGestalt(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String[],System.Reflection.Assembly[])
-  name: UseGestalt(WebApplicationBuilder?, string[], params Assembly?[]?)
+  name: UseGestalt(WebApplicationBuilder?, string?[]?, params Assembly?[]?)
   href: api/Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions.html#Gestalt_ASPNet_ExtensionMethods_WebApplicationBuilderExtensions_UseGestalt_Microsoft_AspNetCore_Builder_WebApplicationBuilder_System_String___System_Reflection_Assembly___
   commentId: M:Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions.UseGestalt(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String[],System.Reflection.Assembly[])
   name.vb: UseGestalt(WebApplicationBuilder, String(), ParamArray Assembly())
-  fullName: Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions.UseGestalt(Microsoft.AspNetCore.Builder.WebApplicationBuilder?, string[], params System.Reflection.Assembly?[]?)
+  fullName: Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions.UseGestalt(Microsoft.AspNetCore.Builder.WebApplicationBuilder?, string?[]?, params System.Reflection.Assembly?[]?)
   fullName.vb: Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions.UseGestalt(Microsoft.AspNetCore.Builder.WebApplicationBuilder, String(), ParamArray System.Reflection.Assembly())
-  nameWithType: WebApplicationBuilderExtensions.UseGestalt(WebApplicationBuilder?, string[], params Assembly?[]?)
+  nameWithType: WebApplicationBuilderExtensions.UseGestalt(WebApplicationBuilder?, string?[]?, params Assembly?[]?)
   nameWithType.vb: WebApplicationBuilderExtensions.UseGestalt(WebApplicationBuilder, String(), ParamArray Assembly())
 - uid: Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions.UseGestalt*
   name: UseGestalt
@@ -391,13 +397,13 @@ references:
   fullName: Gestalt.ASPNet.Interfaces.IAspNetModule.ConfigureRoutes
   nameWithType: IAspNetModule.ConfigureRoutes
 - uid: Gestalt.ASPNet.Interfaces.IAspNetModule.ConfigureWebHostSettings(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
-  name: ConfigureWebHostSettings(IWebHostBuilder, IConfiguration?, IHostEnvironment?)
+  name: ConfigureWebHostSettings(IWebHostBuilder?, IConfiguration?, IHostEnvironment?)
   href: api/Gestalt.ASPNet.Interfaces.IAspNetModule.html#Gestalt_ASPNet_Interfaces_IAspNetModule_ConfigureWebHostSettings_Microsoft_AspNetCore_Hosting_IWebHostBuilder_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_Hosting_IHostEnvironment_
   commentId: M:Gestalt.ASPNet.Interfaces.IAspNetModule.ConfigureWebHostSettings(Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Hosting.IHostEnvironment)
   name.vb: ConfigureWebHostSettings(IWebHostBuilder, IConfiguration, IHostEnvironment)
-  fullName: Gestalt.ASPNet.Interfaces.IAspNetModule.ConfigureWebHostSettings(Microsoft.AspNetCore.Hosting.IWebHostBuilder, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
+  fullName: Gestalt.ASPNet.Interfaces.IAspNetModule.ConfigureWebHostSettings(Microsoft.AspNetCore.Hosting.IWebHostBuilder?, Microsoft.Extensions.Configuration.IConfiguration?, Microsoft.Extensions.Hosting.IHostEnvironment?)
   fullName.vb: Gestalt.ASPNet.Interfaces.IAspNetModule.ConfigureWebHostSettings(Microsoft.AspNetCore.Hosting.IWebHostBuilder, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.Hosting.IHostEnvironment)
-  nameWithType: IAspNetModule.ConfigureWebHostSettings(IWebHostBuilder, IConfiguration?, IHostEnvironment?)
+  nameWithType: IAspNetModule.ConfigureWebHostSettings(IWebHostBuilder?, IConfiguration?, IHostEnvironment?)
   nameWithType.vb: IAspNetModule.ConfigureWebHostSettings(IWebHostBuilder, IConfiguration, IHostEnvironment)
 - uid: Gestalt.ASPNet.Interfaces.IAspNetModule.ConfigureWebHostSettings*
   name: ConfigureWebHostSettings
@@ -879,11 +885,14 @@ references:
   nameWithType: ConsoleApplication.ConsoleApplication
   nameWithType.vb: ConsoleApplication.New
 - uid: Gestalt.Console.ConsoleApplication.ConfigureMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder)
-  name: ConfigureMetrics(IMetricsBuilder)
+  name: ConfigureMetrics(IMetricsBuilder?)
   href: api/Gestalt.Console.ConsoleApplication.html#Gestalt_Console_ConsoleApplication_ConfigureMetrics_Microsoft_Extensions_Diagnostics_Metrics_IMetricsBuilder_
   commentId: M:Gestalt.Console.ConsoleApplication.ConfigureMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder)
-  fullName: Gestalt.Console.ConsoleApplication.ConfigureMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder)
-  nameWithType: ConsoleApplication.ConfigureMetrics(IMetricsBuilder)
+  name.vb: ConfigureMetrics(IMetricsBuilder)
+  fullName: Gestalt.Console.ConsoleApplication.ConfigureMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder?)
+  fullName.vb: Gestalt.Console.ConsoleApplication.ConfigureMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder)
+  nameWithType: ConsoleApplication.ConfigureMetrics(IMetricsBuilder?)
+  nameWithType.vb: ConsoleApplication.ConfigureMetrics(IMetricsBuilder)
 - uid: Gestalt.Console.ConsoleApplication.ConfigureMetrics*
   name: ConfigureMetrics
   href: api/Gestalt.Console.ConsoleApplication.html#Gestalt_Console_ConsoleApplication_ConfigureMetrics_
@@ -904,13 +913,13 @@ references:
   fullName: Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions
   nameWithType: HostApplicationBuilderExtensions
 - uid: Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions.UseGestalt(Microsoft.Extensions.Hosting.HostApplicationBuilder,System.String[],System.Reflection.Assembly[])
-  name: UseGestalt(HostApplicationBuilder?, string[], params Assembly?[]?)
+  name: UseGestalt(HostApplicationBuilder?, string?[]?, params Assembly?[]?)
   href: api/Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions.html#Gestalt_Console_ExtensionMethods_HostApplicationBuilderExtensions_UseGestalt_Microsoft_Extensions_Hosting_HostApplicationBuilder_System_String___System_Reflection_Assembly___
   commentId: M:Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions.UseGestalt(Microsoft.Extensions.Hosting.HostApplicationBuilder,System.String[],System.Reflection.Assembly[])
   name.vb: UseGestalt(HostApplicationBuilder, String(), ParamArray Assembly())
-  fullName: Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions.UseGestalt(Microsoft.Extensions.Hosting.HostApplicationBuilder?, string[], params System.Reflection.Assembly?[]?)
+  fullName: Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions.UseGestalt(Microsoft.Extensions.Hosting.HostApplicationBuilder?, string?[]?, params System.Reflection.Assembly?[]?)
   fullName.vb: Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions.UseGestalt(Microsoft.Extensions.Hosting.HostApplicationBuilder, String(), ParamArray System.Reflection.Assembly())
-  nameWithType: HostApplicationBuilderExtensions.UseGestalt(HostApplicationBuilder?, string[], params Assembly?[]?)
+  nameWithType: HostApplicationBuilderExtensions.UseGestalt(HostApplicationBuilder?, string?[]?, params Assembly?[]?)
   nameWithType.vb: HostApplicationBuilderExtensions.UseGestalt(HostApplicationBuilder, String(), ParamArray Assembly())
 - uid: Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions.UseGestalt*
   name: UseGestalt
@@ -926,13 +935,13 @@ references:
   fullName: Gestalt.Console.InternalHostedService
   nameWithType: InternalHostedService
 - uid: Gestalt.Console.InternalHostedService.#ctor(Gestalt.Core.Interfaces.IApplication)
-  name: InternalHostedService(IApplication)
+  name: InternalHostedService(IApplication?)
   href: api/Gestalt.Console.InternalHostedService.html#Gestalt_Console_InternalHostedService__ctor_Gestalt_Core_Interfaces_IApplication_
   commentId: M:Gestalt.Console.InternalHostedService.#ctor(Gestalt.Core.Interfaces.IApplication)
   name.vb: New(IApplication)
-  fullName: Gestalt.Console.InternalHostedService.InternalHostedService(Gestalt.Core.Interfaces.IApplication)
+  fullName: Gestalt.Console.InternalHostedService.InternalHostedService(Gestalt.Core.Interfaces.IApplication?)
   fullName.vb: Gestalt.Console.InternalHostedService.New(Gestalt.Core.Interfaces.IApplication)
-  nameWithType: InternalHostedService.InternalHostedService(IApplication)
+  nameWithType: InternalHostedService.InternalHostedService(IApplication?)
   nameWithType.vb: InternalHostedService.New(IApplication)
 - uid: Gestalt.Console.InternalHostedService.#ctor*
   name: InternalHostedService
