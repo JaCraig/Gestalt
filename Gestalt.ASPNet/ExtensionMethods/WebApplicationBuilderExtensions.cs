@@ -17,7 +17,7 @@ namespace Gestalt.ASPNet.ExtensionMethods
         /// The assemblies to search for modules, if empty the base application directory is searched.
         /// </param>
         /// <returns>The host application builder.</returns>
-        public static WebApplication? UseGestalt(this WebApplicationBuilder? app, string[] args, params Assembly?[]? assemblies)
+        public static WebApplication? UseGestalt(this WebApplicationBuilder? app, string?[]? args, params Assembly?[]? assemblies)
         {
             if (app is null)
                 return null;

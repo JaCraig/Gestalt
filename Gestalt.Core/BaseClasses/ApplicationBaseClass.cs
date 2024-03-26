@@ -28,38 +28,42 @@ namespace Gestalt.Core.BaseClasses
         {
             configuration ??= new ConfigurationBuilder().Build();
             IConfigurationSection? LoggingConfiguration = configuration.GetSection("Logging");
-            InternalLogger = LoggerFactory.Create(builder =>
+            try
             {
-                try
+                InternalLogger = LoggerFactory.Create(builder =>
                 {
-                    if (LoggingConfiguration is not null)
-                        builder = builder.AddConfiguration(LoggingConfiguration);
-                }
-                catch { }
-                _ = builder.AddConsole();
-            }).CreateLogger("Gestalt");
+                    try
+                    {
+                        if (LoggingConfiguration is not null)
+                            builder = builder.AddConfiguration(LoggingConfiguration);
+                    }
+                    catch { }
+                    _ = builder.AddConsole();
+                }).CreateLogger("Gestalt");
+            }
+            catch { }
             var EntryAssembly = Assembly.GetEntryAssembly();
             if (assemblies is null || assemblies.Length == 0)
                 assemblies = EntryAssembly.FindAssemblies();
 
-            InternalLogger.LogInformation("Starting application {entryAssemblyName}", EntryAssembly?.GetName().Name);
-            InternalLogger.LogInformation("Assembly Count: {assemblyCount}", assemblies.Length);
+            InternalLogger?.LogInformation("Starting application {entryAssemblyName}", EntryAssembly?.GetName().Name);
+            InternalLogger?.LogInformation("Assembly Count: {assemblyCount}", assemblies.Length);
             if (assemblies.Length > 0)
-                InternalLogger.LogInformation("Searching assemblies {assemblies}", assemblies.ToString(x => x?.GetName().Name ?? "", ", "));
+                InternalLogger?.LogInformation("Searching assemblies {assemblies}", assemblies.ToString(x => x?.GetName().Name ?? "", ", "));
 
             Configuration = configuration;
             Environment = env;
             Modules = assemblies.FindModules();
 
-            InternalLogger.LogInformation("Module Count: {moduleCount}", Modules.Length);
+            InternalLogger?.LogInformation("Module Count: {moduleCount}", Modules.Length);
             if (Modules.Length > 0)
-                InternalLogger.LogInformation("Using modules {modules}", Modules.ToString(x => x?.Name ?? "", ", "));
+                InternalLogger?.LogInformation("Using modules {modules}", Modules.ToString(x => x?.Name ?? "", ", "));
 
             Frameworks = assemblies.FindFrameworks();
 
-            InternalLogger.LogInformation("Framework Count: {frameworkCount}", Frameworks.Length);
+            InternalLogger?.LogInformation("Framework Count: {frameworkCount}", Frameworks.Length);
             if (Frameworks.Length > 0)
-                InternalLogger.LogInformation("Using frameworks {frameworks}", Frameworks.ToString(x => x?.Name ?? "", ", "));
+                InternalLogger?.LogInformation("Using frameworks {frameworks}", Frameworks.ToString(x => x?.Name ?? "", ", "));
 
             Name = EntryAssembly?.GetName().Name ?? "";
         }
@@ -189,7 +193,7 @@ namespace Gestalt.Core.BaseClasses
         /// <returns>The service collection</returns>
         public IServiceCollection? ConfigureServices(IServiceCollection? services)
         {
-            if (Configuration is null || Environment is null || services is null)
+            if (Configuration is null || Environment is null || services?.IsReadOnly != false)
                 return services;
 
             InternalLogger?.LogInformation("Configuring services");

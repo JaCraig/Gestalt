@@ -35,7 +35,7 @@ namespace Gestalt.Core.BaseClasses
             Name = name ?? typeof(TModule).GetName().Replace((typeof(TModule).Namespace ?? "") + ".", "");
             Category = category ?? typeof(TModule).Namespace?.Split(".", StringSplitOptions.RemoveEmptyEntries).Skip(1).FirstOrDefault() ?? "";
             Tags = tags ?? Array.Empty<string?>();
-            ContentPath = contentPath ?? $"wwwroot/Content/{ID}/";
+            ContentPath = contentPath ?? $"wwwroot/Content/{Category}/{Name}";
         }
 
         /// <summary>

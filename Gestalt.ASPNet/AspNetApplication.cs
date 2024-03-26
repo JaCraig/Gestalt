@@ -31,7 +31,7 @@ namespace Gestalt.ASPNet
         /// </summary>
         /// <param name="application">The application.</param>
         /// <returns>The web application.</returns>
-        public WebApplication? ConfigureApplication(WebApplication application)
+        public WebApplication? ConfigureApplication(WebApplication? application)
         {
             if (application is null || application.Lifetime is null)
                 return application;
@@ -71,7 +71,7 @@ namespace Gestalt.ASPNet
         /// Configures the metrics settings.
         /// </summary>
         /// <param name="metrics">The metrics builder.</param>
-        public void ConfigureMetrics(IMetricsBuilder metrics)
+        public void ConfigureMetrics(IMetricsBuilder? metrics)
         {
             if (metrics is null)
                 return;

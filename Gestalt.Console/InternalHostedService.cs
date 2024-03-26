@@ -14,7 +14,7 @@ namespace Gestalt.Console
         /// Initializes a new instance of the <see cref="InternalHostedService"/> class.
         /// </summary>
         /// <param name="application">Application object</param>
-        public InternalHostedService(IApplication application)
+        public InternalHostedService(IApplication? application)
         {
             Application = application;
         }
@@ -22,7 +22,7 @@ namespace Gestalt.Console
         /// <summary>
         /// Gets the application.
         /// </summary>
-        private IApplication Application { get; }
+        private IApplication? Application { get; }
 
         /// <summary>
         /// Starts the application.
@@ -31,7 +31,7 @@ namespace Gestalt.Console
         /// <returns>Async task.</returns>
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            Application.OnStarted();
+            Application?.OnStarted();
             return Task.CompletedTask;
         }
 
@@ -42,7 +42,7 @@ namespace Gestalt.Console
         /// <returns>Async task.</returns>
         public Task StopAsync(CancellationToken cancellationToken)
         {
-            Application.OnStopped();
+            Application?.OnStopped();
             return Task.CompletedTask;
         }
     }

@@ -15,9 +15,9 @@ namespace Gestalt.Console.ExtensionMethods
         /// <param name="args">The command line arguments</param>
         /// <param name="assemblies">The assemblies to look in for modules</param>
         /// <returns>The resulting host</returns>
-        public static IHost? UseGestalt(this HostApplicationBuilder? app, string[] args, params Assembly?[]? assemblies)
+        public static IHost? UseGestalt(this HostApplicationBuilder? app, string?[]? args, params Assembly?[]? assemblies)
         {
-            if (app is null)
+            if (app?.Services.IsReadOnly != false)
                 return null;
 
             var App = new ConsoleApplication(app.Configuration, app.Environment, assemblies);

@@ -27,7 +27,7 @@ namespace Gestalt.Console
         /// Configures the metrics settings for the application.
         /// </summary>
         /// <param name="metricsBuilder">The metrics builder</param>
-        public void ConfigureMetrics(IMetricsBuilder metricsBuilder)
+        public void ConfigureMetrics(IMetricsBuilder? metricsBuilder)
         {
             if (metricsBuilder is null)
                 return;

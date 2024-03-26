@@ -37,6 +37,6 @@ namespace Gestalt.ASPNet.Interfaces
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>The web host builder</returns>
-        IWebHostBuilder ConfigureWebHostSettings(IWebHostBuilder webHost, IConfiguration? configuration, IHostEnvironment? environment);
+        IWebHostBuilder? ConfigureWebHostSettings(IWebHostBuilder? webHost, IConfiguration? configuration, IHostEnvironment? environment);
     }
 }

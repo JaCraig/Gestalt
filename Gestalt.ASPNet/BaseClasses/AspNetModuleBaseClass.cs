@@ -24,7 +24,7 @@ namespace Gestalt.ASPNet.BaseClasses
         /// <param name="category">The category.</param>
         /// <param name="contentPath">The content path.</param>
         /// <param name="tags">The tags.</param>
-        protected AspNetModuleBaseClass(string? name, string? category, string? contentPath, params string[] tags)
+        protected AspNetModuleBaseClass(string? name, string? category, string? contentPath, params string?[]? tags)
             : base(name, category, contentPath, tags)
         {
         }
@@ -52,7 +52,7 @@ namespace Gestalt.ASPNet.BaseClasses
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The host environment.</param>
         /// <returns>The endpoint route builder.</returns>
-        public virtual IEndpointRouteBuilder? ConfigureRoutes(IEndpointRouteBuilder endpoints, IConfiguration? configuration, IHostEnvironment? environment) => endpoints;
+        public virtual IEndpointRouteBuilder? ConfigureRoutes(IEndpointRouteBuilder? endpoints, IConfiguration? configuration, IHostEnvironment? environment) => endpoints;
 
         /// <summary>
         /// Configures the host settings.
@@ -61,6 +61,6 @@ namespace Gestalt.ASPNet.BaseClasses
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>The web host builder</returns>
-        public virtual IWebHostBuilder ConfigureWebHostSettings(IWebHostBuilder webHost, IConfiguration? configuration, IHostEnvironment? environment) => webHost;
+        public virtual IWebHostBuilder? ConfigureWebHostSettings(IWebHostBuilder? webHost, IConfiguration? configuration, IHostEnvironment? environment) => webHost;
     }
 }
