@@ -1,5 +1,16 @@
 
 
+<a name="1.0.4"></a>
+## [1.0.4](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.4) (2024-03-26)
+
+### Bug Fixes
+
+* Small fixes due to new tests ([6a924a8](https://www.github.com/JaCraig/Gestalt/commit/6a924a8c26c6622be6591ec4aed28c4b5e934b9b))
+
+### Other
+
+* merge ([bd51661](https://www.github.com/JaCraig/Gestalt/commit/bd5166192ac30ad8fbd223f2a612c1d03c886720))
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.3) (2024-03-26)
 
