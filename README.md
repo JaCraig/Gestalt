@@ -75,8 +75,8 @@ public class Program
 For more advanced usage, refer to the [documentation](https://jacraig.github.io/Gestalt/articles/intro.html).
 
 ## Contributing
-Contributions to Gestalt are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. Before contributing, please review the [contribution guidelines](CONTRIBUTING.md).
+Contributions to Gestalt are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. Before contributing, please review the [contribution guidelines](https://github.com/JaCraig/Gestalt/blob/main/CONTRIBUTING.md).
 
 ## License
 
-Gestalt is licensed under the [Appache 2.0 License](LICENSE).
+Gestalt is licensed under the [Appache 2.0 License](https://github.com/JaCraig/Gestalt/blob/main/LICENSE).
