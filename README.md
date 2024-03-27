@@ -33,7 +33,24 @@ Modern software development often requires building applications with modular ar
 Gestalt can be installed via NuGet Package Manager:
 
 ```bash
-dotnet add package Gestalt
+dotnet add package Gestalt.Core
+```
+
+Or for framework specific functionality, install the appropriate package:
+
+```bash
+# For ASP.NET base functionality
+dotnet add package Gestalt.AspNet
+# For ASP.NET MVC functionality
+dotnet add package Gestalt.AspNet.MVC
+# For ASP.NET Controllers functionality (without views)
+dotnet add package Gestalt.AspNet.Controllers
+# For ASP.NET SignalR functionality
+dotnet add package Gestalt.AspNet.SignalR
+# For ASP.NET Razor Pages functionality
+dotnet add package Gestalt.AspNet.RazorPages
+# For console applications
+dotnet add package Gestalt.Console
 ```
 
 ### Creating Modules
@@ -46,13 +63,79 @@ To create a module, follow these steps:
 
 3. Implement module-specific functionality within the class.
 
-The most basic example of a module class is shown below:
+A basic example of a module class is shown below:
 
 ```csharp
-// ExampleModule.cs
-public class ExampleModule : ApplicationModuleBaseClass<ExampleModule>
+/// <summary>
+/// This is an example of a basic module that configures the application with the usual default settings when creating a new web application.
+/// It implements the MvcModuleBaseClass which simplifies the process of creating a module that needs to modify MVC settings.
+/// However, you can implement the IMvcModule interface directly if you prefer.
+/// </summary>
+public class BasicModule : MvcModuleBaseClass<BasicModule>
 {
-    // Override configuration, service registration, and lifecycle methods here
+    /// <summary>
+    /// This is called to configure the IApplicationBuilder object. Since this is an MVC app, that would be the WebApplication object.
+    /// </summary>
+    /// <param name="applicationBuilder">The application builder object.</param>
+    /// <param name="configuration">The configuration object.</param>
+    /// <param name="environment">The host environment object.</param>
+    /// <returns>The application builder object should be returned.</returns>
+    public override IApplicationBuilder? ConfigureApplication(IApplicationBuilder? applicationBuilder, IConfiguration? configuration, IHostEnvironment? environment)
+    {
+        if (applicationBuilder is null)
+            return applicationBuilder;
+
+        // Configure the HTTP request pipeline.
+        if (environment?.IsDevelopment() == false)
+        {
+            // This is the default exception handler for the application when in production.
+            _ = applicationBuilder.UseExceptionHandler("/Home/Error");
+
+            // We will add a strict transport security header to the response.
+            _ = applicationBuilder.UseHsts();
+        }
+
+        // This will redirect HTTP requests to HTTPS.
+        _ = applicationBuilder.UseHttpsRedirection();
+        // And let's serve static files.
+        _ = applicationBuilder.UseStaticFiles();
+        // We will also add authorization to the application.
+        _ = applicationBuilder.UseAuthorization();
+        // And lastly, we will return the application builder.
+        return applicationBuilder;
+    }
+
+    /// <summary>
+    /// This is called to configure the MVC options. We will just return the options object as is.
+    /// </summary>
+    /// <param name="mVCBuilder">The MVC builder object.</param>
+    /// <param name="configuration">The configuration object.</param>
+    /// <param name="environment">The host environment object.</param>
+    /// <returns>The MVC builder object.</returns>
+    public override IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment)
+    {
+        return mVCBuilder;
+    }
+
+    /// <summary>
+    /// This is called to configure our endpoint routes. For our example, we will just use the default route.
+    /// </summary>
+    /// <param name="endpoints">The endpoint route builder.</param>
+    /// <param name="configuration">The configuration object.</param>
+    /// <param name="environment">The host environment object.</param>
+    /// <returns>The endpoint route builder.</returns>
+    public override IEndpointRouteBuilder? ConfigureRoutes(IEndpointRouteBuilder? endpoints, IConfiguration? configuration, IHostEnvironment? environment)
+    {
+        if (endpoints is null)
+            return endpoints;
+
+        // Map the default route.
+        endpoints.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
+        return endpoints;
+    }
 }
 ```
 
