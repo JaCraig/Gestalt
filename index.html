@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Gestalt | Gestalt API Reference </title>
+      <title> Gestalt | Gestalt API Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Gestalt | Gestalt API Reference ">
+      <meta name="title" content=" Gestalt | Gestalt API Reference ">
       
       
       <link rel="icon" href="favicon.ico">
@@ -85,9 +85,73 @@
         </div>
 
         <article data-uid="">
-<h1 id="gestalt">Gestalt</h1>
+<h1 id="-gestalt"><img src="https://jacraig.github.io/Gestalt/images/Icon.png" style="height:25px" alt="Gestalt Icon"> Gestalt</h1>
 
 <p><a href="https://github.com/JaCraig/Gestalt/actions/workflows/dotnet-publish.yml"><img src="https://github.com/JaCraig/Gestalt/actions/workflows/dotnet-publish.yml/badge.svg" alt=".NET Publish"></a> <a href="https://coveralls.io/github/JaCraig/Gestalt?branch=main"><img src="https://coveralls.io/repos/github/JaCraig/Gestalt/badge.svg?branch=main" alt="Coverage Status"></a></p>
+<p>Gestalt is a C# library designed to facilitate the development of modular applications. It allows developers to create reusable modules that can be easily integrated into various applications, enhancing code reusability and maintainability.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#getting-started">Getting Started</a>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#creating-modules">Creating Modules</a></li>
+<li><a href="#using-modules">Using Modules</a></li>
+</ul>
+</li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Modern software development often requires building applications with modular architectures to promote reusability and scalability. Gestalt provides a framework for organizing application functionality into cohesive modules, encapsulating logic and services that can be easily shared across different projects.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Modular Architecture:</strong> Define modules encapsulating configuration, services, and lifecycle events.</li>
+<li><strong>Configuration Management:</strong> Easily configure application settings using built-in configuration providers.</li>
+<li><strong>Dependency Injection:</strong> Utilize dependency injection for managing dependencies and services.</li>
+<li><strong>Lifecycle Management:</strong> Implement lifecycle events such as application start, stop, and shutdown.</li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="installation">Installation</h3>
+<p>Gestalt can be installed via NuGet Package Manager:</p>
+<pre><code class="lang-bash">dotnet add package Gestalt
+</code></pre>
+<h3 id="creating-modules">Creating Modules</h3>
+<p>To create a module, follow these steps:</p>
+<ol>
+<li><p>Define a class that inherits from one of the *ModuleBaseClasses or implements one of the IApplicationModule interfaces (IMvcModule, ISignalRModule, IRazorPagesModule, etc).</p>
+</li>
+<li><p>Override methods for configuring settings, services, and lifecycle events.</p>
+</li>
+<li><p>Implement module-specific functionality within the class.</p>
+</li>
+</ol>
+<p>The most basic example of a module class is shown below:</p>
+<pre><code class="lang-csharp">// ExampleModule.cs
+public class ExampleModule : ApplicationModuleBaseClass&lt;ExampleModule&gt;
+{
+    // Override configuration, service registration, and lifecycle methods here
+}
+</code></pre>
+<h3 id="using-modules">Using Modules</h3>
+<p>To have your application start using modules, you just need to call UseGestalt on the application builder:</p>
+<pre><code class="lang-csharp">// Program.cs
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
+        var app = builder.UseGestalt&lt;ExampleModule&gt;();
+        app.Run();
+    }
+}
+</code></pre>
+<p>For more advanced usage, refer to the <a href="https://jacraig.github.io/Gestalt/articles/intro.html">documentation</a>.</p>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions to Gestalt are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. Before contributing, please review the <a href="../CONTRIBUTING.md">contribution guidelines</a>.</p>
+<h2 id="license">License</h2>
+<p>Gestalt is licensed under the <a href="../LICENSE">Appache 2.0 License</a>.</p>
 
 </article>
 
