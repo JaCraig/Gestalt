@@ -79,4 +79,4 @@ Contributions to Gestalt are welcome! If you encounter any issues or have sugges
 
 ## License
 
-Gestalt is licensed under the [Appache 2.0 License](https://github.com/JaCraig/Gestalt/blob/main/LICENSE).
+Gestalt is licensed under the [Apache 2.0 License](https://github.com/JaCraig/Gestalt/blob/main/LICENSE).
