@@ -115,7 +115,21 @@
 <h2 id="getting-started">Getting Started</h2>
 <h3 id="installation">Installation</h3>
 <p>Gestalt can be installed via NuGet Package Manager:</p>
-<pre><code class="lang-bash">dotnet add package Gestalt
+<pre><code class="lang-bash">dotnet add package Gestalt.Core
+</code></pre>
+<p>Or for framework specific functionality, install the appropriate package:</p>
+<pre><code class="lang-bash"># For ASP.NET base functionality
+dotnet add package Gestalt.AspNet
+# For ASP.NET MVC functionality
+dotnet add package Gestalt.AspNet.MVC
+# For ASP.NET Controllers functionality (without views)
+dotnet add package Gestalt.AspNet.Controllers
+# For ASP.NET SignalR functionality
+dotnet add package Gestalt.AspNet.SignalR
+# For ASP.NET Razor Pages functionality
+dotnet add package Gestalt.AspNet.RazorPages
+# For console applications
+dotnet add package Gestalt.Console
 </code></pre>
 <h3 id="creating-modules">Creating Modules</h3>
 <p>To create a module, follow these steps:</p>
@@ -127,11 +141,77 @@
 <li><p>Implement module-specific functionality within the class.</p>
 </li>
 </ol>
-<p>The most basic example of a module class is shown below:</p>
-<pre><code class="lang-csharp">// ExampleModule.cs
-public class ExampleModule : ApplicationModuleBaseClass&lt;ExampleModule&gt;
+<p>A basic example of a module class is shown below:</p>
+<pre><code class="lang-csharp">/// &lt;summary&gt;
+/// This is an example of a basic module that configures the application with the usual default settings when creating a new web application.
+/// It implements the MvcModuleBaseClass which simplifies the process of creating a module that needs to modify MVC settings.
+/// However, you can implement the IMvcModule interface directly if you prefer.
+/// &lt;/summary&gt;
+public class BasicModule : MvcModuleBaseClass&lt;BasicModule&gt;
 {
-    // Override configuration, service registration, and lifecycle methods here
+    /// &lt;summary&gt;
+    /// This is called to configure the IApplicationBuilder object. Since this is an MVC app, that would be the WebApplication object.
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;applicationBuilder&quot;&gt;The application builder object.&lt;/param&gt;
+    /// &lt;param name=&quot;configuration&quot;&gt;The configuration object.&lt;/param&gt;
+    /// &lt;param name=&quot;environment&quot;&gt;The host environment object.&lt;/param&gt;
+    /// &lt;returns&gt;The application builder object should be returned.&lt;/returns&gt;
+    public override IApplicationBuilder? ConfigureApplication(IApplicationBuilder? applicationBuilder, IConfiguration? configuration, IHostEnvironment? environment)
+    {
+        if (applicationBuilder is null)
+            return applicationBuilder;
+
+        // Configure the HTTP request pipeline.
+        if (environment?.IsDevelopment() == false)
+        {
+            // This is the default exception handler for the application when in production.
+            _ = applicationBuilder.UseExceptionHandler(&quot;/Home/Error&quot;);
+
+            // We will add a strict transport security header to the response.
+            _ = applicationBuilder.UseHsts();
+        }
+
+        // This will redirect HTTP requests to HTTPS.
+        _ = applicationBuilder.UseHttpsRedirection();
+        // And let's serve static files.
+        _ = applicationBuilder.UseStaticFiles();
+        // We will also add authorization to the application.
+        _ = applicationBuilder.UseAuthorization();
+        // And lastly, we will return the application builder.
+        return applicationBuilder;
+    }
+
+    /// &lt;summary&gt;
+    /// This is called to configure the MVC options. We will just return the options object as is.
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;mVCBuilder&quot;&gt;The MVC builder object.&lt;/param&gt;
+    /// &lt;param name=&quot;configuration&quot;&gt;The configuration object.&lt;/param&gt;
+    /// &lt;param name=&quot;environment&quot;&gt;The host environment object.&lt;/param&gt;
+    /// &lt;returns&gt;The MVC builder object.&lt;/returns&gt;
+    public override IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment)
+    {
+        return mVCBuilder;
+    }
+
+    /// &lt;summary&gt;
+    /// This is called to configure our endpoint routes. For our example, we will just use the default route.
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;endpoints&quot;&gt;The endpoint route builder.&lt;/param&gt;
+    /// &lt;param name=&quot;configuration&quot;&gt;The configuration object.&lt;/param&gt;
+    /// &lt;param name=&quot;environment&quot;&gt;The host environment object.&lt;/param&gt;
+    /// &lt;returns&gt;The endpoint route builder.&lt;/returns&gt;
+    public override IEndpointRouteBuilder? ConfigureRoutes(IEndpointRouteBuilder? endpoints, IConfiguration? configuration, IHostEnvironment? environment)
+    {
+        if (endpoints is null)
+            return endpoints;
+
+        // Map the default route.
+        endpoints.MapControllerRoute(
+                name: &quot;default&quot;,
+                pattern: &quot;{controller=Home}/{action=Index}/{id?}&quot;);
+
+        return endpoints;
+    }
 }
 </code></pre>
 <h3 id="using-modules">Using Modules</h3>
