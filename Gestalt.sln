@@ -38,7 +38,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gestalt.Console.Tests", "Ge
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gestalt.ASPNet.Tests", "Gestalt.ASPNet.Tests\Gestalt.ASPNet.Tests.csproj", "{9EEE9B2A-058F-4D4F-ABD7-DCFA8697BC03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestalt.SpeedTests", "Gestalt.SpeedTests\Gestalt.SpeedTests.csproj", "{24BDE436-0171-4669-9A7A-0907FEA71A0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gestalt.SpeedTests", "Gestalt.SpeedTests\Gestalt.SpeedTests.csproj", "{24BDE436-0171-4669-9A7A-0907FEA71A0C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gestalt.ASPNet.Controllers.Tests", "Gestalt.ASPNet.Controllers.Tests\Gestalt.ASPNet.Controllers.Tests.csproj", "{9989B7C6-957A-45C2-B342-C2E0BE76D34D}"
 EndProject
@@ -47,6 +47,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gestalt.ASPNet.RazorPages.Tests", "Gestalt.ASPNet.RazorPages.Tests\Gestalt.ASPNet.RazorPages.Tests.csproj", "{24CB7254-0C0E-45C5-8C37-7D639DB9B8CF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gestalt.ASPNet.SignalR.Tests", "Gestalt.ASPNet.SignalR.Tests\Gestalt.ASPNet.SignalR.Tests.csproj", "{B48BD7CC-AE84-4120-8FC3-1747EA94B078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestalt.Example.SelfContainedModule", "Gestalt.Example.SelfContainedModule\Gestalt.Example.SelfContainedModule.csproj", "{F7AF986F-7068-4F06-A2A0-B23986F23BF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -126,6 +128,10 @@ Global
 		{B48BD7CC-AE84-4120-8FC3-1747EA94B078}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B48BD7CC-AE84-4120-8FC3-1747EA94B078}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B48BD7CC-AE84-4120-8FC3-1747EA94B078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7AF986F-7068-4F06-A2A0-B23986F23BF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7AF986F-7068-4F06-A2A0-B23986F23BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7AF986F-7068-4F06-A2A0-B23986F23BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7AF986F-7068-4F06-A2A0-B23986F23BF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,6 +147,7 @@ Global
 		{C6C860C4-3B38-4CF6-81B0-342481AA8BBA} = {F57292D5-8BAB-45F3-ACAA-D2D9399162A3}
 		{24CB7254-0C0E-45C5-8C37-7D639DB9B8CF} = {F57292D5-8BAB-45F3-ACAA-D2D9399162A3}
 		{B48BD7CC-AE84-4120-8FC3-1747EA94B078} = {F57292D5-8BAB-45F3-ACAA-D2D9399162A3}
+		{F7AF986F-7068-4F06-A2A0-B23986F23BF6} = {43BAC149-B186-4E8E-8129-874C287C7EC1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6884EB8-1666-49D2-A1A0-0E6B076BCF63}

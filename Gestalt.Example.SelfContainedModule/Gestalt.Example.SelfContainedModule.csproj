@@ -1,0 +1,21 @@
+﻿<!--For self contained modules, we can either do a normal class project or set the Sdk to Microsoft.NET.Sdk.Razor if we want to add Views, etc.-->
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+      <TargetFramework>net8.0</TargetFramework>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>enable</Nullable>
+	  
+	  <!--We will add razor support for MVC to the project-->
+	  <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+	  
+	  <!--Add the base path for static web assets-->
+	  <StaticWebAssetBasePath>SelfContainedModule</StaticWebAssetBasePath>
+	  
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gestalt.ASPNet.MVC\Gestalt.ASPNet.MVC.csproj" />
+  </ItemGroup>
+
+</Project>

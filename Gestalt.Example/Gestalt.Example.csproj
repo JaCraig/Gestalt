@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
@@ -10,6 +10,7 @@
     <ProjectReference Include="..\Gestalt.ASPNet.MVC\Gestalt.ASPNet.MVC.csproj" />
     <ProjectReference Include="..\Gestalt.ASPNet.RazorPages\Gestalt.ASPNet.RazorPages.csproj" />
     <ProjectReference Include="..\Gestalt.ASPNet.SignalR\Gestalt.ASPNet.SignalR.csproj" />
+    <ProjectReference Include="..\Gestalt.Example.SelfContainedModule\Gestalt.Example.SelfContainedModule.csproj" />
   </ItemGroup>
 
 </Project>

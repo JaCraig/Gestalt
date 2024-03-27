@@ -2,3 +2,5 @@
   href: intro.md
 - name: Console Example
   href: console.md
+- name: Self Contained Module Example
+  href: selfcontained.md
