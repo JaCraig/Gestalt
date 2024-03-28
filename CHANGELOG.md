@@ -1,5 +1,23 @@
 
 
+<a name="1.0.5"></a>
+## [1.0.5](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.5) (2024-03-28)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([1dd6a79](https://www.github.com/JaCraig/Gestalt/commit/1dd6a7958b7fd07fa35b9b807c891e8334649929))
+
+### Other
+
+* Merge pull request #4 from JaCraig/dependabot/nuget/dependencies-d538b24088 ([7dc8794](https://www.github.com/JaCraig/Gestalt/commit/7dc8794de95c63b0badd57699e5bf3b2494fa774))
+* Adding more examples ([10d7967](https://www.github.com/JaCraig/Gestalt/commit/10d796743e402e5c3a7337515a319bf4409b472c))
+* Another readme update ([121d7c6](https://www.github.com/JaCraig/Gestalt/commit/121d7c6c61d1eae160fb6f3cbfc258ec298ab3cf))
+* Couple of test updates ([57c0ece](https://www.github.com/JaCraig/Gestalt/commit/57c0ece39a272964463e0f088fdd71dc5cb90189))
+* Final update to readme... I think ([4c38686](https://www.github.com/JaCraig/Gestalt/commit/4c38686010a51056793b3f17fbb408f7184c8b5b))
+* merge ([890bd6c](https://www.github.com/JaCraig/Gestalt/commit/890bd6c52dc8285cb1ab40be7f79ceac037311b0))
+* readme update ([cebddb9](https://www.github.com/JaCraig/Gestalt/commit/cebddb9919882188b6481a832cd944f4aecd627f))
+* Updating readme ([476e8d1](https://www.github.com/JaCraig/Gestalt/commit/476e8d1571e3b928b0ccce1c14b15a53e24dde99))
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.4) (2024-03-26)
 
