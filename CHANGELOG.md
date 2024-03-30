@@ -1,5 +1,18 @@
 
 
+<a name="1.0.6"></a>
+## [1.0.6](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.6) (2024-03-30)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([448f485](https://www.github.com/JaCraig/Gestalt/commit/448f485ad558080306fe245252988e05359a9ad9))
+
+### Other
+
+* Merge pull request #5 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-aedbb0ddba ([a654701](https://www.github.com/JaCraig/Gestalt/commit/a6547011ed97d855fe726e46cce694212fcad5a9))
+* Merge pull request #6 from JaCraig/dependabot/nuget/dependencies-ca97d31aab ([78f1233](https://www.github.com/JaCraig/Gestalt/commit/78f1233bffbd6433632ae00fddc2c103f87b8c74))
+* bump the dependencies group in /Gestalt.Core.Tests with 1 update ([be7f434](https://www.github.com/JaCraig/Gestalt/commit/be7f4345fdbe05ac683ee279b6c99159e4455994))
+
 <a name="1.0.5"></a>
 ## [1.0.5](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.5) (2024-03-28)
 
