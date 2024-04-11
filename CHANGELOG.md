@@ -1,5 +1,22 @@
 
 
+<a name="1.0.7"></a>
+## [1.0.7](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.7) (2024-04-11)
+
+### Bug Fixes
+
+* bump BigBook from 5.1.25 to 5.1.26 in the dependencies group ([31f1d78](https://www.github.com/JaCraig/Gestalt/commit/31f1d78418beb251373940fac6c046da6f01e744))
+
+### Other
+
+* Merge pull request #10 from JaCraig/dependabot/nuget/dependencies-022c1db52a ([9545a9c](https://www.github.com/JaCraig/Gestalt/commit/9545a9c41bfcf495df97d92d62239b880fac650f))
+* Merge pull request #7 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-3929d00113 ([a867803](https://www.github.com/JaCraig/Gestalt/commit/a867803467355fa505e777b5c67c7b4e6ed2823e))
+* Merge pull request #8 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-bba4a47fc6 ([c4aef8b](https://www.github.com/JaCraig/Gestalt/commit/c4aef8bd5bec64ac407fe822f26b665eb05adfdf))
+* Merge pull request #9 from JaCraig/dependabot/github_actions/dependencies-45223d3826 ([b8d2a19](https://www.github.com/JaCraig/Gestalt/commit/b8d2a1992a9994c9f6273fe9f08044a2596b58e0))
+* bump peaceiris/actions-gh-pages in the dependencies group ([446f938](https://www.github.com/JaCraig/Gestalt/commit/446f938956de8bb8483fe358305c990caff6fdf3))
+* bump the dependencies group in /Gestalt.Core.Tests with 1 update ([6569867](https://www.github.com/JaCraig/Gestalt/commit/65698674d2e14b7cb40d4595355364095cac652f))
+* bump the dependencies group in /Gestalt.Core.Tests with 1 update ([e1585bf](https://www.github.com/JaCraig/Gestalt/commit/e1585bfd777f91b19e0d0d32dcb4570d668c7947))
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.6) (2024-03-30)
 
