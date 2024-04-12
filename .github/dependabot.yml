@@ -24,6 +24,7 @@ updates:
       - dependency-name: "Microsoft.CodeAnalysis.NetAnalyzers"
       - dependency-name: "husky"
       - dependency-name: "BenchmarkDotNet"
+      - dependency-name: "nsubstitute"
 
   - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/Gestalt.Core.Tests/" # Location of package manifests
@@ -41,6 +42,135 @@ updates:
       - dependency-name: "Microsoft.NET.Test.Sdk"
       - dependency-name: "xunit"
       - dependency-name: "xunit.runner.visualstudio"
+      - dependency-name: "nsubstitute"
+
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/Gestalt.Console.Tests/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
+    allow:
+      - dependency-name: "coverlet.collector"
+      - dependency-name: "Mecha.xUnit"
+      - dependency-name: "Microsoft.NET.Test.Sdk"
+      - dependency-name: "xunit"
+      - dependency-name: "xunit.runner.visualstudio"
+      - dependency-name: "nsubstitute"
+
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/Gestalt.ASPNet.Tests/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
+    allow:
+      - dependency-name: "coverlet.collector"
+      - dependency-name: "Mecha.xUnit"
+      - dependency-name: "Microsoft.NET.Test.Sdk"
+      - dependency-name: "xunit"
+      - dependency-name: "xunit.runner.visualstudio"
+      - dependency-name: "nsubstitute"
+
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/Gestalt.ASPNet.SignalR.Tests/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
+    allow:
+      - dependency-name: "coverlet.collector"
+      - dependency-name: "Mecha.xUnit"
+      - dependency-name: "Microsoft.NET.Test.Sdk"
+      - dependency-name: "xunit"
+      - dependency-name: "xunit.runner.visualstudio"
+      - dependency-name: "nsubstitute"
+
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/Gestalt.ASPNet.RazorPages.Tests/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
+    allow:
+      - dependency-name: "coverlet.collector"
+      - dependency-name: "Mecha.xUnit"
+      - dependency-name: "Microsoft.NET.Test.Sdk"
+      - dependency-name: "xunit"
+      - dependency-name: "xunit.runner.visualstudio"
+      - dependency-name: "nsubstitute"
+
+
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/Gestalt.ASPNet.MVC.Tests/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
+    allow:
+      - dependency-name: "coverlet.collector"
+      - dependency-name: "Mecha.xUnit"
+      - dependency-name: "Microsoft.NET.Test.Sdk"
+      - dependency-name: "xunit"
+      - dependency-name: "xunit.runner.visualstudio"
+      - dependency-name: "nsubstitute"
+
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/Gestalt.ASPNet.Controller.Tests/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
+    allow:
+      - dependency-name: "coverlet.collector"
+      - dependency-name: "Mecha.xUnit"
+      - dependency-name: "Microsoft.NET.Test.Sdk"
+      - dependency-name: "xunit"
+      - dependency-name: "xunit.runner.visualstudio"
+      - dependency-name: "nsubstitute"
+
+
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/Gestalt.Tests.Helpers/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
+    allow:
+      - dependency-name: "coverlet.collector"
+      - dependency-name: "Mecha.xUnit"
+      - dependency-name: "Microsoft.NET.Test.Sdk"
+      - dependency-name: "xunit"
+      - dependency-name: "xunit.runner.visualstudio"
+      - dependency-name: "nsubstitute"
 
   - package-ecosystem: "github-actions"
     directory: "/"
