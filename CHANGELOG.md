@@ -1,5 +1,16 @@
 
 
+<a name="1.0.12"></a>
+## [1.0.12](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.12) (2024-05-02)
+
+### Bug Fixes
+
+* bump BigBook from 5.1.30 to 5.1.31 in the dependencies group ([89c94a2](https://www.github.com/JaCraig/Gestalt/commit/89c94a20ec03d29976aa49f8e60cac84b3a77222))
+
+### Other
+
+* Merge pull request #21 from JaCraig/dependabot/nuget/dependencies-d12e33da90 ([5971b81](https://www.github.com/JaCraig/Gestalt/commit/5971b81a0138c5c4b298d47720e8f27f68a87f1d))
+
 <a name="1.0.11"></a>
 ## [1.0.11](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.11) (2024-05-01)
 
