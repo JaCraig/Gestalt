@@ -1,5 +1,20 @@
 
 
+<a name="1.0.13"></a>
+## [1.0.13](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.13) (2024-05-06)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([849f78c](https://www.github.com/JaCraig/Gestalt/commit/849f78cc53eccab4aecb6a901b4eda2e01fd2e12))
+
+### Other
+
+* Merge pull request #22 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-3c9fe9d54f ([6050931](https://www.github.com/JaCraig/Gestalt/commit/6050931095c96587a28772487caaef7205ce9e14))
+* Merge pull request #23 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-f0704ab2aa ([0f1f576](https://www.github.com/JaCraig/Gestalt/commit/0f1f576184e794d92c0c72fe2ddf6f92eb4e428b))
+* Merge pull request #24 from JaCraig/dependabot/nuget/dependencies-dd4c82564f ([b35a532](https://www.github.com/JaCraig/Gestalt/commit/b35a53266dbe560c06fc971e197435d0af3cfe33))
+* bump Mecha.xUnit ([1e3f876](https://www.github.com/JaCraig/Gestalt/commit/1e3f8763110d2c78a76bc77b5b0809c99cf66371))
+* bump Mecha.xUnit ([581e62c](https://www.github.com/JaCraig/Gestalt/commit/581e62cba4ebb62b2f342a34a23001392a2f7a3a))
+
 <a name="1.0.12"></a>
 ## [1.0.12](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.12) (2024-05-02)
 
