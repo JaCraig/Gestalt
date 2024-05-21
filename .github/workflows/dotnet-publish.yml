@@ -63,6 +63,7 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         files: ./Gestalt.Core.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.Console.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.ASPNet.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.ASPNet.Controllers.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.ASPNet.MVC.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.ASPNet.RazorPages.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.ASPNet.SignalR.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info
         format: lcov
+      continue-on-error: true
       
     - name: Upload NuGet package
       uses: actions/upload-artifact@v4
