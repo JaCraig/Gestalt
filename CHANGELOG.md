@@ -1,5 +1,39 @@
 
 
+<a name="1.0.17"></a>
+## [1.0.17](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.17) (2024-05-30)
+
+### Bug Fixes
+
+* bump BigBook from 5.1.35 to 5.1.36 in the dependencies group ([12aa55e](https://www.github.com/JaCraig/Gestalt/commit/12aa55e4b93a55370bd0b6138c7d4ea253276279))
+
+### Other
+
+* --- ([f7c77a0](https://www.github.com/JaCraig/Gestalt/commit/f7c77a063ff6c2928d562c0fea31157a41e58fda))
+* Merge pull request #34 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-2c9eff1097 ([247f205](https://www.github.com/JaCraig/Gestalt/commit/247f205cbd50f1350a09438817a7b41a29f67d0f))
+* Merge pull request #35 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-b7224192ad ([f7ba7cf](https://www.github.com/JaCraig/Gestalt/commit/f7ba7cf851e383c3badd34759ef9979ac4b62a4d))
+* Merge pull request #36 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-17bfdebd43 ([6236f79](https://www.github.com/JaCraig/Gestalt/commit/6236f79c3dbbb2474a377538e7b549f5704c441d))
+* Merge pull request #37 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-d10d8338a5 ([bd1ebec](https://www.github.com/JaCraig/Gestalt/commit/bd1ebecb3659ca537a0b2e33e68aa304fa447960))
+* Merge pull request #38 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC.Tests/dependencies-d10d8338a5 ([9e24fd8](https://www.github.com/JaCraig/Gestalt/commit/9e24fd816a425e95287e8d24b2c987d2b9ef2387))
+* Merge pull request #39 from JaCraig/dependabot/nuget/Gestalt.ASPNet.RazorPages.Tests/dependencies-d10d8338a5 ([d24f14e](https://www.github.com/JaCraig/Gestalt/commit/d24f14e76fc32e1af2dad899f4cf5a4912065bdd))
+* Merge pull request #40 from JaCraig/dependabot/nuget/Gestalt.Console.Tests/dependencies-d10d8338a5 ([5cb790f](https://www.github.com/JaCraig/Gestalt/commit/5cb790fbd805cff4d69afc4e6ab7282481dd503d))
+* Merge pull request #41 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Tests/dependencies-d10d8338a5 ([8ba0a29](https://www.github.com/JaCraig/Gestalt/commit/8ba0a293914f033566d16465d3feac5382c18698))
+* Merge pull request #42 from JaCraig/dependabot/nuget/Gestalt.ASPNet.SignalR.Tests/dependencies-d10d8338a5 ([150deb2](https://www.github.com/JaCraig/Gestalt/commit/150deb2fef1baf37a0428beb1904937fc51d7b6b))
+* Merge pull request #43 from JaCraig/dependabot/nuget/Gestalt.ASPNet.SignalR.Tests/dependencies-e000669da3 ([67c2b66](https://www.github.com/JaCraig/Gestalt/commit/67c2b668333b22b4a8edc0014c317e59dbf61286))
+* Merge pull request #44 from JaCraig/dependabot/nuget/dependencies-233bfabb76 ([273299f](https://www.github.com/JaCraig/Gestalt/commit/273299f876178739c5202e0c6b46f1d2c67b57c7))
+* bump Mecha.xUnit ([9c85c03](https://www.github.com/JaCraig/Gestalt/commit/9c85c03fa42a0a7691524c7b134d5cdf545a4747))
+* bump Mecha.xUnit ([b3fe8d8](https://www.github.com/JaCraig/Gestalt/commit/b3fe8d8b28f0de1c6111e045ecfeaae586312218))
+* bump Mecha.xUnit ([dd34c9c](https://www.github.com/JaCraig/Gestalt/commit/dd34c9c72c762a02c37b6cc60d0f989bdeaf8bdb))
+* bump Microsoft.NET.Test.Sdk ([f3cf13a](https://www.github.com/JaCraig/Gestalt/commit/f3cf13af45cbf40a1e45b0f6b6d38f66f14c0aa1))
+* bump Microsoft.NET.Test.Sdk ([a346a75](https://www.github.com/JaCraig/Gestalt/commit/a346a75576f6ced08da212ced8c6df336b93972d))
+* bump Microsoft.NET.Test.Sdk ([7b8e180](https://www.github.com/JaCraig/Gestalt/commit/7b8e180291630540b8f53a80395e41225e772efb))
+* bump Microsoft.NET.Test.Sdk ([c199946](https://www.github.com/JaCraig/Gestalt/commit/c1999460ea73871e1b6baaa16f8d2a3ea6bb9c07))
+* bump Microsoft.NET.Test.Sdk ([ec03cb8](https://www.github.com/JaCraig/Gestalt/commit/ec03cb82da3fad53328d7cb239d0105fe5125fa0))
+* bump Microsoft.NET.Test.Sdk ([3f9f17f](https://www.github.com/JaCraig/Gestalt/commit/3f9f17fa4be6f0d2254bc18e8d2289ce8a3fe74d))
+* Fixing build ([7b829d2](https://www.github.com/JaCraig/Gestalt/commit/7b829d294d71c9680666c461bcb21009196629d1))
+* Package updates ([fa7dd31](https://www.github.com/JaCraig/Gestalt/commit/fa7dd319e325f14a0f3389a5d21990ff84e315c3))
+* Update dotnet-publish.yml ([1c166b1](https://www.github.com/JaCraig/Gestalt/commit/1c166b1642b6b05456a470122883e32d124f624d))
+
 <a name="1.0.16"></a>
 ## [1.0.16](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.16) (2024-05-16)
 
