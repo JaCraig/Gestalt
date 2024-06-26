@@ -1,5 +1,18 @@
 
 
+<a name="1.0.24"></a>
+## [1.0.24](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.24) (2024-06-26)
+
+### Bug Fixes
+
+* bump BigBook from 5.1.43 to 5.1.44 in the dependencies group ([f104ce5](https://www.github.com/JaCraig/Gestalt/commit/f104ce57f259345dcdbdb5ccf86cd220b25c8692))
+
+### Other
+
+* Merge pull request #63 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-a96eda608c ([0ff05ce](https://www.github.com/JaCraig/Gestalt/commit/0ff05ce3e022b106f943f7c092b5516f42786363))
+* Merge pull request #64 from JaCraig/dependabot/nuget/dependencies-31048d535f ([ac7f2cf](https://www.github.com/JaCraig/Gestalt/commit/ac7f2cf6442fff79dd37d81c06225b69f2dfaa19))
+* bump the dependencies group in /Gestalt.Core.Tests with 2 updates ([6ca9ca0](https://www.github.com/JaCraig/Gestalt/commit/6ca9ca0c28058903f1ee1e779c2a0c3bdf1d84eb))
+
 <a name="1.0.23"></a>
 ## [1.0.23](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.23) (2024-06-25)
 
