@@ -1,5 +1,24 @@
 
 
+<a name="1.0.27"></a>
+## [1.0.27](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.27) (2024-08-03)
+
+### Bug Fixes
+
+* bump BigBook from 5.1.46 to 5.1.47 in the dependencies group ([7e5310b](https://www.github.com/JaCraig/Gestalt/commit/7e5310b97059496262c3a10084097e9ef0e43ce7))
+
+### Other
+
+* Merge pull request #74 from JaCraig/dependabot/nuget/Gestalt.Console.Tests/dependencies-25d55e3327 ([2cd85c5](https://www.github.com/JaCraig/Gestalt/commit/2cd85c58adc9143778dfbf44c9106a0147247575))
+* Merge pull request #75 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Tests/dependencies-b06778b9b3 ([02b431f](https://www.github.com/JaCraig/Gestalt/commit/02b431f6d114b3e4f6bfc5e55ddd1aca834dde62))
+* Merge pull request #76 from JaCraig/dependabot/nuget/Gestalt.ASPNet.SignalR.Tests/dependencies-9cc3c17e86 ([4047fb5](https://www.github.com/JaCraig/Gestalt/commit/4047fb56f0711df8dc75a8fefde2d80e32c87332))
+* Merge pull request #77 from JaCraig/dependabot/nuget/Gestalt.ASPNet.SignalR.Tests/dependencies-b3ff0eb1b1 ([bc68af4](https://www.github.com/JaCraig/Gestalt/commit/bc68af41dc6c9c52acbea36dd448935a8396094c))
+* Merge pull request #78 from JaCraig/dependabot/nuget/dependencies-2afefb85ff ([202a050](https://www.github.com/JaCraig/Gestalt/commit/202a0506561a5b8eef5a643879b43fadaebbe11a))
+* bump Mecha.xUnit ([8e0ee95](https://www.github.com/JaCraig/Gestalt/commit/8e0ee952320ee286bfbe463848261dee08fcd455))
+* bump Mecha.xUnit ([772f3c8](https://www.github.com/JaCraig/Gestalt/commit/772f3c86e74f5bcd9cb33f4af4b28da0f49e385e))
+* bump Mecha.xUnit ([00e7e8e](https://www.github.com/JaCraig/Gestalt/commit/00e7e8e9e25b72aeb09ef9949cd9e58c1a1e052a))
+* bump the dependencies group ([81cbfd2](https://www.github.com/JaCraig/Gestalt/commit/81cbfd2da4cd515d7e9099e798b57524875d19d6))
+
 <a name="1.0.26"></a>
 ## [1.0.26](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.26) (2024-07-24)
 
