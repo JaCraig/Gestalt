@@ -1,5 +1,31 @@
 
 
+<a name="1.0.29"></a>
+## [1.0.29](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.29) (2024-08-21)
+
+### Bug Fixes
+
+* Fixing build and updating packages ([93a3021](https://www.github.com/JaCraig/Gestalt/commit/93a3021fa3cc716da6e9f20916f1757076e45d05))
+
+### Other
+
+* Merge pull request #83 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Tests/dependencies-0abfb65c46 ([92bdfb2](https://www.github.com/JaCraig/Gestalt/commit/92bdfb2b1491aff6e998d0082c77ccb28a07c254))
+* Merge pull request #84 from JaCraig/dependabot/nuget/Gestalt.Console.Tests/dependencies-7ee70dda26 ([a005408](https://www.github.com/JaCraig/Gestalt/commit/a00540836ec6f4d1871fe0a3cb1beef2d489e240))
+* Merge pull request #85 from JaCraig/dependabot/nuget/Gestalt.ASPNet.SignalR.Tests/dependencies-76fa9e7f54 ([a3cd129](https://www.github.com/JaCraig/Gestalt/commit/a3cd1290db781d072497deac6749af6ede979293))
+* Merge pull request #86 from JaCraig/dependabot/nuget/Gestalt.Console.Tests/dependencies-76fa9e7f54 ([7be2aba](https://www.github.com/JaCraig/Gestalt/commit/7be2aba69b71df829be9d18ddcf36c6710ac7863))
+* Merge pull request #87 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-20452041bf ([af62523](https://www.github.com/JaCraig/Gestalt/commit/af62523fc88ab374e9d2b8b096ec9f1291642851))
+* Merge pull request #88 from JaCraig/dependabot/nuget/Gestalt.ASPNet.RazorPages.Tests/dependencies-20452041bf ([9c69012](https://www.github.com/JaCraig/Gestalt/commit/9c690129b87ecd27773d89cce23c6270c60a4d31))
+* Merge pull request #89 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC.Tests/dependencies-20452041bf ([68604b7](https://www.github.com/JaCraig/Gestalt/commit/68604b72ff527f18f0687a4610e4fd3a3d448949))
+* Merge pull request #90 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Tests/dependencies-20452041bf ([283c1d7](https://www.github.com/JaCraig/Gestalt/commit/283c1d7560e647783958706912354bfd0a5cae7c))
+* bump Mecha.xUnit ([76700d5](https://www.github.com/JaCraig/Gestalt/commit/76700d50f8dfc08c4db9d82e199d75c995ee3254))
+* bump Microsoft.NET.Test.Sdk ([614acbf](https://www.github.com/JaCraig/Gestalt/commit/614acbf830a7bd356c0503aad0647e3f29238f40))
+* bump Microsoft.NET.Test.Sdk ([1d9d232](https://www.github.com/JaCraig/Gestalt/commit/1d9d23205d7668c393696003cf145ccd2c8ecb15))
+* bump Microsoft.NET.Test.Sdk ([976726d](https://www.github.com/JaCraig/Gestalt/commit/976726d97a2f9b5153e0af743e562d5c29b44df5))
+* bump Microsoft.NET.Test.Sdk ([42ca28e](https://www.github.com/JaCraig/Gestalt/commit/42ca28ec427f9447acadd249b3efb2f49884eef6))
+* bump the dependencies group ([de5ef0e](https://www.github.com/JaCraig/Gestalt/commit/de5ef0edd3a1f87b20d8e94103a4d236853e3373))
+* bump the dependencies group ([7ab3860](https://www.github.com/JaCraig/Gestalt/commit/7ab3860f519290b35ca3023cb788445f0fe2ae56))
+* bump the dependencies group ([331b848](https://www.github.com/JaCraig/Gestalt/commit/331b84893f8d84ff08ecc382a878abefbe1e072d))
+
 <a name="1.0.28"></a>
 ## [1.0.28](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.28) (2024-08-15)
 
