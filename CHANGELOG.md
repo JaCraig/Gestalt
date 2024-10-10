@@ -1,5 +1,20 @@
 
 
+<a name="1.0.35"></a>
+## [1.0.35](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.35) (2024-10-10)
+
+### Bug Fixes
+
+* bump BigBook from 5.1.54 to 5.1.55 in the dependencies group ([87273c6](https://www.github.com/JaCraig/Gestalt/commit/87273c67fa72d1840775e1217cfa5e717b16fc65))
+
+### Other
+
+* Merge pull request #120 from JaCraig/dependabot/nuget/dependencies-248a9a3117 ([d2858eb](https://www.github.com/JaCraig/Gestalt/commit/d2858eba62c5f758bdcd40d8057db41d8538329f))
+* Merge pull request #121 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC.Tests/dependencies-d7b90b540f ([cb2bd61](https://www.github.com/JaCraig/Gestalt/commit/cb2bd61d0944f657226298ebe4b8ec861c42a529))
+* Merge pull request #122 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-006c3a6508 ([9532f9b](https://www.github.com/JaCraig/Gestalt/commit/9532f9b6f2b39f91710712b682e1115590b4e6ab))
+* bump Mecha.xUnit ([43dfe2e](https://www.github.com/JaCraig/Gestalt/commit/43dfe2e8243624cd0999c37adba042e6e18ee4a7))
+* bump the dependencies group ([ef54ba1](https://www.github.com/JaCraig/Gestalt/commit/ef54ba16dc6e48cc63ceb68f7c4f9dea2f05b42d))
+
 <a name="1.0.34"></a>
 ## [1.0.34](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.34) (2024-10-09)
 
