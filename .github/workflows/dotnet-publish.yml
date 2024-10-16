@@ -58,7 +58,7 @@ jobs:
       if: ${{ always() }}
 
     - name: Publish coverage report to coveralls.io
-      uses: coverallsapp/github-action@v2.3.2
+      uses: coverallsapp/github-action@v2.3.3
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         files: ./Gestalt.Core.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.Console.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.ASPNet.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.ASPNet.Controllers.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.ASPNet.MVC.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.ASPNet.RazorPages.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info ./Gestalt.ASPNet.SignalR.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info
