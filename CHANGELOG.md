@@ -1,5 +1,39 @@
 
 
+<a name="1.0.36"></a>
+## [1.0.36](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.36) (2024-10-29)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([b40450e](https://www.github.com/JaCraig/Gestalt/commit/b40450e5ab32df7b1fa85285811b331f0147381a))
+* bump versionize from 2.0.0 to 2.1.0 in the dependencies group ([c3acedc](https://www.github.com/JaCraig/Gestalt/commit/c3acedcc1f92c8749737b9f9cb6d6415dfbbf5a9))
+* Update CI, NSubstitute, and add .versionize config ([14494fe](https://www.github.com/JaCraig/Gestalt/commit/14494fe3c41a4c3264eb1d40661de982baee857c))
+
+### Other
+
+* Merge pull request #123 from JaCraig/dependabot/github_actions/dependencies-5d0541337a ([ea66bfe](https://www.github.com/JaCraig/Gestalt/commit/ea66bfec7fdc21568be18b46dda802e5c00ad3c0))
+* Merge pull request #124 from JaCraig/dependabot/github_actions/dependencies-ffdf47fbe7 ([10fd2fe](https://www.github.com/JaCraig/Gestalt/commit/10fd2fed116d73c794ba37ee2a00d09c8d45bfe0))
+* Merge pull request #125 from JaCraig/dependabot/nuget/dependencies-e43804591a ([577b34b](https://www.github.com/JaCraig/Gestalt/commit/577b34b5225a1dc1b8789c284cbbf92b14497780))
+* Merge pull request #126 from JaCraig/dependabot/github_actions/dependencies-941c69736f ([6da7011](https://www.github.com/JaCraig/Gestalt/commit/6da701135ebfe96b3a33e0fd0839480011abb258))
+* Merge pull request #127 from JaCraig/dependabot/nuget/dependencies-3894128c1d ([14e3304](https://www.github.com/JaCraig/Gestalt/commit/14e33040fd6a0bc646e97d8c6f2790d0153ddd39))
+* Merge pull request #128 from JaCraig/dependabot/github_actions/dependencies-534fe38b4c ([88c96ee](https://www.github.com/JaCraig/Gestalt/commit/88c96eed00d305f63789a4377f07345dad302154))
+* Merge pull request #129 from JaCraig/dependabot/nuget/Gestalt.Console.Tests/dependencies-7328e31875 ([89605a0](https://www.github.com/JaCraig/Gestalt/commit/89605a07e9b174025b814b4f82dd48ced1fb614b))
+* Merge pull request #130 from JaCraig/dependabot/nuget/Gestalt.ASPNet.RazorPages.Tests/dependencies-7328e31875 ([223fc11](https://www.github.com/JaCraig/Gestalt/commit/223fc11ba7429e4f690219bcea86154450d346d7))
+* Merge pull request #131 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC.Tests/dependencies-7328e31875 ([938a7c9](https://www.github.com/JaCraig/Gestalt/commit/938a7c94a59594d2bf509e11e7cc9d8c6ab3bbc0))
+* Merge pull request #132 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-7328e31875 ([adb3bbc](https://www.github.com/JaCraig/Gestalt/commit/adb3bbc845a63bcd4290bed56adfb025ad6e0ebd))
+* Merge pull request #133 from JaCraig/dependabot/nuget/Gestalt.ASPNet.SignalR.Tests/dependencies-7328e31875 ([e3afe48](https://www.github.com/JaCraig/Gestalt/commit/e3afe48b73b59a8cb2af6aa5cc8ad45b4b34ddd5))
+* Merge pull request #134 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Tests/dependencies-7328e31875 ([0019cc2](https://www.github.com/JaCraig/Gestalt/commit/0019cc2646119efd716633e93de218a736d27789))
+* bump coverallsapp/github-action in the dependencies group ([14a9148](https://www.github.com/JaCraig/Gestalt/commit/14a914837365a31202bcdf4e869189026446a8af))
+* bump coverallsapp/github-action in the dependencies group ([f4d1115](https://www.github.com/JaCraig/Gestalt/commit/f4d1115c1bb4e6bbc9bc2d149c9bd03a23539bbd))
+* bump coverallsapp/github-action in the dependencies group ([16a99a1](https://www.github.com/JaCraig/Gestalt/commit/16a99a1c567647e84642f2f891373c2656e811bb))
+* bump NSubstitute ([143716b](https://www.github.com/JaCraig/Gestalt/commit/143716b1bbf3af9dd8c43de802989a70fc77b4cd))
+* bump NSubstitute ([a384c69](https://www.github.com/JaCraig/Gestalt/commit/a384c6944a2d1a96496858fa896410a88fec0d26))
+* bump NSubstitute ([d9096a5](https://www.github.com/JaCraig/Gestalt/commit/d9096a57fdbd27aafd305e5eecb3c790e40d2ff5))
+* bump NSubstitute ([610d827](https://www.github.com/JaCraig/Gestalt/commit/610d827bb3b750ccd152ef3e09fe56458c84e9ac))
+* bump NSubstitute ([600874a](https://www.github.com/JaCraig/Gestalt/commit/600874ab21c65e899c1cb9b83a38895f37fae92e))
+* bump NSubstitute in /Gestalt.Core.Tests in the dependencies group ([981b8f1](https://www.github.com/JaCraig/Gestalt/commit/981b8f188c170512e93845c4b01913a9860ee932))
+* bump the dependencies group with 2 updates ([01b75ac](https://www.github.com/JaCraig/Gestalt/commit/01b75ac4545715e01598f2a87236cd6305995664))
+
 <a name="1.0.35"></a>
 ## [1.0.35](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.35) (2024-10-10)
 
