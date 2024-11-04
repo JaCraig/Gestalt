@@ -1,5 +1,18 @@
 
 
+<a name="1.0.39"></a>
+## [1.0.39](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.39) (2024-11-04)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([c25ade4](https://www.github.com/JaCraig/Gestalt/commit/c25ade4552d0c2e860005fe569c21d856ca8286f))
+
+### Other
+
+* Merge pull request #139 from JaCraig/dependabot/nuget/Gestalt.ASPNet.SignalR.Tests/dependencies-d5231b1512 ([4373e63](https://www.github.com/JaCraig/Gestalt/commit/4373e63522723f215ca85ec8eea946df450e341a))
+* Merge pull request #140 from JaCraig/dependabot/nuget/dependencies-1f5325bd9c ([c999c45](https://www.github.com/JaCraig/Gestalt/commit/c999c45b2ccc7684cc07ffdbd5215d891f78f34a))
+* bump the dependencies group ([f94422d](https://www.github.com/JaCraig/Gestalt/commit/f94422dbb818fdd8759b7d1cef365f66b39e8007))
+
 <a name="1.0.38"></a>
 ## [1.0.38](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.38) (2024-10-31)
 
