@@ -1,5 +1,18 @@
 
 
+<a name="1.0.41"></a>
+## [1.0.41](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.41) (2024-11-11)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([b1f2bba](https://www.github.com/JaCraig/Gestalt/commit/b1f2bbaaa727cdbdae8b45da608fea1f91953aa3))
+
+### Other
+
+* Merge pull request #143 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC.Tests/dependencies-ffd79e3be1 ([f908ea9](https://www.github.com/JaCraig/Gestalt/commit/f908ea9f44bf3180330a90477135ee41e26b608a))
+* Merge pull request #144 from JaCraig/dependabot/nuget/dependencies-81691b5001 ([d476197](https://www.github.com/JaCraig/Gestalt/commit/d476197513a030580009a43d41af43e044b7d007))
+* bump the dependencies group ([b9344d9](https://www.github.com/JaCraig/Gestalt/commit/b9344d9f68229c6a5353007add4aa32a3c464234))
+
 <a name="1.0.40"></a>
 ## [1.0.40](https://www.github.com/JaCraig/Gestalt/releases/tag/v1.0.40) (2024-11-05)
 
