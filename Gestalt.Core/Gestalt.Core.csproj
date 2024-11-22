@@ -4,7 +4,7 @@
     <Description>This is the core abstractions library for Gestalt that includes interfaces and base classes. Gestalt is a comprehensive ASP.NET application framework designed to streamline the development and packaging process with its modular architecture. With Gestalt, effortlessly construct robust ASP.NET applications using modular design principles and leverage the power of dependency injection for seamless integration of reusable components. Incorporate plugins effortlessly, configuring them via a flexible configuration system. Gestalt empowers developers to craft scalable and maintainable applications, focusing on building reusable modules and extensions. Whether you're developing a small-scale project or a large enterprise application, Gestalt provides the foundation for modular, extensible ASP.NET solutions.</Description>
     <AssemblyTitle>Gestalt.Core</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Gestalt.Core</AssemblyName>
     <PackageId>Gestalt.Core</PackageId>
@@ -53,13 +53,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BigBook" Version="5.1.62" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.1" />
+    <PackageReference Include="BigBook" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.0" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="8.0.0">
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

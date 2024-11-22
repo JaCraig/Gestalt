@@ -1,4 +1,5 @@
 ﻿using BigBook;
+using BigBook.ExtensionMethods;
 using Gestalt.Core.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,20 +15,15 @@ namespace Gestalt.Core.BaseClasses
     /// Application framework base class
     /// </summary>
     /// <seealso cref="IApplicationFramework"/>
-    public abstract class ApplicationFrameworkBaseClass<TApplicationFramework, TModule> : IEquatable<IApplicationFramework>, IApplicationFramework
+    /// <remarks>
+    /// Initializes a new instance of the <see
+    /// cref="ApplicationFrameworkBaseClass{TApplicationFramework, TModule}"/> class.
+    /// </remarks>
+    /// <param name="name">The name of the application framework.</param>
+    public abstract class ApplicationFrameworkBaseClass<TApplicationFramework, TModule>(string? name) : IEquatable<IApplicationFramework>, IApplicationFramework
         where TApplicationFramework : ApplicationFrameworkBaseClass<TApplicationFramework, TModule>, new()
         where TModule : IApplicationModule
     {
-        /// <summary>
-        /// Initializes a new instance of the <see
-        /// cref="ApplicationFrameworkBaseClass{TApplicationFramework, TModule}"/> class.
-        /// </summary>
-        /// <param name="name">The name of the application framework.</param>
-        protected ApplicationFrameworkBaseClass(string? name)
-        {
-            Name = name ?? typeof(TModule).GetName().AddSpaces();
-        }
-
         /// <summary>
         /// Initializes a new instance of the <see
         /// cref="ApplicationFrameworkBaseClass{TApplicationFramework, TModule}"/> class.
@@ -57,7 +53,7 @@ namespace Gestalt.Core.BaseClasses
         /// Application framework name
         /// </summary>
         /// <value>The name.</value>
-        public string Name { get; protected set; }
+        public string Name { get; protected set; } = name ?? typeof(TModule).GetName().AddSpaces();
 
         /// <summary>
         /// Gets the order.
@@ -129,7 +125,7 @@ namespace Gestalt.Core.BaseClasses
         /// <returns>The modules.</returns>
         public IServiceCollection? Configure(IApplicationModule?[]? modules, IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment)
         {
-            modules ??= Array.Empty<IApplicationModule>();
+            modules ??= [];
             ConfigureModules(modules.OfType<TModule>().ToArray(), services, configuration, environment);
             return services;
         }
