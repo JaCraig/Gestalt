@@ -1,5 +1,19 @@
 
 
+<a name="2.0.1"></a>
+## [2.0.1](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.0.1) (2024-11-25)
+
+### Bug Fixes
+
+* bump BigBook in /Gestalt.ASPNet in the dependencies group ([9c3cc72](https://www.github.com/JaCraig/Gestalt/commit/9c3cc723d7fdff8be5736f04c512651524654a45))
+
+### Other
+
+* Merge pull request #153 from JaCraig/dependabot/nuget/Gestalt.ASPNet/dependencies-2948b9f91f ([b66d174](https://www.github.com/JaCraig/Gestalt/commit/b66d174ff8cfd9fc4541927f6e1049a2ba9ef328))
+* Merge branch 'main' of https://github.com/JaCraig/Gestalt ([c03b001](https://www.github.com/JaCraig/Gestalt/commit/c03b0013b0b41ebc8baebdfcd5b5e8a9b4a830b8))
+* update husky and versionize tool versions in dotnet-tools.json ([4fb701b](https://www.github.com/JaCraig/Gestalt/commit/4fb701bcf05fcffe885043bc0d2551f0836450be))
+* update usage of UseGestalt method in Main program ([6798c9e](https://www.github.com/JaCraig/Gestalt/commit/6798c9ef0b3d94d723f592e13a08be71ee93d409))
+
 <a name="2.0.0"></a>
 ## [2.0.0](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.0.0) (2024-11-22)
 
