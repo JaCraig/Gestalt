@@ -3,7 +3,6 @@ using Gestalt.Core.BaseClasses;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 
 namespace Gestalt.ASPNet.SignalR
 {
@@ -19,7 +18,7 @@ namespace Gestalt.ASPNet.SignalR
             if (configuration is null || environment is null || services is null)
                 return;
 
-            modules ??= Array.Empty<ISignalRModule>();
+            modules ??= [];
 
             // SignalR builder, setup the options.
             Microsoft.AspNetCore.SignalR.ISignalRServerBuilder? Builder = services.AddSignalR(options =>
@@ -29,7 +28,7 @@ namespace Gestalt.ASPNet.SignalR
                     ISignalRModule Module = modules[I];
                     if (Module is null)
                         continue;
-                    options = Module.Options(options, configuration, environment);
+                    options = Module.Options(options, configuration, environment) ?? options;
                 }
             });
 

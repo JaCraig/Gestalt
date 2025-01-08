@@ -23,7 +23,7 @@ namespace Gestalt.ASPNet.RazorPages.BaseClasses
         /// <param name="category">The category.</param>
         /// <param name="contentPath">The content path.</param>
         /// <param name="tags">The tags.</param>
-        protected RazorPagesModuleBaseClass(string? name, string? category, string? contentPath, params string[] tags)
+        protected RazorPagesModuleBaseClass(string? name, string? category, string? contentPath, params string?[]? tags)
             : base(name, category, contentPath, tags)
         {
         }

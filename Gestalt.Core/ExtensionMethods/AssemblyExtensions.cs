@@ -21,7 +21,7 @@ namespace Gestalt.Core.ExtensionMethods
         public static Assembly[] FindAssemblies(this Assembly? entryAssembly)
         {
             if (entryAssembly is null)
-                return Array.Empty<Assembly>();
+                return [];
 
             var AssembliesFound = new HashSet<Assembly>
                 {
@@ -30,16 +30,16 @@ namespace Gestalt.Core.ExtensionMethods
             var Temp = entryAssembly.Location;
             var DirectoryPath = Path.GetDirectoryName(Temp);
             if (string.IsNullOrEmpty(DirectoryPath))
-                return AssembliesFound.ToArray();
-            foreach (var TempAssembly in new DirectoryInfo(DirectoryPath)?.EnumerateFiles("*.dll", SearchOption.TopDirectoryOnly) ?? Enumerable.Empty<FileInfo>())
+                return [.. AssembliesFound];
+            foreach (FileInfo TempAssembly in new DirectoryInfo(DirectoryPath)?.EnumerateFiles("*.dll", SearchOption.TopDirectoryOnly) ?? [])
             {
                 try
                 {
-                    AssembliesFound.Add(Assembly.LoadFrom(TempAssembly.FullName));
+                    _ = AssembliesFound.Add(Assembly.LoadFrom(TempAssembly.FullName));
                 }
                 catch { }
             }
-            return AssembliesFound.ToArray();
+            return [.. AssembliesFound];
         }
 
         /// <summary>
@@ -50,7 +50,7 @@ namespace Gestalt.Core.ExtensionMethods
         public static IApplicationFramework[] FindFrameworks(this Assembly?[]? assemblies)
         {
             if (assemblies is null || assemblies.Length == 0)
-                return Array.Empty<IApplicationFramework>();
+                return [];
 
             var ReturnValue = new HashSet<IApplicationFramework>();
             for (int I = 0, AssembliesLength = assemblies.Length; I < AssembliesLength; I++)
@@ -60,13 +60,13 @@ namespace Gestalt.Core.ExtensionMethods
                     continue;
                 try
                 {
-                    var ModuleTypes = TempAssembly.GetTypes()
+                    IEnumerable<Type> ModuleTypes = TempAssembly.GetTypes()
                         .Where(x => typeof(IApplicationFramework).IsAssignableFrom(x) && x.GetConstructor(Type.EmptyTypes) != null);
-                    ReturnValue.Add(ModuleTypes.Create<IApplicationFramework>());
+                    _ = ReturnValue.Add(ModuleTypes.Create<IApplicationFramework>());
                 }
                 catch { }
             }
-            return ReturnValue.OrderBy(x => x.Order).ToArray();
+            return [.. ReturnValue.OrderBy(x => x.Order)];
         }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace Gestalt.Core.ExtensionMethods
         public static IApplicationModule[] FindModules(this Assembly?[]? assemblies)
         {
             if (assemblies is null || assemblies.Length == 0)
-                return Array.Empty<IApplicationModule>();
+                return [];
 
             var ReturnValue = new HashSet<IApplicationModule>();
             for (int I = 0, AssembliesLength = assemblies.Length; I < AssembliesLength; I++)
@@ -86,13 +86,13 @@ namespace Gestalt.Core.ExtensionMethods
                     continue;
                 try
                 {
-                    var ModuleTypes = TempAssembly.GetTypes()
+                    IEnumerable<Type> ModuleTypes = TempAssembly.GetTypes()
                         .Where(x => typeof(IApplicationModule).IsAssignableFrom(x) && x.GetConstructor(Type.EmptyTypes) != null);
-                    ReturnValue.Add(ModuleTypes.Create<IApplicationModule>());
+                    _ = ReturnValue.Add(ModuleTypes.Create<IApplicationModule>());
                 }
                 catch { }
             }
-            return ReturnValue.OrderBy(x => x.Order).ToArray();
+            return [.. ReturnValue.OrderBy(x => x.Order)];
         }
     }
 }

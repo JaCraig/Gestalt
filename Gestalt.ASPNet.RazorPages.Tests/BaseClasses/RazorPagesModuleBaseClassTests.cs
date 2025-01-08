@@ -1,15 +1,15 @@
+using Gestalt.ASPNet.RazorPages.BaseClasses;
+using Gestalt.Tests.Helpers;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using NSubstitute;
+using System;
+using Xunit;
+
 namespace Gestalt.ASPNet.RazorPages.Tests.BaseClasses
 {
-    using Gestalt.ASPNet.RazorPages.BaseClasses;
-    using Gestalt.Tests.Helpers;
-    using Microsoft.AspNetCore.Mvc.RazorPages;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Hosting;
-    using NSubstitute;
-    using System;
-    using Xunit;
-
     public class RazorPagesModuleBaseClass_1Tests : TestBaseClass
     {
         public RazorPagesModuleBaseClass_1Tests()
@@ -17,10 +17,11 @@ namespace Gestalt.ASPNet.RazorPages.Tests.BaseClasses
             _Name = "TestValue1335960113";
             _Category = "TestValue966733231";
             _ContentPath = "TestValue468335660";
-            _Tags = new[] { "TestValue740309588", "TestValue1836641462", "TestValue2073426856" };
+            _Tags = ["TestValue740309588", "TestValue1836641462", "TestValue2073426856"];
             _TestClass = new TestRazorPagesModuleBaseClass(_Name, _Category, _ContentPath, _Tags);
         }
 
+        protected override Type? ObjectType { get; set; } = typeof(TestRazorPagesModuleBaseClass);
         private readonly string _Category;
 
         private readonly string _ContentPath;
@@ -31,18 +32,16 @@ namespace Gestalt.ASPNet.RazorPages.Tests.BaseClasses
 
         private readonly TestRazorPagesModuleBaseClass _TestClass;
 
-        protected override Type? ObjectType { get; set; } = typeof(TestRazorPagesModuleBaseClass);
-
         [Fact]
         public void CanCallConfigureRazorPages()
         {
             // Arrange
-            var RazorPagesBuilder = Substitute.For<IMvcBuilder>();
-            var Configuration = Substitute.For<IConfiguration>();
-            var Environment = Substitute.For<IHostEnvironment>();
+            IMvcBuilder RazorPagesBuilder = Substitute.For<IMvcBuilder>();
+            IConfiguration Configuration = Substitute.For<IConfiguration>();
+            IHostEnvironment Environment = Substitute.For<IHostEnvironment>();
 
             // Act
-            var Result = _TestClass.ConfigureRazorPages(RazorPagesBuilder, Configuration, Environment);
+            IMvcBuilder? Result = _TestClass.ConfigureRazorPages(RazorPagesBuilder, Configuration, Environment);
 
             // Assert
             Assert.NotNull(Result);
@@ -62,12 +61,12 @@ namespace Gestalt.ASPNet.RazorPages.Tests.BaseClasses
         public void CanCallOptions()
         {
             // Arrange
-            var Options = Substitute.For<RazorPagesOptions>();
-            var Configuration = Substitute.For<IConfiguration>();
-            var Environment = Substitute.For<IHostEnvironment>();
+            RazorPagesOptions Options = Substitute.For<RazorPagesOptions>();
+            IConfiguration Configuration = Substitute.For<IConfiguration>();
+            IHostEnvironment Environment = Substitute.For<IHostEnvironment>();
 
             // Act
-            var Result = _TestClass.Options(Options, Configuration, Environment);
+            RazorPagesOptions? Result = _TestClass.Options(Options, Configuration, Environment);
 
             // Assert
             Assert.NotNull(Result);
@@ -77,10 +76,10 @@ namespace Gestalt.ASPNet.RazorPages.Tests.BaseClasses
         [Fact]
         public void CanCallOptionsWithNullValues()
         {
-            _TestClass.Options(Substitute.For<RazorPagesOptions>(), default, Substitute.For<IHostEnvironment>());
-            _TestClass.Options(Substitute.For<RazorPagesOptions>(), Substitute.For<IConfiguration>(), default);
-            _TestClass.Options(default, Substitute.For<IConfiguration>(), Substitute.For<IHostEnvironment>());
-            _TestClass.Options(default, default, default);
+            _ = _TestClass.Options(Substitute.For<RazorPagesOptions>(), default, Substitute.For<IHostEnvironment>());
+            _ = _TestClass.Options(Substitute.For<RazorPagesOptions>(), Substitute.For<IConfiguration>(), default);
+            _ = _TestClass.Options(default, Substitute.For<IConfiguration>(), Substitute.For<IHostEnvironment>());
+            _ = _TestClass.Options(default, default, default);
         }
 
         [Fact]
@@ -110,32 +109,20 @@ namespace Gestalt.ASPNet.RazorPages.Tests.BaseClasses
         [Theory]
         [InlineData("")]
         [InlineData("   ")]
-        public void CanConstructWithInvalidCategory(string value)
-        {
-            _ = new TestRazorPagesModuleBaseClass(_Name, value, _ContentPath, _Tags);
-        }
+        public void CanConstructWithInvalidCategory(string value) => _ = new TestRazorPagesModuleBaseClass(_Name, value, _ContentPath, _Tags);
 
         [Theory]
         [InlineData("")]
         [InlineData("   ")]
-        public void CanConstructWithInvalidContentPath(string value)
-        {
-            _ = new TestRazorPagesModuleBaseClass(_Name, _Category, value, _Tags);
-        }
+        public void CanConstructWithInvalidContentPath(string value) => _ = new TestRazorPagesModuleBaseClass(_Name, _Category, value, _Tags);
 
         [Theory]
         [InlineData("")]
         [InlineData("   ")]
-        public void CanConstructWithInvalidName(string value)
-        {
-            _ = new TestRazorPagesModuleBaseClass(value, _Category, _ContentPath, _Tags);
-        }
+        public void CanConstructWithInvalidName(string value) => _ = new TestRazorPagesModuleBaseClass(value, _Category, _ContentPath, _Tags);
 
         [Fact]
-        public void CanConstructWithNullTags()
-        {
-            _ = new TestRazorPagesModuleBaseClass(_Name, _Category, _ContentPath, default);
-        }
+        public void CanConstructWithNullTags() => _ = new TestRazorPagesModuleBaseClass(_Name, _Category, _ContentPath, default);
 
         private class TestRazorPagesModuleBaseClass : RazorPagesModuleBaseClass<TestRazorPagesModuleBaseClass>
         {

@@ -3,7 +3,6 @@ using Gestalt.Core.BaseClasses;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 using System.Linq;
 
 namespace Gestalt.ASPNet.RazorPages
@@ -25,7 +24,7 @@ namespace Gestalt.ASPNet.RazorPages
             if (configuration is null || environment is null || services is null)
                 return;
 
-            modules ??= Array.Empty<IRazorPagesModule>();
+            modules ??= [];
 
             IMvcBuilder? MVCBuilder = services.AddRazorPages(options =>
             {
@@ -34,7 +33,7 @@ namespace Gestalt.ASPNet.RazorPages
                     IRazorPagesModule Module = modules[I];
                     if (Module is null)
                         continue;
-                    options = Module.Options(options, configuration, environment);
+                    options = Module.Options(options, configuration, environment) ?? options;
                 }
             });
 
@@ -43,7 +42,7 @@ namespace Gestalt.ASPNet.RazorPages
                 IRazorPagesModule Module = modules[I];
                 if (Module is null)
                     continue;
-                var ModuleAssembly = Module.GetType().Assembly;
+                System.Reflection.Assembly ModuleAssembly = Module.GetType().Assembly;
                 var ModuleName = ModuleAssembly.FullName;
                 MVCBuilder = Module.ConfigureRazorPages(MVCBuilder, configuration, environment);
                 if (MVCBuilder?.PartManager?.ApplicationParts.Any(x => x.Name == ModuleName) == false)

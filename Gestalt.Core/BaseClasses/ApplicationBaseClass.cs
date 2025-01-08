@@ -114,7 +114,7 @@ namespace Gestalt.Core.BaseClasses
             if (configuration is null)
                 return configuration;
 
-            args ??= Array.Empty<string?>();
+            args ??= [];
 
             InternalLogger?.LogInformation("Configuring configuration settings");
 

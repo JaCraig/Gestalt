@@ -20,7 +20,7 @@ namespace Gestalt.Core.Tests.BaseClasses
             _Name = "TestValue1960118988";
             _Category = "TestValue1860675215";
             _ContentPath = "TestValue192350694";
-            _Tags = new[] { "TestValue443821728", "TestValue1316046464", "TestValue1292267405" };
+            _Tags = ["TestValue443821728", "TestValue1316046464", "TestValue1292267405"];
             _TestClass = new TestApplicationModuleBaseClass(_Name, _Category, _ContentPath, _Tags);
         }
 
