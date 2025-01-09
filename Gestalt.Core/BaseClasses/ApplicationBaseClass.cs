@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
 namespace Gestalt.Core.BaseClasses
@@ -109,6 +109,7 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="configuration">The configuration.</param>
         /// <param name="args">The command line arguments</param>
         /// <returns>The configuration builder.</returns>
+        [return: NotNullIfNotNull(nameof(configuration))]
         public IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, string?[]? args)
         {
             if (configuration is null)
@@ -121,7 +122,7 @@ namespace Gestalt.Core.BaseClasses
             for (int I = 0, ModulesLength = Modules.Length; I < ModulesLength; I++)
             {
                 IApplicationModule Module = Modules[I];
-                configuration = Module.ConfigureConfigurationSettings(configuration, Environment, args);
+                configuration = Module.ConfigureConfigurationSettings(configuration, Environment, args) ?? configuration;
             }
             return configuration;
         }
@@ -131,6 +132,7 @@ namespace Gestalt.Core.BaseClasses
         /// </summary>
         /// <param name="services">The services.</param>
         /// <returns>The services.</returns>
+        [return: NotNullIfNotNull(nameof(services))]
         public IServiceCollection? ConfigureFrameworks(IServiceCollection? services)
         {
             if (services is null)
@@ -141,7 +143,7 @@ namespace Gestalt.Core.BaseClasses
             for (int I = 0, FrameworksLength = Frameworks.Length; I < FrameworksLength; I++)
             {
                 IApplicationFramework Framework = Frameworks[I];
-                services = Framework.Configure(Modules, services, Configuration, Environment);
+                services = Framework.Configure(Modules, services, Configuration, Environment) ?? services;
             }
             return services;
         }
@@ -151,6 +153,7 @@ namespace Gestalt.Core.BaseClasses
         /// </summary>
         /// <param name="host">The host.</param>
         /// <returns>Host builder</returns>
+        [return: NotNullIfNotNull(nameof(host))]
         public IHostBuilder? ConfigureHostSettings(IHostBuilder? host)
         {
             if (host is null)
@@ -161,7 +164,7 @@ namespace Gestalt.Core.BaseClasses
             for (int I = 0, ModulesLength = Modules.Length; I < ModulesLength; I++)
             {
                 IApplicationModule Module = Modules[I];
-                host = Module.ConfigureHostSettings(host, Configuration, Environment);
+                host = Module.ConfigureHostSettings(host, Configuration, Environment) ?? host;
             }
             return host;
         }
@@ -171,6 +174,7 @@ namespace Gestalt.Core.BaseClasses
         /// </summary>
         /// <param name="logging">The logging.</param>
         /// <returns>Logging builder</returns>
+        [return: NotNullIfNotNull(nameof(logging))]
         public ILoggingBuilder? ConfigureLoggingSettings(ILoggingBuilder? logging)
         {
             if (logging is null)
@@ -181,7 +185,7 @@ namespace Gestalt.Core.BaseClasses
             for (int I = 0, ModulesLength = Modules.Length; I < ModulesLength; I++)
             {
                 IApplicationModule Module = Modules[I];
-                logging = Module.ConfigureLoggingSettings(logging, Configuration, Environment);
+                logging = Module.ConfigureLoggingSettings(logging, Configuration, Environment) ?? logging;
             }
             return logging;
         }
@@ -191,6 +195,7 @@ namespace Gestalt.Core.BaseClasses
         /// </summary>
         /// <param name="services">The services collection.</param>
         /// <returns>The service collection</returns>
+        [return: NotNullIfNotNull(nameof(services))]
         public IServiceCollection? ConfigureServices(IServiceCollection? services)
         {
             if (Configuration is null || Environment is null || services?.IsReadOnly != false)
@@ -216,7 +221,7 @@ namespace Gestalt.Core.BaseClasses
             for (int I = 0, ModulesLength = Modules.Length; I < ModulesLength; I++)
             {
                 IApplicationModule Module = Modules[I];
-                services = Module.ConfigureServices(services, Configuration, Environment);
+                services = Module.ConfigureServices(services, Configuration, Environment) ?? services;
             }
             return services;
         }

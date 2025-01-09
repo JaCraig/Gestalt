@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Gestalt.ASPNet.SignalR.Interfaces
 {
@@ -18,6 +19,7 @@ namespace Gestalt.ASPNet.SignalR.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The SignalR builder</returns>
+        [return: NotNullIfNotNull(nameof(builder))]
         ISignalRServerBuilder? ConfigureSignalR(ISignalRServerBuilder? builder, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
@@ -27,6 +29,7 @@ namespace Gestalt.ASPNet.SignalR.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The SignalR options</returns>
+        [return: NotNullIfNotNull(nameof(options))]
         HubOptions? Options(HubOptions? options, IConfiguration? configuration, IHostEnvironment? environment);
     }
 }

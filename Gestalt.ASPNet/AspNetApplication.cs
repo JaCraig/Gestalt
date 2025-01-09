@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Diagnostics.Metrics;
 using Microsoft.Extensions.Hosting;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
 namespace Gestalt.ASPNet
@@ -13,24 +14,19 @@ namespace Gestalt.ASPNet
     /// ASP.NET Application.
     /// </summary>
     /// <seealso cref="ApplicationBaseClass"/>
-    public class AspNetApplication : ApplicationBaseClass
+    /// <remarks>Initializes a new instance of the <see cref="AspNetApplication"/> class.</remarks>
+    /// <param name="configuration">The configuration.</param>
+    /// <param name="env">The hosting environment.</param>
+    /// <param name="assemblies">The assemblies.</param>
+    public class AspNetApplication(IConfiguration? configuration, IHostEnvironment? env, params Assembly?[]? assemblies)
+        : ApplicationBaseClass(configuration, env, assemblies)
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="AspNetApplication"/> class.
-        /// </summary>
-        /// <param name="configuration">The configuration.</param>
-        /// <param name="env">The hosting environment.</param>
-        /// <param name="assemblies">The assemblies.</param>
-        public AspNetApplication(IConfiguration? configuration, IHostEnvironment? env, params Assembly?[]? assemblies)
-            : base(configuration, env, assemblies)
-        {
-        }
-
         /// <summary>
         /// Configures the application, setting up the modules and endpoints.
         /// </summary>
         /// <param name="application">The application.</param>
         /// <returns>The web application.</returns>
+        [return: NotNullIfNotNull(nameof(application))]
         public WebApplication? ConfigureApplication(WebApplication? application)
         {
             if (application is null || application.Lifetime is null)

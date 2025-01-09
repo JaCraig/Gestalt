@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
 namespace Gestalt.ASPNet.ExtensionMethods
@@ -17,6 +18,7 @@ namespace Gestalt.ASPNet.ExtensionMethods
         /// The assemblies to search for modules, if empty the base application directory is searched.
         /// </param>
         /// <returns>The host application builder.</returns>
+        [return: NotNullIfNotNull(nameof(app))]
         public static WebApplication? UseGestalt(this WebApplicationBuilder? app, string?[]? args, params Assembly?[]? assemblies)
         {
             if (app is null)
@@ -37,10 +39,8 @@ namespace Gestalt.ASPNet.ExtensionMethods
             // Configures logging settings
             _ = App.ConfigureLoggingSettings(app.Logging);
 
-#if NET8_0_OR_GREATER
             // Configure metrics settings
             App.ConfigureMetrics(app.Metrics);
-#endif
 
             // Configure frameworks (e.g. MVC, SignalR, etc.)
             _ = App.ConfigureFrameworks(app.Services);

@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 
@@ -123,6 +124,7 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="configuration">The application configuration.</param>
         /// <param name="environment">The host environment.</param>
         /// <returns>The modules.</returns>
+        [return: NotNullIfNotNull(nameof(services))]
         public IServiceCollection? Configure(IApplicationModule?[]? modules, IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment)
         {
             modules ??= [];

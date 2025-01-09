@@ -4,6 +4,7 @@ using Microsoft.Extensions.Diagnostics.Metrics;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Gestalt.Core.Interfaces
 {
@@ -67,6 +68,7 @@ namespace Gestalt.Core.Interfaces
         /// <param name="environment">The host environment</param>
         /// <param name="args">The command line arguments</param>
         /// <returns>The configuration builder.</returns>
+        [return: NotNullIfNotNull(nameof(configuration))]
         IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, IHostEnvironment? environment, string?[]? args);
 
         /// <summary>
@@ -76,6 +78,7 @@ namespace Gestalt.Core.Interfaces
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>Host builder</returns>
+        [return: NotNullIfNotNull(nameof(host))]
         IHostBuilder? ConfigureHostSettings(IHostBuilder? host, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
@@ -85,6 +88,7 @@ namespace Gestalt.Core.Interfaces
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>Logging builder</returns>
+        [return: NotNullIfNotNull(nameof(logging))]
         ILoggingBuilder? ConfigureLoggingSettings(ILoggingBuilder? logging, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
@@ -94,6 +98,7 @@ namespace Gestalt.Core.Interfaces
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>The metrics builder</returns>
+        [return: NotNullIfNotNull(nameof(metrics))]
         IMetricsBuilder? ConfigureMetrics(IMetricsBuilder? metrics, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
@@ -103,6 +108,7 @@ namespace Gestalt.Core.Interfaces
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>Services</returns>
+        [return: NotNullIfNotNull(nameof(services))]
         IServiceCollection? ConfigureServices(IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>

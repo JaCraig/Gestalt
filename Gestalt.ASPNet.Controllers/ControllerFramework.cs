@@ -3,7 +3,6 @@ using Gestalt.Core.BaseClasses;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 using System.Linq;
 
 namespace Gestalt.ASPNet.Controllers
@@ -20,7 +19,7 @@ namespace Gestalt.ASPNet.Controllers
             if (configuration is null || environment is null || services is null)
                 return;
 
-            modules ??= Array.Empty<IControllerModule>();
+            modules ??= [];
 
             // MVC Builder, setup the options.
             IMvcBuilder? MVCBuilder = services.AddControllers(options =>
@@ -40,7 +39,7 @@ namespace Gestalt.ASPNet.Controllers
                 IControllerModule Module = modules[I];
                 if (Module is null)
                     continue;
-                var ModuleAssembly = Module.GetType().Assembly;
+                System.Reflection.Assembly ModuleAssembly = Module.GetType().Assembly;
                 var ModuleName = ModuleAssembly.FullName;
                 MVCBuilder = Module.ConfigureMVC(MVCBuilder, configuration, environment);
                 if (MVCBuilder?.PartManager?.ApplicationParts.Any(x => x.Name == ModuleName) == false)

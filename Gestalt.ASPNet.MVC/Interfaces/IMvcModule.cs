@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Gestalt.ASPNet.MVC.Interfaces
 {
@@ -19,6 +20,7 @@ namespace Gestalt.ASPNet.MVC.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The MVC builder</returns>
+        [return: NotNullIfNotNull(nameof(mVCBuilder))]
         IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
@@ -28,6 +30,7 @@ namespace Gestalt.ASPNet.MVC.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The MVC options</returns>
+        [return: NotNullIfNotNull(nameof(options))]
         MvcOptions? Options(MvcOptions? options, IConfiguration? configuration, IHostEnvironment? environment);
     }
 }

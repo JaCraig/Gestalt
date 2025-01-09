@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 
@@ -121,6 +122,7 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="environment">The host environment</param>
         /// <param name="args">The command line arguments</param>
         /// <returns>The configuration builder</returns>
+        [return: NotNullIfNotNull(nameof(configuration))]
         public virtual IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, IHostEnvironment? environment, string?[]? args) => configuration;
 
         /// <summary>
@@ -130,6 +132,7 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>Host builder</returns>
+        [return: NotNullIfNotNull(nameof(host))]
         public virtual IHostBuilder? ConfigureHostSettings(IHostBuilder? host, IConfiguration? configuration, IHostEnvironment? environment) => host;
 
         /// <summary>
@@ -139,6 +142,7 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>Logging builder</returns>
+        [return: NotNullIfNotNull(nameof(logging))]
         public virtual ILoggingBuilder? ConfigureLoggingSettings(ILoggingBuilder? logging, IConfiguration? configuration, IHostEnvironment? environment) => logging;
 
         /// <summary>
@@ -148,6 +152,7 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>The metrics builder</returns>
+        [return: NotNullIfNotNull(nameof(metrics))]
         public virtual IMetricsBuilder? ConfigureMetrics(IMetricsBuilder? metrics, IConfiguration? configuration, IHostEnvironment? environment) => metrics;
 
         /// <summary>
@@ -157,6 +162,7 @@ namespace Gestalt.Core.BaseClasses
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>Services</returns>
+        [return: NotNullIfNotNull(nameof(services))]
         public virtual IServiceCollection? ConfigureServices(IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment) => services;
 
         /// <summary>

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Gestalt.ASPNet.RazorPages.Interfaces
 {
@@ -19,6 +20,7 @@ namespace Gestalt.ASPNet.RazorPages.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The RazorPages builder</returns>
+        [return: NotNullIfNotNull(nameof(mVCBuilder))]
         IMvcBuilder? ConfigureRazorPages(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
@@ -28,6 +30,7 @@ namespace Gestalt.ASPNet.RazorPages.Interfaces
         /// <param name="configuration">Configuration</param>
         /// <param name="environment">Host environment.</param>
         /// <returns>The RazorPages options</returns>
+        [return: NotNullIfNotNull(nameof(options))]
         RazorPagesOptions? Options(RazorPagesOptions? options, IConfiguration? configuration, IHostEnvironment? environment);
     }
 }

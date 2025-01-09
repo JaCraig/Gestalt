@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Gestalt.Core.Interfaces
 {
@@ -48,6 +49,7 @@ namespace Gestalt.Core.Interfaces
         /// <param name="configuration">The application configuration.</param>
         /// <param name="environment">The host environment.</param>
         /// <returns>The services.</returns>
+        [return: NotNullIfNotNull(nameof(services))]
         public IServiceCollection? Configure(IApplicationModule[] modules, IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment);
     }
 }

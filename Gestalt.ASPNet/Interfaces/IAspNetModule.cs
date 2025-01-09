@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Gestalt.ASPNet.Interfaces
 {
@@ -19,6 +20,7 @@ namespace Gestalt.ASPNet.Interfaces
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The host environment.</param>
         /// <returns>The application builder.</returns>
+        [return: NotNullIfNotNull(nameof(applicationBuilder))]
         IApplicationBuilder? ConfigureApplication(IApplicationBuilder? applicationBuilder, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
@@ -28,6 +30,7 @@ namespace Gestalt.ASPNet.Interfaces
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The host environment.</param>
         /// <returns>The endpoint route builder.</returns>
+        [return: NotNullIfNotNull(nameof(endpoints))]
         IEndpointRouteBuilder? ConfigureRoutes(IEndpointRouteBuilder endpoints, IConfiguration? configuration, IHostEnvironment? environment);
 
         /// <summary>
@@ -37,6 +40,7 @@ namespace Gestalt.ASPNet.Interfaces
         /// <param name="configuration">The configuration.</param>
         /// <param name="environment">The environment.</param>
         /// <returns>The web host builder</returns>
+        [return: NotNullIfNotNull(nameof(webHost))]
         IWebHostBuilder? ConfigureWebHostSettings(IWebHostBuilder? webHost, IConfiguration? configuration, IHostEnvironment? environment);
     }
 }

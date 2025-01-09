@@ -8,21 +8,14 @@ namespace Gestalt.Console
     /// <summary>
     /// Internal hosted service for the console application.
     /// </summary>
-    public class InternalHostedService : IHostedService
+    /// <remarks>Initializes a new instance of the <see cref="InternalHostedService"/> class.</remarks>
+    /// <param name="application">Application object</param>
+    public class InternalHostedService(IApplication? application) : IHostedService
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="InternalHostedService"/> class.
-        /// </summary>
-        /// <param name="application">Application object</param>
-        public InternalHostedService(IApplication? application)
-        {
-            Application = application;
-        }
-
         /// <summary>
         /// Gets the application.
         /// </summary>
-        private IApplication? Application { get; }
+        private IApplication? Application { get; } = application;
 
         /// <summary>
         /// Starts the application.
