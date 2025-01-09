@@ -598,13 +598,13 @@ references:
   nameWithType: RazorPagesModuleBaseClass<TModule>.RazorPagesModuleBaseClass()
   nameWithType.vb: RazorPagesModuleBaseClass(Of TModule).New()
 - uid: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])
-  name: RazorPagesModuleBaseClass(string?, string?, string?, params string[])
+  name: RazorPagesModuleBaseClass(string?, string?, string?, params string?[]?)
   href: api/Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass-1.html#Gestalt_ASPNet_RazorPages_BaseClasses_RazorPagesModuleBaseClass_1__ctor_System_String_System_String_System_String_System_String___
   commentId: M:Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.#ctor(System.String,System.String,System.String,System.String[])
   name.vb: New(String, String, String, ParamArray String())
-  fullName: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass<TModule>.RazorPagesModuleBaseClass(string?, string?, string?, params string[])
+  fullName: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass<TModule>.RazorPagesModuleBaseClass(string?, string?, string?, params string?[]?)
   fullName.vb: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass(Of TModule).New(String, String, String, ParamArray String())
-  nameWithType: RazorPagesModuleBaseClass<TModule>.RazorPagesModuleBaseClass(string?, string?, string?, params string[])
+  nameWithType: RazorPagesModuleBaseClass<TModule>.RazorPagesModuleBaseClass(string?, string?, string?, params string?[]?)
   nameWithType.vb: RazorPagesModuleBaseClass(Of TModule).New(String, String, String, ParamArray String())
 - uid: Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass`1.#ctor*
   name: RazorPagesModuleBaseClass

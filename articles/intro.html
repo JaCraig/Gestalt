@@ -101,12 +101,14 @@ using Microsoft.Extensions.Diagnostics.Metrics;
 namespace Gestalt.Example
 {
     /// &lt;summary&gt;
-    /// In this example, we are creating a basic web application using Gestalt. We are using the default configuration settings and showing examples of building your own modules.
+    /// In this example, we are creating a basic web application using Gestalt. We are using the
+    /// default configuration settings and showing examples of building your own modules.
     /// &lt;/summary&gt;
     public static class Program
     {
         /// &lt;summary&gt;
-        /// The main entry point for the application. This is where the application is configured and run.
+        /// The main entry point for the application. This is where the application is configured
+        /// and run.
         /// &lt;/summary&gt;
         /// &lt;param name=&quot;args&quot;&gt;The command line arguments&lt;/param&gt;
         public static void Main(string[] args)
@@ -114,28 +116,33 @@ namespace Gestalt.Example
             // Create a new web application builder as normal.
             WebApplicationBuilder Builder = WebApplication.CreateBuilder(args);
 
-            // Call the UseGestalt extension method and the Gestalt library will find your modules, use them to configure your application, and build your WebApplication object.
-            // In this example, we have added the Gestalt.ASPNet.MVC, Gestalt.ASPNet.SignalR, and Gestalt.ASPNet.RazorPages libraries to the project.
-            // As such, the UseGestalt extesion will automatically add routing, call AddControllersWithViews, AddRazorPages, and AddSignalR for us.
-            // It will then allow the modules to configure the parts of the application that they are responsible for.
+            // Call the UseGestalt extension method and the Gestalt library will find your modules,
+            // use them to configure your application, and build your WebApplication object. In this
+            // example, we have added the Gestalt.ASPNet.MVC, Gestalt.ASPNet.SignalR, and
+            // Gestalt.ASPNet.RazorPages libraries to the project. As such, the UseGestalt extesion
+            // will automatically add routing, call AddControllersWithViews, AddRazorPages, and
+            // AddSignalR for us. It will then allow the modules to configure the parts of the
+            // application that they are responsible for.
             WebApplication? App = Builder.UseGestalt(args);
 
-            // If the application is null, then the Gestalt library was unable to build the application.
-            // Normally an exception would be thrown but if the WebApplicationBuilder is null, then a null WebApplication object is returned.
+            // If the application is null, then the Gestalt library was unable to build the
+            // application. Normally an exception would be thrown but if the WebApplicationBuilder
+            // is null, then a null WebApplication object is returned.
             if (App is null)
                 return;
 
-            // Note that you can still configure the application as normal.
-            // Gestalt is meant to help you build your application in a modular way but you can still configure it as you see fit.
-            // This also applies above to the WebApplicationBuilder. You can always configure it as you see fit prior to calling UseGestalt.
+            // Note that you can still configure the application as normal. Gestalt is meant to help
+            // you build your application in a modular way but you can still configure it as you see
+            // fit. This also applies above to the WebApplicationBuilder. You can always configure
+            // it as you see fit prior to calling UseGestalt.
 
-            App.Map(&quot;/Custom&quot;, app =&gt;
+            _ = App.Map(&quot;/Custom&quot;, app =&gt;
             {
-                app.UseRouting();
+                _ = app.UseRouting();
 
-                app.UseEndpoints(endpoints =&gt;
+                _ = app.UseEndpoints(endpoints =&gt;
                 {
-                    endpoints.MapGet(&quot;/&quot;, async context =&gt; await context.Response.WriteAsync(&quot;Hello World!&quot;));
+                    _ = endpoints.MapGet(&quot;/&quot;, async context =&gt; await context.Response.WriteAsync(&quot;Hello World!&quot;));
                 });
             });
 
@@ -145,14 +152,16 @@ namespace Gestalt.Example
     }
 
     /// &lt;summary&gt;
-    /// This is an example of a basic module that configures the application with the usual default settings when creating a new web application.
-    /// It implements the MvcModuleBaseClass which simplifies the process of creating a module that needs to modify MVC settings.
-    /// However, you can implement the IMvcModule interface directly if you prefer.
+    /// This is an example of a basic module that configures the application with the usual default
+    /// settings when creating a new web application. It implements the MvcModuleBaseClass which
+    /// simplifies the process of creating a module that needs to modify MVC settings. However, you
+    /// can implement the IMvcModule interface directly if you prefer.
     /// &lt;/summary&gt;
     public class BasicModule : MvcModuleBaseClass&lt;BasicModule&gt;
     {
         /// &lt;summary&gt;
-        /// This is called to configure the IApplicationBuilder object. Since this is an MVC app, that would be the WebApplication object.
+        /// This is called to configure the IApplicationBuilder object. Since this is an MVC app,
+        /// that would be the WebApplication object.
         /// &lt;/summary&gt;
         /// &lt;param name=&quot;applicationBuilder&quot;&gt;The application builder object.&lt;/param&gt;
         /// &lt;param name=&quot;configuration&quot;&gt;The configuration object.&lt;/param&gt;
@@ -190,13 +199,11 @@ namespace Gestalt.Example
         /// &lt;param name=&quot;configuration&quot;&gt;The configuration object.&lt;/param&gt;
         /// &lt;param name=&quot;environment&quot;&gt;The host environment object.&lt;/param&gt;
         /// &lt;returns&gt;The MVC builder object.&lt;/returns&gt;
-        public override IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment)
-        {
-            return mVCBuilder;
-        }
+        public override IMvcBuilder? ConfigureMVC(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment) =&gt; mVCBuilder;
 
         /// &lt;summary&gt;
-        /// This is called to configure our endpoint routes. For our example, we will just use the default route.
+        /// This is called to configure our endpoint routes. For our example, we will just use the
+        /// default route.
         /// &lt;/summary&gt;
         /// &lt;param name=&quot;endpoints&quot;&gt;The endpoint route builder.&lt;/param&gt;
         /// &lt;param name=&quot;configuration&quot;&gt;The configuration object.&lt;/param&gt;
@@ -208,7 +215,7 @@ namespace Gestalt.Example
                 return endpoints;
 
             // Map the default route.
-            endpoints.MapControllerRoute(
+            _ = endpoints.MapControllerRoute(
                     name: &quot;default&quot;,
                     pattern: &quot;{controller=Home}/{action=Index}/{id?}&quot;);
 
@@ -218,17 +225,22 @@ namespace Gestalt.Example
 
     /// &lt;summary&gt;
     /// &lt;para&gt;
-    /// All modules implement the IApplicationModule interface. As such, they all have certain methods that they must implement and can be used to configure the application.
-    /// Module interfaces then get more and more specific to the application type. For example, IAspNetModule adds application, route, and web app configuration methods.
-    /// IMvcModule is used to configure MVC settings, like the BasicModule example.
+    /// All modules implement the IApplicationModule interface. As such, they all have certain
+    /// methods that they must implement and can be used to configure the application. Module
+    /// interfaces then get more and more specific to the application type. For example,
+    /// IAspNetModule adds application, route, and web app configuration methods. IMvcModule is used
+    /// to configure MVC settings, like the BasicModule example.
     /// &lt;/para&gt;
-    /// &lt;para&gt;This example though implements the IRazorPagesModule interface. This is used to configure Razor Pages settings.&lt;/para&gt;
+    /// &lt;para&gt;
+    /// This example though implements the IRazorPagesModule interface. This is used to configure
+    /// Razor Pages settings.
+    /// &lt;/para&gt;
     /// &lt;/summary&gt;
     public class BasicRazorPagesModule : RazorPagesModuleBaseClass&lt;BasicRazorPagesModule&gt;
     {
         /// &lt;summary&gt;
-        /// Sometimes modules need to be loaded in a specific order. By default, the order number is 100.
-        /// Lower numbers are loaded first, as such this module will be loaded prior to the BasicModule.
+        /// Sometimes modules need to be loaded in a specific order. By default, the order number is
+        /// 100. Lower numbers are loaded first, as such this module will be loaded prior to the BasicModule.
         /// &lt;/summary&gt;
         public override int Order =&gt; 20;
 
@@ -239,64 +251,62 @@ namespace Gestalt.Example
         /// &lt;param name=&quot;configuration&quot;&gt;The configuration object.&lt;/param&gt;
         /// &lt;param name=&quot;environment&quot;&gt;The host environment object.&lt;/param&gt;
         /// &lt;returns&gt;The configured MVC builder object.&lt;/returns&gt;
-        public override IMvcBuilder? ConfigureRazorPages(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment)
-        {
-            return mVCBuilder;
-        }
+        public override IMvcBuilder? ConfigureRazorPages(IMvcBuilder? mVCBuilder, IConfiguration? configuration, IHostEnvironment? environment) =&gt; mVCBuilder;
     }
 
     /// &lt;summary&gt;
     /// The other examples use the *BaseClass classes to simplify the process of creating a module.
-    /// However, you can implement the interfaces directly if you prefer or need to due to the module that you are trying to build.
-    /// Note though, that I would recommend breaking down your modules into smaller parts if you find yourself needing to implement multiple interfaces.
+    /// However, you can implement the interfaces directly if you prefer or need to due to the
+    /// module that you are trying to build. Note though, that I would recommend breaking down your
+    /// modules into smaller parts if you find yourself needing to implement multiple interfaces.
     /// &lt;/summary&gt;
     public class MoreAdvancedModule : IMvcModule, ISignalRModule, IRazorPagesModule
     {
         /// &lt;summary&gt;
-        /// The category of the module. This is used to group modules together.
-        /// When using the *BaseClass classes, this is the last part of the namespace that the module is in by default.
+        /// The category of the module. This is used to group modules together. When using the
+        /// *BaseClass classes, this is the last part of the namespace that the module is in by default.
         /// &lt;/summary&gt;
         public string Category { get; } = &quot;Example Category&quot;;
 
         /// &lt;summary&gt;
-        /// The content path of the module. Gestalt does not directly use this, but it is available for your use.
-        /// For adding static web content, you would still configure the StaticWebAssetBasePath in the csproj file.
-        /// When using the *BaseClass classes, this defaults to &quot;wwwroot/Content/{Category}/{Name}&quot;.
+        /// The content path of the module. Gestalt does not directly use this, but it is available
+        /// for your use. For adding static web content, you would still configure the
+        /// StaticWebAssetBasePath in the csproj file. When using the *BaseClass classes, this
+        /// defaults to &quot;wwwroot/Content/{Category}/{Name}&quot;.
         /// &lt;/summary&gt;
         public string ContentPath { get; } = &quot;MyContentPath&quot;;
 
         /// &lt;summary&gt;
-        /// The ID of the module. This is used to identify the module and determine if there are any conflicts.
-        /// This defaults to the module's type name.
+        /// The ID of the module. This is used to identify the module and determine if there are any
+        /// conflicts. This defaults to the module's type name.
         /// &lt;/summary&gt;
         public string ID { get; } = &quot;ExampleID&quot;;
 
         /// &lt;summary&gt;
-        /// The last modified date of the module. This is used to determine if the module has been updated.
-        /// When using the *BaseClass classes, this is the assembly last modified date.
+        /// The last modified date of the module. This is used to determine if the module has been
+        /// updated. When using the *BaseClass classes, this is the assembly last modified date.
         /// &lt;/summary&gt;
         public DateTime LastModified { get; } = DateTime.Now;
 
         /// &lt;summary&gt;
-        /// The display name of the module.
-        /// By default this would be the name of the module class.
+        /// The display name of the module. By default this would be the name of the module class.
         /// &lt;/summary&gt;
         public string Name { get; } = &quot;Example&quot;;
 
         /// &lt;summary&gt;
-        /// The order that the module is loaded in. Lower numbers are loaded first.
-        /// By default, this is 100.
+        /// The order that the module is loaded in. Lower numbers are loaded first. By default, this
+        /// is 100.
         /// &lt;/summary&gt;
         public int Order { get; } = 0;
 
         /// &lt;summary&gt;
-        /// The tags of the module. This is used to group modules together but is not used by Gestalt directly.
+        /// The tags of the module. This is used to group modules together but is not used by
+        /// Gestalt directly.
         /// &lt;/summary&gt;
         public string?[] Tags { get; } = new string?[] { &quot;Example&quot; };
 
         /// &lt;summary&gt;
-        /// The version of the module.
-        /// By default, this is the assembly version number.
+        /// The version of the module. By default, this is the assembly version number.
         /// &lt;/summary&gt;
         public string Version { get; } = &quot;1.0.0&quot;;
 
@@ -337,9 +347,10 @@ namespace Gestalt.Example
         public ILoggingBuilder? ConfigureLoggingSettings(ILoggingBuilder? logging, IConfiguration? configuration, IHostEnvironment? environment) =&gt; logging;
 
         /// &lt;summary&gt;
-        /// This is called to configure the metrics settings. Note that this is only called if the metrics builder is available.
-        /// In .Net 6, the metrics builder is not available by default and thus is not called. However, in .Net 8, it is available.
-        /// The module can still be used in .Net 6 or 8, but the metrics builder will not be available in .Net 6.
+        /// This is called to configure the metrics settings. Note that this is only called if the
+        /// metrics builder is available. In .Net 6, the metrics builder is not available by default
+        /// and thus is not called. However, in .Net 8, it is available. The module can still be
+        /// used in .Net 6 or 8, but the metrics builder will not be available in .Net 6.
         /// &lt;/summary&gt;
         /// &lt;param name=&quot;metrics&quot;&gt;The metrics builder.&lt;/param&gt;
         /// &lt;param name=&quot;configuration&quot;&gt;The configuration.&lt;/param&gt;
@@ -402,27 +413,30 @@ namespace Gestalt.Example
         public IWebHostBuilder? ConfigureWebHostSettings(IWebHostBuilder? webHost, IConfiguration? configuration, IHostEnvironment? environment) =&gt; webHost;
 
         /// &lt;summary&gt;
-        /// This is called when the application is started. Any code that needs to be run when the application starts can be placed here.
+        /// This is called when the application is started. Any code that needs to be run when the
+        /// application starts can be placed here.
         /// &lt;/summary&gt;
         public void OnStarted()
         { }
 
         /// &lt;summary&gt;
-        /// This is called when the application is stopped. Any code that needs to be run when the application stops can be placed here.
+        /// This is called when the application is stopped. Any code that needs to be run when the
+        /// application stops can be placed here.
         /// &lt;/summary&gt;
         public void OnStopped()
         { }
 
         /// &lt;summary&gt;
-        /// This is called when the application is stopping. Any code that needs to be run when the application is stopping can be placed here.
+        /// This is called when the application is stopping. Any code that needs to be run when the
+        /// application is stopping can be placed here.
         /// &lt;/summary&gt;
         public void OnStopping()
         { }
 
         /// &lt;summary&gt;
-        /// This is called to configure the options for razor pages.
-        /// Note that you can always skip this method and instead configure the options in the ConfigureServices method.
-        /// It's more of a convenience method than necessary.
+        /// This is called to configure the options for razor pages. Note that you can always skip
+        /// this method and instead configure the options in the ConfigureServices method. It's more
+        /// of a convenience method than necessary.
         /// &lt;/summary&gt;
         /// &lt;param name=&quot;options&quot;&gt;The razor pages options object.&lt;/param&gt;
         /// &lt;param name=&quot;configuration&quot;&gt;The configuration&lt;/param&gt;
@@ -431,9 +445,9 @@ namespace Gestalt.Example
         public RazorPagesOptions? Options(RazorPagesOptions? options, IConfiguration? configuration, IHostEnvironment? environment) =&gt; options;
 
         /// &lt;summary&gt;
-        /// This is called to configure the options for SignalR
-        /// Note that you can always skip this method and instead configure the options in the ConfigureServices method.
-        /// It's more of a convenience method than necessary.
+        /// This is called to configure the options for SignalR Note that you can always skip this
+        /// method and instead configure the options in the ConfigureServices method. It's more of a
+        /// convenience method than necessary.
         /// &lt;/summary&gt;
         /// &lt;param name=&quot;options&quot;&gt;The SignalR hub options object.&lt;/param&gt;
         /// &lt;param name=&quot;configuration&quot;&gt;The configuration&lt;/param&gt;
@@ -442,9 +456,9 @@ namespace Gestalt.Example
         public HubOptions? Options(HubOptions? options, IConfiguration? configuration, IHostEnvironment? environment) =&gt; options;
 
         /// &lt;summary&gt;
-        /// This is called to configure the options for MVC.
-        /// Note that you can always skip this method and instead configure the options in the ConfigureServices method.
-        /// It's more of a convenience method than necessary.
+        /// This is called to configure the options for MVC. Note that you can always skip this
+        /// method and instead configure the options in the ConfigureServices method. It's more of a
+        /// convenience method than necessary.
         /// &lt;/summary&gt;
         /// &lt;param name=&quot;options&quot;&gt;The MVC options object.&lt;/param&gt;
         /// &lt;param name=&quot;configuration&quot;&gt;The configuration&lt;/param&gt;
