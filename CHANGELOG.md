@@ -1,5 +1,32 @@
 
 
+<a name="2.1.1"></a>
+## [2.1.1](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.1) (2025-01-14)
+
+### Bug Fixes
+
+* bump the dependencies group ([13b312c](https://www.github.com/JaCraig/Gestalt/commit/13b312c6c675e246a4aa5aaa622e4c521c855ed6))
+
+### Other
+
+* Merge pull request #183 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Tests/dependencies-2617f8f5e9 ([7733b78](https://www.github.com/JaCraig/Gestalt/commit/7733b787f00715695b0c16ffdf9bd3328dc54279))
+* Merge pull request #184 from JaCraig/dependabot/nuget/Gestalt.ASPNet.SignalR.Tests/dependencies-955fcb2e58 ([d240e46](https://www.github.com/JaCraig/Gestalt/commit/d240e46dc2e0feac8fbdb5bc2d6889a0676fdb19))
+* Merge pull request #185 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-955fcb2e58 ([1a2439c](https://www.github.com/JaCraig/Gestalt/commit/1a2439c68dbac76f3ceb21e55b93e87d1122895d))
+* Merge pull request #186 from JaCraig/dependabot/nuget/Gestalt.ASPNet.RazorPages.Tests/dependencies-955fcb2e58 ([344beae](https://www.github.com/JaCraig/Gestalt/commit/344beaea25e58f48025ad9e86963dc3b006b9a13))
+* Merge pull request #187 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC.Tests/dependencies-955fcb2e58 ([77d2145](https://www.github.com/JaCraig/Gestalt/commit/77d21450cbc68b96e7e27d112b5052c8d103e68a))
+* Merge pull request #188 from JaCraig/dependabot/nuget/Gestalt.Console.Tests/dependencies-955fcb2e58 ([1442313](https://www.github.com/JaCraig/Gestalt/commit/1442313c41e91742dd071fb1cc322bfcfa30eb10))
+* Merge pull request #189 from JaCraig/dependabot/nuget/Gestalt.Console.Tests/dependencies-abe87c017b ([403f2df](https://www.github.com/JaCraig/Gestalt/commit/403f2df0d5a7f5036c011774c7386e19a444e519))
+* Merge pull request #190 from JaCraig/dependabot/nuget/Gestalt.ASPNet.RazorPages/dependencies-fdc1ba107c ([71baeb0](https://www.github.com/JaCraig/Gestalt/commit/71baeb08e795e9cbeb6f1268af0133a67346734f))
+* Merge pull request #192 from JaCraig/dependabot/nuget/Gestalt.Example.Console/dependencies-e981ba8172 ([9e9833e](https://www.github.com/JaCraig/Gestalt/commit/9e9833ec491a2b0941547681fc7e417780aad5ee))
+* bump Microsoft.Extensions.Hosting ([f3f9992](https://www.github.com/JaCraig/Gestalt/commit/f3f9992342d10e31d28642d50fa9b0189535ee06))
+* bump the dependencies group ([7f06140](https://www.github.com/JaCraig/Gestalt/commit/7f06140d3f920c9c14ee6e2ebc32d4cb0f73267e))
+* bump the dependencies group ([59c81bf](https://www.github.com/JaCraig/Gestalt/commit/59c81bfdd7b10ee59a68d2f834608dc647df5916))
+* bump xunit.runner.visualstudio ([7297c12](https://www.github.com/JaCraig/Gestalt/commit/7297c127680f9d40493dd84e2b23789f71f190d4))
+* bump xunit.runner.visualstudio ([1d2ee62](https://www.github.com/JaCraig/Gestalt/commit/1d2ee62bfbbdedddb355b3c2639630b612d7cd6d))
+* bump xunit.runner.visualstudio ([0a3d476](https://www.github.com/JaCraig/Gestalt/commit/0a3d4761c20c62d40f5cf7d35b990a84fcef556a))
+* bump xunit.runner.visualstudio ([acaed1b](https://www.github.com/JaCraig/Gestalt/commit/acaed1b84b1349c1869f0089dbb5f44ea91f9d3c))
+* bump xunit.runner.visualstudio ([18a0bd5](https://www.github.com/JaCraig/Gestalt/commit/18a0bd598fe38d3a1ba11c2cf72007f6a173bb48))
+
 <a name="2.1.0"></a>
 ## [2.1.0](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.0) (2025-01-09)
 
