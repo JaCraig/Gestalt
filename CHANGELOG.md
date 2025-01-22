@@ -1,5 +1,34 @@
 
 
+<a name="2.1.3"></a>
+## [2.1.3](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.3) (2025-01-22)
+
+### Bug Fixes
+
+* bump BigBook in /Gestalt.ASPNet.MVC in the dependencies group ([4eb4fe3](https://www.github.com/JaCraig/Gestalt/commit/4eb4fe36c3f3d839a956c17ef6998b22a76f6310))
+
+### Other
+
+* Merge pull request #193 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC.Tests/dependencies-4c88d71a4f ([b954a37](https://www.github.com/JaCraig/Gestalt/commit/b954a37d15ef7c414765f236f8615a349150cc6c))
+* Merge pull request #194 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-ecb6d7a753 ([c75c8a4](https://www.github.com/JaCraig/Gestalt/commit/c75c8a42faab7d883cb212b2ba35507ce14503b6))
+* Merge pull request #195 from JaCraig/dependabot/nuget/Gestalt.ASPNet.RazorPages.Tests/dependencies-ecb6d7a753 ([9de9cbe](https://www.github.com/JaCraig/Gestalt/commit/9de9cbe410086f08c767f74d1dafc7ade0d1419a))
+* Merge pull request #196 from JaCraig/dependabot/nuget/Gestalt.ASPNet.SignalR.Tests/dependencies-293c44675e ([51da18e](https://www.github.com/JaCraig/Gestalt/commit/51da18e6fd36770da4fa01081e54c2e1bd8e4b34))
+* Merge pull request #197 from JaCraig/dependabot/nuget/Gestalt.Console.Tests/dependencies-293c44675e ([bba3ad6](https://www.github.com/JaCraig/Gestalt/commit/bba3ad65a5ed5562b933891b27d921fe47194f9b))
+* Merge pull request #198 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Tests/dependencies-293c44675e ([21305f6](https://www.github.com/JaCraig/Gestalt/commit/21305f631f4665f09daacc9386614cd80d5f918d))
+* Merge pull request #199 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC.Tests/dependencies-293c44675e ([2cccfae](https://www.github.com/JaCraig/Gestalt/commit/2cccfae746a8c5174c4305da2f06abdcb9cea66c))
+* Merge pull request #200 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-0d060393c4 ([aa2cade](https://www.github.com/JaCraig/Gestalt/commit/aa2cade1913545184a077215b71c54fd35f384cf))
+* Merge pull request #201 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC/dependencies-0d060393c4 ([d777bed](https://www.github.com/JaCraig/Gestalt/commit/d777bed644a16280f1159c54c1b597b08d36c9f4))
+* bump BigBook in /Gestalt.Core.Tests in the dependencies group ([04e5297](https://www.github.com/JaCraig/Gestalt/commit/04e5297235e93cbfd54d46eea16f285b555e3eca))
+* bump the dependencies group ([8d33890](https://www.github.com/JaCraig/Gestalt/commit/8d3389042df0eb70f5b5fd1421224660a3ec7f05))
+* bump the dependencies group ([661ac21](https://www.github.com/JaCraig/Gestalt/commit/661ac21ceb4395d6480d67505d24b1d81766ceaf))
+* bump the dependencies group ([ba2d38c](https://www.github.com/JaCraig/Gestalt/commit/ba2d38c49253b80a9c4ae5cbb86c43349efbb6f3))
+* bump the dependencies group ([dd21133](https://www.github.com/JaCraig/Gestalt/commit/dd21133b43b794dc2a5427e7fd712d5e8f50f3b5))
+* bump the dependencies group ([1dda9f2](https://www.github.com/JaCraig/Gestalt/commit/1dda9f2aecafeff079608584b51d6b2f2788a9ba))
+* bump the dependencies group ([0019442](https://www.github.com/JaCraig/Gestalt/commit/001944264524611ff03c3232b446497523c7e291))
+* bump the dependencies group in /Gestalt.Core.Tests with 4 updates ([ba1d59b](https://www.github.com/JaCraig/Gestalt/commit/ba1d59ba356cf0f86d0c6a6a7c382ae0f9f84a37))
+* **deps:** update package versions in test project ([0cbf64a](https://www.github.com/JaCraig/Gestalt/commit/0cbf64a2c177311606b8d845ef81e52e774cbf3b))
+* **workflow:** update .NET publish workflow for SDK versioning ([ba5593e](https://www.github.com/JaCraig/Gestalt/commit/ba5593e3feba4d80dd34d21e3fec66860fdf23e9))
+
 <a name="2.1.2"></a>
 ## [2.1.2](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.2) (2025-01-15)
 
