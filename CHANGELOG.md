@@ -1,5 +1,28 @@
 
 
+<a name="2.1.4"></a>
+## [2.1.4](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.4) (2025-02-11)
+
+### Bug Fixes
+
+* bump the dependencies group in /Gestalt.ASPNet.MVC with 4 updates ([5768d88](https://www.github.com/JaCraig/Gestalt/commit/5768d88bbb9d9303a24157e522fa3e454700cb3a))
+
+### Other
+
+* Merge pull request #202 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC.Tests/dependencies-acb57ac024 ([617f3b5](https://www.github.com/JaCraig/Gestalt/commit/617f3b599fe035c6e1fddad7866e360fc1213251))
+* Merge pull request #203 from JaCraig/dependabot/github_actions/dependencies-9455fdc96d ([65cb42f](https://www.github.com/JaCraig/Gestalt/commit/65cb42f2691e37c5a7626e7465f556873b88fa2c))
+* Merge pull request #204 from JaCraig/dependabot/github_actions/dependencies-4adb1accbf ([869c05a](https://www.github.com/JaCraig/Gestalt/commit/869c05ab4a39bac55a17985c97e23a7b83af7bc6))
+* Merge pull request #205 from JaCraig/dependabot/nuget/Gestalt.ASPNet.RazorPages.Tests/dependencies-01dabde02e ([513049a](https://www.github.com/JaCraig/Gestalt/commit/513049af80c0e3d369ca01bd35e5618253e1d0e5))
+* Merge pull request #206 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC.Tests/dependencies-8512ba2625 ([7002e35](https://www.github.com/JaCraig/Gestalt/commit/7002e35ffc238adf3fd2da2b815726f5050a1696))
+* Merge pull request #207 from JaCraig/dependabot/github_actions/dependencies-56417c14b1 ([b44a8f2](https://www.github.com/JaCraig/Gestalt/commit/b44a8f2fa43d550083596ef9fca5698baeb1f803))
+* Merge pull request #208 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC/dependencies-3147cc97e9 ([7a8da74](https://www.github.com/JaCraig/Gestalt/commit/7a8da745af53b594881c139d947cbf587d54e6e8))
+* bump actions/setup-dotnet in the dependencies group ([fda6dd7](https://www.github.com/JaCraig/Gestalt/commit/fda6dd7ed350192810f050fa1cebc1fa32a3e007))
+* bump BigBook ([453e5fc](https://www.github.com/JaCraig/Gestalt/commit/453e5fc45301351eb7cae5478265300e2c33fdfe))
+* bump coverallsapp/github-action in the dependencies group ([9dec660](https://www.github.com/JaCraig/Gestalt/commit/9dec660e6d2cc44aecc3ef6524a3c7d4a0bca5eb))
+* bump coverallsapp/github-action in the dependencies group ([08a079c](https://www.github.com/JaCraig/Gestalt/commit/08a079ccad4cfe6849623d365d6cfaeb17883688))
+* bump the dependencies group ([980ee35](https://www.github.com/JaCraig/Gestalt/commit/980ee353b5b452e899ceea6e208d07f360b2444e))
+* bump the dependencies group ([311b040](https://www.github.com/JaCraig/Gestalt/commit/311b0409307b1d329fbd95634cda2248e2c96639))
+
 <a name="2.1.3"></a>
 ## [2.1.3](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.3) (2025-01-22)
 
