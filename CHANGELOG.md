@@ -1,5 +1,16 @@
 
 
+<a name="2.1.5"></a>
+## [2.1.5](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.5) (2025-02-11)
+
+### Bug Fixes
+
+* bump the dependencies group ([1a85201](https://www.github.com/JaCraig/Gestalt/commit/1a852016484d12e3276a733af45aa3116ca62393))
+
+### Other
+
+* Merge pull request #209 from JaCraig/dependabot/nuget/Gestalt.ASPNet.RazorPages/dependencies-3147cc97e9 ([dc254d1](https://www.github.com/JaCraig/Gestalt/commit/dc254d125b08e7c4112c01c6e09f0059a1c0d258))
+
 <a name="2.1.4"></a>
 ## [2.1.4](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.4) (2025-02-11)
 
