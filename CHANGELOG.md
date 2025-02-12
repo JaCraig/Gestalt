@@ -1,5 +1,17 @@
 
 
+<a name="2.1.6"></a>
+## [2.1.6](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.6) (2025-02-12)
+
+### Bug Fixes
+
+* **dependencies:** update test SDK and xUnit versions ([a09ec7f](https://www.github.com/JaCraig/Gestalt/commit/a09ec7f7b1dac8f45db3810fea9d1364b27e86b8))
+
+### Other
+
+* Merge pull request #210 from JaCraig/dependabot/nuget/Gestalt.Console.Tests/dependencies-f9cd202ab1 ([0f57758](https://www.github.com/JaCraig/Gestalt/commit/0f57758302f9be67ecf14dfbf4fc94b2fe6d264e))
+* bump Microsoft.Extensions.Hosting ([9aea7f6](https://www.github.com/JaCraig/Gestalt/commit/9aea7f6d468335c3a7ab3ab398dcdd93ada06bcd))
+
 <a name="2.1.5"></a>
 ## [2.1.5](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.5) (2025-02-11)
 
