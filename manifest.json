@@ -18,7 +18,11 @@
           "relative_path": "api/Gestalt.ASPNet.AspNetApplication.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.AspNetApplication",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.AspNetApplication.yml\" sourcestartlinenumber=\"1\">ASP.NET Application.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -28,7 +32,11 @@
           "relative_path": "api/Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass<TModule>",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.BaseClasses.AspNetModuleBaseClass-1.yml\" sourcestartlinenumber=\"1\">Base class for ASP.NET modules.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -38,7 +46,11 @@
           "relative_path": "api/Gestalt.ASPNet.BaseClasses.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.BaseClasses",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -48,7 +60,11 @@
           "relative_path": "api/Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass<TModule>",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.Controllers.BaseClasses.ControllerModuleBaseClass-1.yml\" sourcestartlinenumber=\"1\">MVC controller only module base class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -58,7 +74,11 @@
           "relative_path": "api/Gestalt.ASPNet.Controllers.BaseClasses.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.Controllers.BaseClasses",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -68,7 +88,11 @@
           "relative_path": "api/Gestalt.ASPNet.Controllers.ControllerFramework.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.Controllers.ControllerFramework",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.Controllers.ControllerFramework.yml\" sourcestartlinenumber=\"1\">MVC Framework controller only class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -78,7 +102,11 @@
           "relative_path": "api/Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.Controllers.Interfaces.IControllerModule",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.Controllers.Interfaces.IControllerModule.yml\" sourcestartlinenumber=\"1\">Module interface for ASP.NET MVC controller only functionality.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -88,7 +116,11 @@
           "relative_path": "api/Gestalt.ASPNet.Controllers.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.Controllers.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -98,7 +130,11 @@
           "relative_path": "api/Gestalt.ASPNet.Controllers.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.Controllers",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -108,7 +144,11 @@
           "relative_path": "api/Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.ExtensionMethods.WebApplicationBuilderExtensions.yml\" sourcestartlinenumber=\"1\">WebApplicationBuilder Extensions</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -118,7 +158,11 @@
           "relative_path": "api/Gestalt.ASPNet.ExtensionMethods.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.ExtensionMethods",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -128,7 +172,11 @@
           "relative_path": "api/Gestalt.ASPNet.Interfaces.IAspNetModule.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.Interfaces.IAspNetModule",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.Interfaces.IAspNetModule.yml\" sourcestartlinenumber=\"1\">ASP.NET Module</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -138,7 +186,11 @@
           "relative_path": "api/Gestalt.ASPNet.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -148,7 +200,11 @@
           "relative_path": "api/Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass<TModule>",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.MVC.BaseClasses.MvcModuleBaseClass-1.yml\" sourcestartlinenumber=\"1\">MVC Module base class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -158,7 +214,11 @@
           "relative_path": "api/Gestalt.ASPNet.MVC.BaseClasses.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.MVC.BaseClasses",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -168,7 +228,11 @@
           "relative_path": "api/Gestalt.ASPNet.MVC.Interfaces.IMvcModule.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.MVC.Interfaces.IMvcModule",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.MVC.Interfaces.IMvcModule.yml\" sourcestartlinenumber=\"1\">Module interface for ASP.NET MVC functionality.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -178,7 +242,11 @@
           "relative_path": "api/Gestalt.ASPNet.MVC.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.MVC.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -188,7 +256,11 @@
           "relative_path": "api/Gestalt.ASPNet.MVC.MvcFramework.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.MVC.MvcFramework",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.MVC.MvcFramework.yml\" sourcestartlinenumber=\"1\">MVC Framework class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -198,7 +270,11 @@
           "relative_path": "api/Gestalt.ASPNet.MVC.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.MVC",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -208,7 +284,11 @@
           "relative_path": "api/Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass<TModule>",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.RazorPages.BaseClasses.RazorPagesModuleBaseClass-1.yml\" sourcestartlinenumber=\"1\">Razor Pages Module base class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -218,7 +298,11 @@
           "relative_path": "api/Gestalt.ASPNet.RazorPages.BaseClasses.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.RazorPages.BaseClasses",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -228,7 +312,11 @@
           "relative_path": "api/Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.RazorPages.Interfaces.IRazorPagesModule.yml\" sourcestartlinenumber=\"1\">Razor Pages Module Interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -238,7 +326,11 @@
           "relative_path": "api/Gestalt.ASPNet.RazorPages.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.RazorPages.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -248,7 +340,11 @@
           "relative_path": "api/Gestalt.ASPNet.RazorPages.RazorPagesFramework.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.RazorPages.RazorPagesFramework",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.RazorPages.RazorPagesFramework.yml\" sourcestartlinenumber=\"1\">Razor Pages Framework class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -258,7 +354,11 @@
           "relative_path": "api/Gestalt.ASPNet.RazorPages.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.RazorPages",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -268,7 +368,11 @@
           "relative_path": "api/Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass<TModule>",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.SignalR.BaseClasses.SignalRModuleBaseClass-1.yml\" sourcestartlinenumber=\"1\">SignalR Module base class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -278,7 +382,11 @@
           "relative_path": "api/Gestalt.ASPNet.SignalR.BaseClasses.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.SignalR.BaseClasses",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -288,7 +396,11 @@
           "relative_path": "api/Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.SignalR.Interfaces.ISignalRModule.yml\" sourcestartlinenumber=\"1\">Module interface for ASP.NET SignalR functionality.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -298,7 +410,11 @@
           "relative_path": "api/Gestalt.ASPNet.SignalR.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.SignalR.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -308,7 +424,11 @@
           "relative_path": "api/Gestalt.ASPNet.SignalR.SignalRFramework.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.SignalR.SignalRFramework",
+      "Summary": "<p sourcefile=\"api/Gestalt.ASPNet.SignalR.SignalRFramework.yml\" sourcestartlinenumber=\"1\">MVC Framework class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -318,7 +438,11 @@
           "relative_path": "api/Gestalt.ASPNet.SignalR.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet.SignalR",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -328,7 +452,11 @@
           "relative_path": "api/Gestalt.ASPNet.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.ASPNet",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -338,7 +466,11 @@
           "relative_path": "api/Gestalt.Console.ConsoleApplication.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Console.ConsoleApplication",
+      "Summary": "<p sourcefile=\"api/Gestalt.Console.ConsoleApplication.yml\" sourcestartlinenumber=\"1\">Console application class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -348,7 +480,11 @@
           "relative_path": "api/Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions",
+      "Summary": "<p sourcefile=\"api/Gestalt.Console.ExtensionMethods.HostApplicationBuilderExtensions.yml\" sourcestartlinenumber=\"1\">Host application builder extensions</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -358,7 +494,11 @@
           "relative_path": "api/Gestalt.Console.ExtensionMethods.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Console.ExtensionMethods",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -368,7 +508,11 @@
           "relative_path": "api/Gestalt.Console.InternalHostedService.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Console.InternalHostedService",
+      "Summary": "<p sourcefile=\"api/Gestalt.Console.InternalHostedService.yml\" sourcestartlinenumber=\"1\">Internal hosted service for the console application.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -378,7 +522,11 @@
           "relative_path": "api/Gestalt.Console.Modules.InternalModule.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Console.Modules.InternalModule",
+      "Summary": "<p sourcefile=\"api/Gestalt.Console.Modules.InternalModule.yml\" sourcestartlinenumber=\"1\">Internal module</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -388,7 +536,11 @@
           "relative_path": "api/Gestalt.Console.Modules.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Console.Modules",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -398,7 +550,11 @@
           "relative_path": "api/Gestalt.Console.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Console",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -408,7 +564,11 @@
           "relative_path": "api/Gestalt.Core.ApplicationFrameworkDefaults.Order.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.ApplicationFrameworkDefaults.Order",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.ApplicationFrameworkDefaults.Order.yml\" sourcestartlinenumber=\"1\">The order the frameworks are loaded.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -418,7 +578,11 @@
           "relative_path": "api/Gestalt.Core.ApplicationFrameworkDefaults.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.ApplicationFrameworkDefaults",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.ApplicationFrameworkDefaults.yml\" sourcestartlinenumber=\"1\">Application framework defaults</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -428,7 +592,11 @@
           "relative_path": "api/Gestalt.Core.ApplicationModuleDefaults.Order.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.ApplicationModuleDefaults.Order",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.ApplicationModuleDefaults.Order.yml\" sourcestartlinenumber=\"1\">The order the modules are loaded.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -438,7 +606,11 @@
           "relative_path": "api/Gestalt.Core.ApplicationModuleDefaults.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.ApplicationModuleDefaults",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.ApplicationModuleDefaults.yml\" sourcestartlinenumber=\"1\">Application Module Defaults</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -448,7 +620,11 @@
           "relative_path": "api/Gestalt.Core.BaseClasses.ApplicationBaseClass.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.BaseClasses.ApplicationBaseClass",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.BaseClasses.ApplicationBaseClass.yml\" sourcestartlinenumber=\"1\">Application info holder.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -458,7 +634,11 @@
           "relative_path": "api/Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass<TApplicationFramework, TModule>",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.BaseClasses.ApplicationFrameworkBaseClass-2.yml\" sourcestartlinenumber=\"1\">Application framework base class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -468,7 +648,11 @@
           "relative_path": "api/Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.BaseClasses.ApplicationModuleBaseClass<TModule>",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.BaseClasses.ApplicationModuleBaseClass-1.yml\" sourcestartlinenumber=\"1\">Module base class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -478,7 +662,11 @@
           "relative_path": "api/Gestalt.Core.BaseClasses.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.BaseClasses",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -488,7 +676,11 @@
           "relative_path": "api/Gestalt.Core.ExtensionMethods.AssemblyExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.ExtensionMethods.AssemblyExtensions",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.ExtensionMethods.AssemblyExtensions.yml\" sourcestartlinenumber=\"1\">Assembly Extension Methods</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -498,7 +690,11 @@
           "relative_path": "api/Gestalt.Core.ExtensionMethods.GenericExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.ExtensionMethods.GenericExtensions",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.ExtensionMethods.GenericExtensions.yml\" sourcestartlinenumber=\"1\">Generic Extensions</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -508,7 +704,11 @@
           "relative_path": "api/Gestalt.Core.ExtensionMethods.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.ExtensionMethods",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -518,7 +718,11 @@
           "relative_path": "api/Gestalt.Core.Interfaces.IApplication.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.Interfaces.IApplication",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.Interfaces.IApplication.yml\" sourcestartlinenumber=\"1\">Application Interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -528,7 +732,11 @@
           "relative_path": "api/Gestalt.Core.Interfaces.IApplicationFramework.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.Interfaces.IApplicationFramework",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.Interfaces.IApplicationFramework.yml\" sourcestartlinenumber=\"1\">The application framework interface. This is used to configure the framework specific modules.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -538,7 +746,11 @@
           "relative_path": "api/Gestalt.Core.Interfaces.IApplicationModule.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.Interfaces.IApplicationModule",
+      "Summary": "<p sourcefile=\"api/Gestalt.Core.Interfaces.IApplicationModule.yml\" sourcestartlinenumber=\"1\">Application Module Interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -548,7 +760,11 @@
           "relative_path": "api/Gestalt.Core.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -558,7 +774,11 @@
           "relative_path": "api/Gestalt.Core.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Gestalt.Core",
+      "Summary": null
     },
     {
       "type": "Conceptual",
@@ -574,11 +794,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -617,11 +837,11 @@
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "articles/toc.html"
-        },
         ".json": {
           "relative_path": "articles/toc.json"
+        },
+        ".html": {
+          "relative_path": "articles/toc.html"
         }
       },
       "version": ""
@@ -650,11 +870,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
