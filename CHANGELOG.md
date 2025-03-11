@@ -1,5 +1,16 @@
 
 
+<a name="2.1.7"></a>
+## [2.1.7](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.7) (2025-03-11)
+
+### Bug Fixes
+
+* bump the dependencies group in /Gestalt.ASPNet with 4 updates ([69beb3e](https://www.github.com/JaCraig/Gestalt/commit/69beb3e6f498d33169d96c8bd3f5509a9426484d))
+
+### Other
+
+* Merge pull request #211 from JaCraig/dependabot/nuget/Gestalt.ASPNet/dependencies-02031831bc ([2103bbf](https://www.github.com/JaCraig/Gestalt/commit/2103bbfc1264cda20eccd63573ef1dc4fc469112))
+
 <a name="2.1.6"></a>
 ## [2.1.6](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.6) (2025-02-12)
 
