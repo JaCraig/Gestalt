@@ -4,7 +4,6 @@
 		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
 		<IsPackable>false</IsPackable>
 		<Nullable>enable</Nullable>
-		<RunSettingsFilePath>C:\dev\Mine\JaCraig\Gestalt\Gestalt.ASPNet.Controllers.Tests\bin\Debug\net9.0\fine-code-coverage\coverage-tool-output\Gestalt.ASPNet.Controllers.Tests %28net9.0%29-fcc-mscodecoverage-generated.runsettings</RunSettingsFilePath>
 	</PropertyGroup>
 
 	<ItemGroup>

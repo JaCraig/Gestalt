@@ -4,7 +4,6 @@
 		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
 		<IsPackable>false</IsPackable>
 		<Nullable>enable</Nullable>
-		<RunSettingsFilePath>C:\dev\Mine\JaCraig\Gestalt\Gestalt.ASPNet.MVC.Tests\bin\Debug\net9.0\fine-code-coverage\coverage-tool-output\Gestalt.ASPNet.MVC.Tests %28net9.0%29-fcc-mscodecoverage-generated.runsettings</RunSettingsFilePath>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -28,10 +27,6 @@
 	<ItemGroup>
 		<ProjectReference Include="..\Gestalt.ASPNet.MVC\Gestalt.ASPNet.MVC.csproj" />
 		<ProjectReference Include="..\Gestalt.Tests.Helpers\Gestalt.Tests.Helpers.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Interfaces\" />
 	</ItemGroup>
 
 </Project>
