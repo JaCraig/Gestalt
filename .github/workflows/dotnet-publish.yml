@@ -53,7 +53,7 @@ jobs:
         run: dotnet build --no-restore --configuration $BUILD_CONFIG
 
       - name: Test
-        run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults-${{ matrix.dotnet-version }}/ /p:CoverletOutputFormat=lcov /p:Configuration=$BUILD_CONFIG --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
+        run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults-${{ matrix.dotnet-version }}/ /p:CoverletOutputFormat=lcov /p:Configuration=$BUILD_CONFIG --no-build --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
