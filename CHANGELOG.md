@@ -1,5 +1,20 @@
 
 
+<a name="2.1.8"></a>
+## [2.1.8](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.8) (2025-03-15)
+
+### Bug Fixes
+
+* **build:** Fixing build ([5a8c1ca](https://www.github.com/JaCraig/Gestalt/commit/5a8c1ca1b191b0a18794b1a7965697221aadb003))
+* **build:** More build fix attempts ([284efc4](https://www.github.com/JaCraig/Gestalt/commit/284efc431fc4efe1081699f5d7eb222d6bd719fc))
+* **tests:** remove RunSettingsFilePath from projects ([e298b06](https://www.github.com/JaCraig/Gestalt/commit/e298b06552cb9a287c79be5d30a217f5300d7ec4))
+
+### Other
+
+* Merge pull request #212 from JaCraig/dependabot/nuget/Gestalt.SpeedTests/dependencies-862504c568 ([cb904b2](https://www.github.com/JaCraig/Gestalt/commit/cb904b2dfebb5111f39fd8cea00dc2cd783623d6))
+* bump Microsoft.Extensions.Hosting ([8a08975](https://www.github.com/JaCraig/Gestalt/commit/8a0897544ea6a3c82664b24ebc42e63797970c43))
+* **project:** update package versions ([e781b2d](https://www.github.com/JaCraig/Gestalt/commit/e781b2d8f38a659d3d48d4211ed9f1bf354c45dd))
+
 <a name="2.1.7"></a>
 ## [2.1.7](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.7) (2025-03-11)
 
