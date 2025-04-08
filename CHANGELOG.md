@@ -1,5 +1,20 @@
 
 
+<a name="2.1.9"></a>
+## [2.1.9](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.9) (2025-04-08)
+
+### Bug Fixes
+
+* bump the dependencies group ([a306590](https://www.github.com/JaCraig/Gestalt/commit/a3065903c8b08896447cedfb4ad06b79db30399c))
+
+### Other
+
+* Merge pull request #213 from JaCraig/dependabot/github_actions/dependencies-f2f4ef4d1d ([c15f0e6](https://www.github.com/JaCraig/Gestalt/commit/c15f0e62eea7c769bc3ff40dcb6c2dd9f7cb3d02))
+* Merge pull request #214 from JaCraig/dependabot/nuget/Gestalt.ASPNet.SignalR/dependencies-3861be47aa ([7a24868](https://www.github.com/JaCraig/Gestalt/commit/7a248689cb8759bee45c6d6e7e210419c2008bdd))
+* bump actions/setup-dotnet in the dependencies group ([92acd96](https://www.github.com/JaCraig/Gestalt/commit/92acd960bfe6bd42160ae96045c92b431283c64c))
+* Merge branch 'main' of https://github.com/JaCraig/Gestalt ([c311dd9](https://www.github.com/JaCraig/Gestalt/commit/c311dd9abcacf0a47db358e4d7dfd3b9c97a8847))
+* **workflow:** update test command to prevent unnecessary builds ([8dc3673](https://www.github.com/JaCraig/Gestalt/commit/8dc367332ead3ea03981b1dca8f6380d7fc5f1cc))
+
 <a name="2.1.8"></a>
 ## [2.1.8](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.8) (2025-03-15)
 
