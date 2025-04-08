@@ -1,5 +1,16 @@
 
 
+<a name="2.1.10"></a>
+## [2.1.10](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.10) (2025-04-08)
+
+### Bug Fixes
+
+* bump the dependencies group ([de17e26](https://www.github.com/JaCraig/Gestalt/commit/de17e26801850e669dfbc32df710e10ca54a8e75))
+
+### Other
+
+* Merge pull request #215 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Controllers/dependencies-3861be47aa ([a9b503e](https://www.github.com/JaCraig/Gestalt/commit/a9b503ed95264dc2bdda4d2b895312755edb453f))
+
 <a name="2.1.9"></a>
 ## [2.1.9](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.9) (2025-04-08)
 
