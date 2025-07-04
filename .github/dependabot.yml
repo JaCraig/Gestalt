@@ -5,8 +5,10 @@
 
 version: 2
 updates:
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.ASPNet/" # Location of package manifests
+  # --- Foundational Layer ---
+  # Gestalt.Core is the base for all other projects
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.Core/"
     schedule:
       interval: "daily"
     commit-message:
@@ -16,8 +18,10 @@ updates:
         patterns:
           - "*"
 
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.ASPNet.Controllers/" # Location of package manifests
+  # --- Core Application Layers ---
+  # Gestalt.Console depends on Gestalt.Core
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.Console/"
     schedule:
       interval: "daily"
     commit-message:
@@ -27,8 +31,9 @@ updates:
         patterns:
           - "*"
 
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.ASPNet.MVC/" # Location of package manifests
+  # Gestalt.ASPNet depends on Gestalt.Core
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.ASPNet/"
     schedule:
       interval: "daily"
     commit-message:
@@ -38,8 +43,39 @@ updates:
         patterns:
           - "*"
 
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.ASPNet.RazorPages/" # Location of package manifests
+  # --- ASPNet Extensions (depend on ASPNet & Core) ---
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.ASPNet.Controllers/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "fix"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.ASPNet.MVC/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "fix"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.ASPNet.RazorPages/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "fix"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.ASPNet.SignalR/"
     schedule:
       interval: "daily"
     commit-message:
@@ -49,41 +85,39 @@ updates:
         patterns:
           - "*"
 
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.ASPNet.SignalR/" # Location of package manifests
+  # --- Example & Utility Projects (depend on above) ---
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.Example/"
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "fix"
+      prefix: "chore"
     groups:
       dependencies:
         patterns:
           - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.Console/" # Location of package manifests
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.Example.Console/"
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "fix"
+      prefix: "chore"
     groups:
       dependencies:
         patterns:
           - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.Core/" # Location of package manifests
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.Example.SelfContainedModule/"
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "fix"
+      prefix: "chore"
     groups:
       dependencies:
         patterns:
           - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.Example/" # Location of package manifests
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.SpeedTests/"
     schedule:
       interval: "daily"
     commit-message:
@@ -93,8 +127,79 @@ updates:
         patterns:
           - "*"
 
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.Example.Console/" # Location of package manifests
+  # --- Test & Helper Projects (depend on main projects) ---
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.Tests.Helpers/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.Core.Tests/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.Console.Tests/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.ASPNet.Tests/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.ASPNet.Controllers.Tests/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.ASPNet.MVC.Tests/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.ASPNet.RazorPages.Tests/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+  - package-ecosystem: "nuget"
+    directory: "/Gestalt.ASPNet.SignalR.Tests/"
     schedule:
       interval: "daily"
     commit-message:
@@ -104,116 +209,7 @@ updates:
         patterns:
           - "*"
 
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.Example.SelfContainedModule/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "chore"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.SpeedTests/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "chore"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.Tests.Helpers/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "chore"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.Core.Tests/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "chore"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.Console.Tests/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "chore"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.ASPNet.Tests/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "chore"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.ASPNet.SignalR.Tests/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "chore"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.ASPNet.RazorPages.Tests/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "chore"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.ASPNet.MVC.Tests/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "chore"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Gestalt.ASPNet.Controller.Tests/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "chore"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-
+  # --- GitHub Actions ---
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
