@@ -1,5 +1,16 @@
 
 
+<a name="2.1.15"></a>
+## [2.1.15](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.15) (2025-08-19)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([10d1fec](https://www.github.com/JaCraig/Gestalt/commit/10d1feca5cfd96a78c9240a5c1b0b0531367e1fa))
+
+### Other
+
+* Merge pull request #254 from JaCraig/dependabot/nuget/Gestalt.Core/dependencies-a5fe8833ec ([a644b80](https://www.github.com/JaCraig/Gestalt/commit/a644b806fa1156912bcf8465606c8454d6d32f0a))
+
 <a name="2.1.14"></a>
 ## [2.1.14](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.14) (2025-08-19)
 
