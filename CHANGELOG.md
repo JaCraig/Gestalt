@@ -1,5 +1,48 @@
 
 
+<a name="2.1.20"></a>
+## [2.1.20](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.20) (2025-09-09)
+
+### Bug Fixes
+
+* Bump the dependencies group with 4 updates ([2ce4f4c](https://www.github.com/JaCraig/Gestalt/commit/2ce4f4c12c833b69368ce7dc77c4d4186d88b380))
+* Bump the dependencies group with 4 updates ([53e403f](https://www.github.com/JaCraig/Gestalt/commit/53e403f51959b2a6c9707cbdd9dfad08c77c0e32))
+* Bump the dependencies group with 5 updates ([29a4a4a](https://www.github.com/JaCraig/Gestalt/commit/29a4a4a0c2ed1898948507c586b6fd9e331f2868))
+
+### Other
+
+* Merge pull request #251 from JaCraig/dependabot/github_actions/dependencies-a331d3ec2d ([4e357a3](https://www.github.com/JaCraig/Gestalt/commit/4e357a325bf95c1aa7549a843b343b90829ea617))
+* Merge pull request #269 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-c86233ea9b ([97c5bb5](https://www.github.com/JaCraig/Gestalt/commit/97c5bb52c6ef63b739f83718974d9641663523dc))
+* Merge pull request #270 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-c86233ea9b ([eddd624](https://www.github.com/JaCraig/Gestalt/commit/eddd624d9b6dd453dd61c96ca4c543211c81e6ac))
+* Merge pull request #271 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-c86233ea9b ([1a8c560](https://www.github.com/JaCraig/Gestalt/commit/1a8c56039483208a35e454bdadd91ee63ee18732))
+* Merge pull request #272 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-c86233ea9b ([ab3b80d](https://www.github.com/JaCraig/Gestalt/commit/ab3b80dbf29f492272b11269d5dbdd3e848021fa))
+* Merge pull request #273 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-c86233ea9b ([73d42e3](https://www.github.com/JaCraig/Gestalt/commit/73d42e3744ec795b7032b3277195d1a2650c22c5))
+* Merge pull request #274 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-c86233ea9b ([0b3685c](https://www.github.com/JaCraig/Gestalt/commit/0b3685c03faa139832169894fafc8a8dd575cc1d))
+* Merge pull request #275 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Controllers.Tests/dependencies-209ac93609 ([d8e4b72](https://www.github.com/JaCraig/Gestalt/commit/d8e4b72a2af989feb7c445454994e74fec0d34af))
+* Merge pull request #276 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-c86233ea9b ([e206627](https://www.github.com/JaCraig/Gestalt/commit/e20662700166bfea5833d90bf06fcb2b8db4cd0e))
+* Merge pull request #277 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-40efe4b6f8 ([1219011](https://www.github.com/JaCraig/Gestalt/commit/1219011ff87f40d8b3dcdf11573e6af2979f5705))
+* Merge pull request #279 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-4ae13d5056 ([36d7009](https://www.github.com/JaCraig/Gestalt/commit/36d7009a9d277059e15a889deeb28948f8ef4d43))
+* Merge pull request #281 from JaCraig/dependabot/nuget/Gestalt.Console/dependencies-35fce61938 ([c07181b](https://www.github.com/JaCraig/Gestalt/commit/c07181b737c4ede7f372c32d7d8ab1dbfc92570c))
+* Merge pull request #282 from JaCraig/dependabot/nuget/Gestalt.Core/dependencies-f74045b568 ([0c76805](https://www.github.com/JaCraig/Gestalt/commit/0c768053b9c0f0cbb236f4db6bd9e150ac017d91))
+* Merge pull request #283 from JaCraig/dependabot/nuget/Gestalt.Core/dependencies-f74045b568 ([b0820b0](https://www.github.com/JaCraig/Gestalt/commit/b0820b0af137a8efc933299265d97bc1b054a577))
+* Merge pull request #284 from JaCraig/dependabot/nuget/Gestalt.Console/dependencies-44f6982d62 ([ad2dd72](https://www.github.com/JaCraig/Gestalt/commit/ad2dd7207fb8c7ceccec81deba3b061edbd760f5))
+* Merge pull request #285 from JaCraig/dependabot/nuget/Gestalt.Console/dependencies-44f6982d62 ([9f12e4e](https://www.github.com/JaCraig/Gestalt/commit/9f12e4e70c2f28ec8fdc785a33e1dfb05a6e3c31))
+* Merge pull request #286 from JaCraig/dependabot/nuget/Gestalt.Console/dependencies-0dfa171d98 ([4a14390](https://www.github.com/JaCraig/Gestalt/commit/4a14390be5935fd20c180d10e81370f184e05636))
+* Bump actions/checkout from 4 to 5 in the dependencies group ([0cb89a2](https://www.github.com/JaCraig/Gestalt/commit/0cb89a237d707ac7af918b9df6ee7e31ba254fc3))
+* Bump the dependencies group with 1 update ([06d71a3](https://www.github.com/JaCraig/Gestalt/commit/06d71a39eb93cf4bd5b9a9ed996ca87f15698972))
+* Bump the dependencies group with 1 update ([03a8980](https://www.github.com/JaCraig/Gestalt/commit/03a89808c0f3ed4d0f4cc77b99dc2041a2529c46))
+* Bump the dependencies group with 1 update ([049a145](https://www.github.com/JaCraig/Gestalt/commit/049a145339c95e288d08cb63c8ca51b4ad898008))
+* Bump the dependencies group with 1 update ([4fa2a8a](https://www.github.com/JaCraig/Gestalt/commit/4fa2a8ac49037e5e3c5d9034a1165b3ba7be0983))
+* Bump the dependencies group with 1 update ([5207ac1](https://www.github.com/JaCraig/Gestalt/commit/5207ac1531ea15118ec53df9d7e7a598f8d0c223))
+* Bump the dependencies group with 1 update ([4129045](https://www.github.com/JaCraig/Gestalt/commit/41290453d129b21daa09d15962e0bfcd0d009e09))
+* Bump the dependencies group with 1 update ([f8a5153](https://www.github.com/JaCraig/Gestalt/commit/f8a515342d493c27d65bba353affdce8abea7ad8))
+* Bump the dependencies group with 1 update ([6ec8c77](https://www.github.com/JaCraig/Gestalt/commit/6ec8c77db094c553656f7eb6e668a74d334649c1))
+* Bump the dependencies group with 1 update ([efb7104](https://www.github.com/JaCraig/Gestalt/commit/efb71042bc297e89aebd8ad0807be9d949b80387))
+* Bump the dependencies group with 2 updates ([f960daf](https://www.github.com/JaCraig/Gestalt/commit/f960dafbd5109edbdb487786f1adcea1e7031984))
+* Bump the dependencies group with 5 updates ([e699ffe](https://www.github.com/JaCraig/Gestalt/commit/e699ffe4bccbc55d0859f1ba0009e5824e775c45))
+* Bump the dependencies group with 5 updates ([cc5c5a1](https://www.github.com/JaCraig/Gestalt/commit/cc5c5a1def41e0518f85953c52da797e1e2a92da))
+* Bump the dependencies group with 6 updates ([263d4e9](https://www.github.com/JaCraig/Gestalt/commit/263d4e94aa357d7c597c16cf92f267fecc326361))
+
 <a name="2.1.19"></a>
 ## [2.1.19](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.19) (2025-08-19)
 
