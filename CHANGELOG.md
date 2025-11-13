@@ -1,5 +1,27 @@
 
 
+<a name="2.2.0"></a>
+## [2.2.0](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.2.0) (2025-11-13)
+
+### Features
+
+* **deps:** update package dependencies ([cf697da](https://www.github.com/JaCraig/Gestalt/commit/cf697da4ca7af0b6e4acd76697075c8fcde6d23d))
+
+### Other
+
+* Merge pull request #385 from JaCraig/dependabot/github_actions/dependencies-dc500464ed ([307b433](https://www.github.com/JaCraig/Gestalt/commit/307b4333ffd3740295e0158eb129f89a3b3b16c6))
+* Merge pull request #386 from JaCraig/dependabot/nuget/Gestalt.SpeedTests/dependencies-01bee85e40 ([55d4698](https://www.github.com/JaCraig/Gestalt/commit/55d4698d9054e3dead2280c64bf88aec8b01c93c))
+* Merge pull request #387 from JaCraig/dependabot/nuget/Gestalt.SpeedTests/dependencies-687d87cf37 ([c8bce09](https://www.github.com/JaCraig/Gestalt/commit/c8bce096b28b47078509e2e078796bacbe131597))
+* Merge pull request #388 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-f078703165 ([c3f5a29](https://www.github.com/JaCraig/Gestalt/commit/c3f5a29e45a341c5f5b3038f9e791fa424d52c29))
+* Merge pull request #407 from JaCraig/dependabot/nuget/dot-config/dependencies-0b6a35b5df ([cd07c7d](https://www.github.com/JaCraig/Gestalt/commit/cd07c7db9ca15a9c34b669d8475f694d703116ca))
+* Merge pull request #412 from JaCraig/dependabot/nuget/Gestalt.Console.Tests/dependencies-f078703165 ([39f84e2](https://www.github.com/JaCraig/Gestalt/commit/39f84e2466c8fe9aa7f6fa4aae714861eb7893c0))
+* Bump actions/upload-artifact in the dependencies group ([03afc1a](https://www.github.com/JaCraig/Gestalt/commit/03afc1afa899aa53716f513b5a754ffd856fcf00))
+* Bump Microsoft.NET.Test.Sdk from 18.0.0 to 18.0.1 ([f317374](https://www.github.com/JaCraig/Gestalt/commit/f31737459d7c2a4c487c519462c721d91fa0c3f8))
+* Bump the dependencies group with 1 update ([3fefe38](https://www.github.com/JaCraig/Gestalt/commit/3fefe38cdccee4e54831e86c84e08de1f134196c))
+* Bump the dependencies group with 1 update ([d429ca9](https://www.github.com/JaCraig/Gestalt/commit/d429ca957ab5f61bccf8a498c2b205c81f0027f9))
+* Bump the dependencies group with 1 update ([696f8a2](https://www.github.com/JaCraig/Gestalt/commit/696f8a27059a06d512db624ba0fb17848b045565))
+* Bump the dependencies group with 1 update ([310b46a](https://www.github.com/JaCraig/Gestalt/commit/310b46aa5ed091f17d32e68042462ddaae5fa316))
+
 <a name="2.1.22"></a>
 ## [2.1.22](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.1.22) (2025-10-16)
 
