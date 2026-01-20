@@ -1,5 +1,39 @@
 
 
+<a name="2.2.2"></a>
+## [2.2.2](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.2.2) (2026-01-20)
+
+### Bug Fixes
+
+* **packages:** update package references ([7b13d43](https://www.github.com/JaCraig/Gestalt/commit/7b13d432ca2e095c8f0cfa976141bd77025bcddc))
+
+### Other
+
+* Merge pull request #446 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-406f96db61 ([14ee414](https://www.github.com/JaCraig/Gestalt/commit/14ee41429ac5df2c699e52e843c5a55dd3a0a74c))
+* Merge pull request #447 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-406f96db61 ([ebe8919](https://www.github.com/JaCraig/Gestalt/commit/ebe8919af3418a25fe0ca855668a8d3befebe824))
+* Merge pull request #448 from JaCraig/dependabot/github_actions/dependencies-88dfb18256 ([e27efca](https://www.github.com/JaCraig/Gestalt/commit/e27efca825ab3d50ff64aa0930a8150720a8df92))
+* Merge pull request #449 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-515ff5359e ([ccbcbb4](https://www.github.com/JaCraig/Gestalt/commit/ccbcbb43da5399a2aa757221818cc0e0b55da3ae))
+* Merge pull request #450 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-515ff5359e ([a9cd45a](https://www.github.com/JaCraig/Gestalt/commit/a9cd45a26341b6aea5bda4c3c04fad08f7e700ef))
+* Merge pull request #451 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-513ebfd917 ([50a9084](https://www.github.com/JaCraig/Gestalt/commit/50a908463fe4a31d33bb675db66a7f2c7f4876aa))
+* Merge pull request #467 from JaCraig/dependabot/github_actions/dependencies-bbc526d7b7 ([558aec8](https://www.github.com/JaCraig/Gestalt/commit/558aec88a57e61ea733b83544f4b15beb9f1fa2d))
+* Merge pull request #506 from JaCraig/dependabot/nuget/Gestalt.Console/dependencies-be5ef023f9 ([cabae62](https://www.github.com/JaCraig/Gestalt/commit/cabae621588a52c9f038dad7d93ea279fddf389b))
+* Merge pull request #507 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC/dependencies-a1d6a091ee ([ceb80d4](https://www.github.com/JaCraig/Gestalt/commit/ceb80d4fa79cf9b6c2ef9cd640fbcefde4f3ebe5))
+* Merge pull request #508 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC/dependencies-6f088c8375 ([e2216f8](https://www.github.com/JaCraig/Gestalt/commit/e2216f82acdd7f8503a5d61a17bfbb999afd3850))
+* Merge pull request #509 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-52be539403 ([41e9665](https://www.github.com/JaCraig/Gestalt/commit/41e96652020e4be9165b49b55d32c1806a4389c0))
+* Merge pull request #510 from JaCraig/dependabot/nuget/Gestalt.Core/dependencies-5de9d601b5 ([95ae1d3](https://www.github.com/JaCraig/Gestalt/commit/95ae1d37fb94d844ad230590f2f2ae68c0c351b2))
+* Bump actions/setup-dotnet in the dependencies group ([9cbf526](https://www.github.com/JaCraig/Gestalt/commit/9cbf526c4d0b0a1f2541b87ac9772da57e2a96dd))
+* Bump actions/upload-artifact in the dependencies group ([c592fb5](https://www.github.com/JaCraig/Gestalt/commit/c592fb5d2c484dbb2038428182f693d44e5e99fb))
+* Bump Microsoft.CodeAnalysis.NetAnalyzers and Microsoft.SourceLink.GitHub ([ec0ff5b](https://www.github.com/JaCraig/Gestalt/commit/ec0ff5ba1ac04296e76a90d5a90e9d4bf08f8bb0))
+* Bump the dependencies group with 1 update ([4d5e35c](https://www.github.com/JaCraig/Gestalt/commit/4d5e35ccb86401b318ff289f0918c0c87ed05bc0))
+* Bump the dependencies group with 1 update ([c66983d](https://www.github.com/JaCraig/Gestalt/commit/c66983d98857b17a38ddad9fab8bb2cd2d474446))
+* Bump the dependencies group with 1 update ([ba3850a](https://www.github.com/JaCraig/Gestalt/commit/ba3850a2a7771e44bf76f2e148ba2de16abcd2b8))
+* Bump the dependencies group with 1 update ([a84b40e](https://www.github.com/JaCraig/Gestalt/commit/a84b40ed3a0cdaaa2e3d8e98a1fcebb609c33ac8))
+* Bump the dependencies group with 1 update ([10971fc](https://www.github.com/JaCraig/Gestalt/commit/10971fc5778a173839c98bb6c7492f2658cfe390))
+* Bump the dependencies group with 1 update ([1324e3a](https://www.github.com/JaCraig/Gestalt/commit/1324e3aa7a3c96af8987198561ff4c2d489df424))
+* Bump the dependencies group with 2 updates ([48f469e](https://www.github.com/JaCraig/Gestalt/commit/48f469e00c1378daf8d78bfa56c52d95aa0a545d))
+* Bump the dependencies group with 6 updates ([635e1f5](https://www.github.com/JaCraig/Gestalt/commit/635e1f5d5c6e4b1a24aef950e29af8c0f531bf17))
+* Bump the dependencies group with 7 updates ([6822a02](https://www.github.com/JaCraig/Gestalt/commit/6822a024751de0ca61e987993e1b23aab1ea1f23))
+
 <a name="2.2.1"></a>
 ## [2.2.1](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.2.1) (2025-12-10)
 
