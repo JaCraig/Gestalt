@@ -4,7 +4,7 @@
     <Description>This is the console specific implementation of Gestalt. Gestalt is a comprehensive application framework designed to streamline the development and packaging process with its modular architecture. With Gestalt, effortlessly construct robust applications using modular design principles and leverage the power of dependency injection for seamless integration of reusable components. Incorporate plugins effortlessly, configuring them via a flexible configuration system. Gestalt empowers developers to craft scalable and maintainable applications, focusing on building reusable modules and extensions. Whether you're developing a small-scale project or a large enterprise application, Gestalt provides the foundation for modular, extensible solutions.</Description>
     <AssemblyTitle>Gestalt.Console</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net9.0;net8.0;net10.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Gestalt.Console</AssemblyName>
     <PackageId>Gestalt.Console</PackageId>
