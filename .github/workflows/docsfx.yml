@@ -2,7 +2,7 @@ name: Document Site Publish
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 permissions:
   contents: write
@@ -10,3 +10,5 @@ permissions:
 jobs:
   publish-docs:
     uses: JaCraig/Centralized-Workflows/.github/workflows/docsfx.yml@main
+    with:
+      solution: "Gestalt.CI.sln"

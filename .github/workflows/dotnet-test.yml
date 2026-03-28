@@ -18,3 +18,5 @@ on:
 jobs:
   build:
     uses: "JaCraig/Centralized-Workflows/.github/workflows/dotnet-test.yml@main"
+    with:
+      solution: "Gestalt.CI.sln"
