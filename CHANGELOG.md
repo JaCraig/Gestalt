@@ -1,5 +1,21 @@
 
 
+<a name="2.4.0"></a>
+## [2.4.0](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.0) (2026-03-28)
+
+### Features
+
+* restructure project files and add Directory.Build.props ([f98e5ee](https://www.github.com/JaCraig/Gestalt/commit/f98e5eea7be945687b506fde898f8b8b7e8697d2))
+* **csproj:** enhance NuGet metadata and update changelog ([06581b0](https://www.github.com/JaCraig/Gestalt/commit/06581b059568d808b2318c781c176d59ffce91f5))
+
+### Bug Fixes
+
+* **repo:** bump version to 2.3.5 and update formatting ([df5ea1f](https://www.github.com/JaCraig/Gestalt/commit/df5ea1fb7bf79b7813d84799873368131e8ea1af))
+
+### Other
+
+* **dependabot:** update schedules and add new groups for dependency management ([3947e83](https://www.github.com/JaCraig/Gestalt/commit/3947e8336731f090b759904537eb5fe7ee5a6319))
+
 <a name="2.3.5"></a>
 ## [2.3.5](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.3.5) (2026-03-28)
 
