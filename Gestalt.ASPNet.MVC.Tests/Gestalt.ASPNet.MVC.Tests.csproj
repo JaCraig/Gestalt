@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
-		<IsPackable>false</IsPackable>
-		<Nullable>enable</Nullable>
-	</PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworks>net10.0</TargetFrameworks>
+    <IsPackable>false</IsPackable>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
 
-	<ItemGroup>
+  <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="8.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -21,12 +21,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
     <PackageReference Include="xunit" Version="2.9.3" />
-		<PackageReference Include="NSubstitute" Version="5.3.0" />
-	</ItemGroup>
+    <PackageReference Include="NSubstitute" Version="5.3.0" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\Gestalt.ASPNet.MVC\Gestalt.ASPNet.MVC.csproj" />
-		<ProjectReference Include="..\Gestalt.Tests.Helpers\Gestalt.Tests.Helpers.csproj" />
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gestalt.ASPNet.MVC\Gestalt.ASPNet.MVC.csproj" />
+    <ProjectReference Include="..\Gestalt.Tests.Helpers\Gestalt.Tests.Helpers.csproj" />
+  </ItemGroup>
 
 </Project>
