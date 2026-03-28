@@ -14,9 +14,20 @@
     <TargetFrameworks>net9.0;net8.0;net10.0</TargetFrameworks>
     <AssemblyName>Gestalt.ASPNet</AssemblyName>
     <PackageId>Gestalt.ASPNet</PackageId>
-    <PackageTags>Gestalt;Modules;ASP.Net;Application Framework;Modular Design;Dependency
-      Injection;Plugin;Reusable Components;Configuration</PackageTags>
+    <PackageTags>Gestalt;Modules;ASP.Net;Application Framework;Modular Design;Dependency Injection;Plugin;Reusable Components;Configuration</PackageTags>
+    <PackageProjectUrl>https://github.com/JaCraig/Gestalt</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Version>2.3.4</Version>
+    <Nullable>enable</Nullable>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <Title>Gestalt.ASPNet</Title>
   </PropertyGroup>
 
