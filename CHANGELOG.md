@@ -1,5 +1,17 @@
 
 
+<a name="2.3.5"></a>
+## [2.3.5](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.3.5) (2026-03-28)
+
+### Bug Fixes
+
+* **workflow:** update permissions for actions in docsfx.yml ([3bc0da0](https://www.github.com/JaCraig/Gestalt/commit/3bc0da0c7a4a51e98c21077a9c6bbc9ddb256858))
+
+### Other
+
+* Merge pull request #659 from JaCraig/dependabot/github_actions/dependencies-97f38a5d32 ([2a289e8](https://www.github.com/JaCraig/Gestalt/commit/2a289e8c8c0430ee91cdcad117a61d2a24a079c0))
+* Bump actions/cache from 4 to 5 in the dependencies group ([bd8af7f](https://www.github.com/JaCraig/Gestalt/commit/bd8af7fa0eb43168757513252960ff2378765009))
+
 <a name="2.3.4"></a>
 ## [2.3.4](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.3.4) (2026-03-28)
 
