@@ -1,5 +1,16 @@
 
 
+<a name="2.3.3"></a>
+## [2.3.3](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.3.3) (2026-03-28)
+
+### Bug Fixes
+
+* **workflow:** update document publishing and testing workflows ([ba0b4f6](https://www.github.com/JaCraig/Gestalt/commit/ba0b4f69c01f5680d0290903935cc05d1cac8bdf))
+
+### Other
+
+* Merge branch 'main' of https://github.com/JaCraig/Gestalt ([0a2de31](https://www.github.com/JaCraig/Gestalt/commit/0a2de319a1f907926fd78d1f6dd6bf5e45179784))
+
 <a name="2.3.2"></a>
 ## [2.3.2](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.3.2) (2026-03-28)
 
