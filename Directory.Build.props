@@ -1,69 +1,69 @@
 <Project>
 
-    <!-- Universal properties: applied to every project in the repository -->
-    <PropertyGroup>
-        <Nullable>enable</Nullable>
-        <EnableNETAnalyzers>true</EnableNETAnalyzers>
-        <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    </PropertyGroup>
+	<!-- Universal properties: applied to every project in the repository -->
+	<PropertyGroup>
+		<Nullable>enable</Nullable>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+	</PropertyGroup>
 
-    <!-- Deterministic builds in CI -->
-    <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
-        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-    </PropertyGroup>
+	<!-- Deterministic builds in CI -->
+	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	</PropertyGroup>
 
-    <!-- Roslyn warning level cap for net8.0 targets -->
-    <PropertyGroup
+	<!-- Roslyn warning level cap for net8.0 targets -->
+	<PropertyGroup
         Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0|AnyCPU'">
-        <WarningLevel>7</WarningLevel>
-    </PropertyGroup>
-    <PropertyGroup
+		<WarningLevel>7</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup
         Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0|AnyCPU'">
-        <WarningLevel>7</WarningLevel>
-    </PropertyGroup>
+		<WarningLevel>7</WarningLevel>
+	</PropertyGroup>
 
-    <!-- Library (packable) project properties and items.
+	<!-- Library (packable) project properties and items.
        Excludes test projects (contain 'Tests') and example/speed-test projects (contain 'Example'). -->
-    <PropertyGroup
+	<PropertyGroup
         Condition="$(MSBuildProjectName.Contains('Tests')) != 'True' AND $(MSBuildProjectName.Contains('Example')) != 'True'">
-        <Authors>James Craig</Authors>
-        <Copyright>Copyright © James Craig 2024</Copyright>
-        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-        <PackageProjectUrl>https://github.com/JaCraig/Gestalt</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/JaCraig/Gestalt</RepositoryUrl>
-        <RepositoryType>git</RepositoryType>
-        <PublishRepositoryUrl>true</PublishRepositoryUrl>
-        <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <AllowedOutputExtensionsInPackageBuildOutputFolder>
-            $(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-        <IncludeSymbols>true</IncludeSymbols>
-        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-        <PackageIcon>Icon.png</PackageIcon>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
-        <PackageReleaseNotes>https://github.com/JaCraig/Gestalt/blob/master/CHANGELOG.md</PackageReleaseNotes>
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
-        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    </PropertyGroup>
+		<Authors>James Craig</Authors>
+		<Copyright>Copyright © James Craig 2024</Copyright>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/JaCraig/Gestalt</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/JaCraig/Gestalt</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>
+			$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb
+		</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageIcon>Icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReleaseNotes>https://github.com/JaCraig/Gestalt/blob/master/CHANGELOG.md</PackageReleaseNotes>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	</PropertyGroup>
 
-    <ItemGroup
+	<ItemGroup
         Condition="$(MSBuildProjectName.Contains('Tests')) != 'True' AND $(MSBuildProjectName.Contains('Example')) != 'True'">
-        <None Include="$(MSBuildThisFileDirectory)Icon.png">
-            <Pack>True</Pack>
-            <PackagePath>\</PackagePath>
-        </None>
-        <None Include="$(MSBuildThisFileDirectory)README.md">
-            <Pack>True</Pack>
-            <PackagePath>\</PackagePath>
-        </None>
-        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.201"
+		<None Include="$(MSBuildThisFileDirectory)Icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.201"
             PrivateAssets="All" />
-        <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.201">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-    </ItemGroup>
-
+		<PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.201">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 </Project>

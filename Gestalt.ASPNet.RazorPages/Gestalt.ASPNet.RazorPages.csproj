@@ -16,7 +16,7 @@
     <PackageId>Gestalt.ASPNet.RazorPages</PackageId>
     <PackageTags>Gestalt;Modules;ASP.Net;RazorPages;Application Framework;Modular Design;Dependency
       Injection;Plugin;Reusable Components;Configuration</PackageTags>
-    <Version>2.3.4</Version>
+    <Version>2.3.5</Version>
     <Title>Gestalt.ASPNet.RazorPages</Title>
   </PropertyGroup>
 
