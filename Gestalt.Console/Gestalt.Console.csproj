@@ -1,64 +1,29 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>This is the console specific implementation of Gestalt. Gestalt is a comprehensive application framework designed to streamline the development and packaging process with its modular architecture. With Gestalt, effortlessly construct robust applications using modular design principles and leverage the power of dependency injection for seamless integration of reusable components. Incorporate plugins effortlessly, configuring them via a flexible configuration system. Gestalt empowers developers to craft scalable and maintainable applications, focusing on building reusable modules and extensions. Whether you're developing a small-scale project or a large enterprise application, Gestalt provides the foundation for modular, extensible solutions.</Description>
+    <Description>This is the console specific implementation of Gestalt. Gestalt is a comprehensive
+      application framework designed to streamline the development and packaging process with its
+      modular architecture. With Gestalt, effortlessly construct robust applications using modular
+      design principles and leverage the power of dependency injection for seamless integration of
+      reusable components. Incorporate plugins effortlessly, configuring them via a flexible
+      configuration system. Gestalt empowers developers to craft scalable and maintainable
+      applications, focusing on building reusable modules and extensions. Whether you're developing
+      a small-scale project or a large enterprise application, Gestalt provides the foundation for
+      modular, extensible solutions.</Description>
     <AssemblyTitle>Gestalt.Console</AssemblyTitle>
-    <Authors>James Craig</Authors>
     <TargetFrameworks>net9.0;net8.0;net10.0</TargetFrameworks>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Gestalt.Console</AssemblyName>
     <PackageId>Gestalt.Console</PackageId>
-    <PackageTags>Gestalt;Modules;Console;Application Framework;Modular Design;Dependency Injection;Plugin;Reusable Components;Configuration</PackageTags>
-    <PackageProjectUrl>https://github.com/JaCraig/Gestalt</PackageProjectUrl>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageTags>Gestalt;Modules;Console;Application Framework;Modular Design;Dependency
+      Injection;Plugin;Reusable Components;Configuration</PackageTags>
     <Version>2.3.4</Version>
-    <Nullable>enable</Nullable>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <Title>Gestalt.Console</Title>
-    <Copyright>Copyright © James Craig 2024</Copyright>
-    <PackageIcon>Icon.png</PackageIcon>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/JaCraig/Gestalt</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>https://github.com/JaCraig/Gestalt/blob/master/CHANGELOG.md</PackageReleaseNotes>
-    <EnableNETAnalyzers>true</EnableNETAnalyzers>
-    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
-    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0|AnyCPU'">
-    <WarningLevel>7</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0|AnyCPU'">
-    <WarningLevel>7</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <None Include="..\Icon.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.5" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.201" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.201">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+
   </ItemGroup>
 
   <ItemGroup>
