@@ -1,5 +1,12 @@
 
 
+<a name="2.3.4"></a>
+## [2.3.4](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.3.4) (2026-03-28)
+
+### Bug Fixes
+
+* **workflow:** update NuGet push command to skip duplicates ([4c85e1e](https://www.github.com/JaCraig/Gestalt/commit/4c85e1e69d51b6951c08e882473bf78e0b7664b0))
+
 <a name="2.3.3"></a>
 ## [2.3.3](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.3.3) (2026-03-28)
 
