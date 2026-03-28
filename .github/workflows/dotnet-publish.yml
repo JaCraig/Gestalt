@@ -11,7 +11,8 @@ jobs:
   build:
     env:
       BUILD_CONFIG: "Release"
-      SOLUTION: "Gestalt.sln"
+      SOLUTION: "Gestalt.CI.sln"
+      HUSKY: 0
 
     runs-on: ubuntu-latest
     strategy:
@@ -28,6 +29,14 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
 
+      - name: Cache NuGet packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
       - name: Install Versionize
         run: dotnet tool install --global Versionize
 
@@ -42,13 +51,24 @@ jobs:
         continue-on-error: true
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore "${{ env.SOLUTION }}"
 
       - name: Build
-        run: dotnet build --no-restore --configuration $BUILD_CONFIG
+        run: dotnet build "${{ env.SOLUTION }}" --no-restore --configuration $BUILD_CONFIG
 
       - name: Test
-        run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults-${{ matrix.dotnet-version }}/ /p:CoverletOutputFormat=lcov /p:Configuration=$BUILD_CONFIG --no-build --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
+        run: |
+          for project in \
+            Gestalt.Core.Tests/Gestalt.Core.Tests.csproj \
+            Gestalt.Console.Tests/Gestalt.Console.Tests.csproj \
+            Gestalt.ASPNet.Tests/Gestalt.ASPNet.Tests.csproj \
+            Gestalt.ASPNet.Controllers.Tests/Gestalt.ASPNet.Controllers.Tests.csproj \
+            Gestalt.ASPNet.MVC.Tests/Gestalt.ASPNet.MVC.Tests.csproj \
+            Gestalt.ASPNet.RazorPages.Tests/Gestalt.ASPNet.RazorPages.Tests.csproj \
+            Gestalt.ASPNet.SignalR.Tests/Gestalt.ASPNet.SignalR.Tests.csproj
+          do
+            dotnet test "$project" --framework net10.0 /p:CollectCoverage=true /p:CoverletOutput=TestResults-${{ matrix.dotnet-version }}/ /p:CoverletOutputFormat=lcov /p:Configuration=$BUILD_CONFIG --no-build --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
+          done
 
       - name: Upload test results
         uses: actions/upload-artifact@v7

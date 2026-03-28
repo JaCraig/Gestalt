@@ -5,8 +5,16 @@ name: .NET Test Pull Requests
 
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
+    paths-ignore:
+      - "**/*.md"
+      - "docfx_project/**"
+      - ".github/ISSUE_TEMPLATE/**"
+      - "CHANGELOG.md"
+      - "CONTRIBUTING.md"
+      - "CODE_OF_CONDUCT.md"
+      - "SECURITY.md"
 
 jobs:
   build:
-    uses: 'JaCraig/Centralized-Workflows/.github/workflows/dotnet-test.yml@main'
+    uses: "JaCraig/Centralized-Workflows/.github/workflows/dotnet-test.yml@main"
