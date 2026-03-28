@@ -201,7 +201,20 @@ updates:
   - package-ecosystem: "nuget"
     directory: "/Gestalt.ASPNet.SignalR.Tests/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+
+  # --- Root Shared Build Files ---
+  # Covers centrally managed package references in Directory.Build.props
+  - package-ecosystem: "nuget"
+    directory: "/"
+    schedule:
+      interval: "weekly"
     commit-message:
       prefix: "chore"
     groups:
@@ -213,7 +226,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
     commit-message:
       prefix: "chore"
     groups:
