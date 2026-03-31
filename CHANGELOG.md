@@ -1,5 +1,25 @@
 
 
+<a name="2.4.1"></a>
+## [2.4.1](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.1) (2026-03-31)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([d82a15a](https://www.github.com/JaCraig/Gestalt/commit/d82a15af37992cb67c94da2dc07b7f37429f7586))
+
+### Other
+
+* Merge pull request #660 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-6a51363bcd ([d2fdf99](https://www.github.com/JaCraig/Gestalt/commit/d2fdf99a79e4b9bca2e518fe716ba3a3bc6397ee))
+* Merge pull request #661 from JaCraig/dependabot/nuget/Gestalt.Core/dependencies-c63606be58 ([914b0e0](https://www.github.com/JaCraig/Gestalt/commit/914b0e07d27ca90d5d12b230fdda9bdd1733e51f))
+* Merge pull request #662 from JaCraig/dependabot/nuget/Gestalt.Core/dependencies-705dce8437 ([0851824](https://www.github.com/JaCraig/Gestalt/commit/0851824152f05e62d61ed58fb43e34a842e34e6f))
+* Merge pull request #663 from JaCraig/dependabot/nuget/Gestalt.Core/dependencies-c63606be58 ([8eb11b6](https://www.github.com/JaCraig/Gestalt/commit/8eb11b68928cd37d1666b0ccd397f919b659e4f9))
+* Bump the dependencies group with 1 update ([c111a9c](https://www.github.com/JaCraig/Gestalt/commit/c111a9ced642b56f61f4c5847b9c84b408ccb4a7))
+* Bump the dependencies group with 2 updates ([240779b](https://www.github.com/JaCraig/Gestalt/commit/240779bceef6f455d19a33d4107afa1a5c23516e))
+* Bump the dependencies group with 2 updates ([2676140](https://www.github.com/JaCraig/Gestalt/commit/2676140d9235c299f97e9b4ef589616eed1e56c4))
+* Merge branch 'main' of https://github.com/JaCraig/Gestalt ([dab6fa2](https://www.github.com/JaCraig/Gestalt/commit/dab6fa290cd0acd7e646fb384612a2f716b9d22d))
+* **tests:** update target frameworks and clean up project files ([854b0cd](https://www.github.com/JaCraig/Gestalt/commit/854b0cd20dfecf020907e493aa775a04775a7b64))
+* **workflow:** update concurrency settings for dotnet publish ([85d540f](https://www.github.com/JaCraig/Gestalt/commit/85d540f22eb591658074bde7ecd5cdd7c6db8517))
+
 <a name="2.4.0"></a>
 ## [2.4.0](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.0) (2026-03-28)
 

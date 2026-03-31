@@ -16,7 +16,7 @@
     <PackageId>Gestalt.Core</PackageId>
     <PackageTags>Gestalt;Modules;ASP.Net;Application Framework;Modular Design;Dependency
       Injection;Plugin;Reusable Components;Configuration</PackageTags>
-    <Version>2.4.0</Version>
+    <Version>2.4.1</Version>
     <Title>Gestalt.Core</Title>
   </PropertyGroup>
 
