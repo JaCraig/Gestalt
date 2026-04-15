@@ -1,5 +1,34 @@
 
 
+<a name="2.4.2"></a>
+## [2.4.2](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.2) (2026-04-15)
+
+### Bug Fixes
+
+* Bump Microsoft.Extensions.Hosting from 10.0.5 to 10.0.6 ([317279b](https://www.github.com/JaCraig/Gestalt/commit/317279b9ca8a119263db6a5d06a94b24775bfff3))
+
+### Other
+
+* Merge pull request #665 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-e323a428b3 ([5da1bfd](https://www.github.com/JaCraig/Gestalt/commit/5da1bfd7104f3a52c0832a5d2c9d46e6520a5364))
+* Merge pull request #666 from JaCraig/dependabot/nuget/Gestalt.Core/dependencies-0e29353ad1 ([69b8a95](https://www.github.com/JaCraig/Gestalt/commit/69b8a954efbf6d480eb8271c24db2bb52abe8f71))
+* Merge pull request #673 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Controllers.Tests/dependencies-317565be0a ([dd50dc8](https://www.github.com/JaCraig/Gestalt/commit/dd50dc8da314803af78cb9bc5921af5c4c10d05a))
+* Merge pull request #674 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Controllers.Tests/dependencies-918fdc6e13 ([973b4cc](https://www.github.com/JaCraig/Gestalt/commit/973b4ccc5ea523ec14ad3c52f77a64beb66c201a))
+* Merge pull request #675 from JaCraig/dependabot/github_actions/dependencies-1f20c0ea9b ([30d5cd8](https://www.github.com/JaCraig/Gestalt/commit/30d5cd8014a101c3435d77faf7213b60bd0d0cbe))
+* Merge pull request #687 from JaCraig/dependabot/nuget/dependencies-f8f963071b ([24b717b](https://www.github.com/JaCraig/Gestalt/commit/24b717be629a14c641a8e5be44d2547514f6281b))
+* Merge pull request #688 from JaCraig/dependabot/nuget/dependencies-dfd9f202fc ([2ad1301](https://www.github.com/JaCraig/Gestalt/commit/2ad13015c8e31cee0f946d24dcfd2e7bd3874210))
+* Merge pull request #689 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-16e42fef11 ([4d80ecb](https://www.github.com/JaCraig/Gestalt/commit/4d80ecbf36da11364b7f76211fa735dbeb2d3211))
+* Merge pull request #690 from JaCraig/dependabot/nuget/Gestalt.Console/dependencies-9cd9437e64 ([eae8202](https://www.github.com/JaCraig/Gestalt/commit/eae820233dfd12517f1ada09b6816059b1d24688))
+* Merge pull request #691 from JaCraig/dependabot/nuget/Gestalt.Console/dependencies-49ebbe160f ([4ee57e6](https://www.github.com/JaCraig/Gestalt/commit/4ee57e6ee1c1935371e5ad5f5adce5cba3174efd))
+* Bump ad-m/github-push-action in the dependencies group ([84f0a33](https://www.github.com/JaCraig/Gestalt/commit/84f0a334c697728ba28c5c78dfffd73f226762b8))
+* Bump Mecha.xUnit and Microsoft.Extensions.Hosting ([fa4648f](https://www.github.com/JaCraig/Gestalt/commit/fa4648f8358991a4920780ecd44b7853510b4292))
+* Bump Mecha.xUnit from 3.3.12 to 3.3.13 ([cd0dcda](https://www.github.com/JaCraig/Gestalt/commit/cd0dcdac8a2eb7757d544554653d6a7b0e7b569a))
+* Bump the dependencies group with 1 update ([9a4d9df](https://www.github.com/JaCraig/Gestalt/commit/9a4d9dfc919b1b5c67e2ed4c7733fc89c5ac0581))
+* Bump the dependencies group with 2 updates ([a117ed2](https://www.github.com/JaCraig/Gestalt/commit/a117ed2cddc1346a8257864071ebf696626af2e1))
+* Bump the dependencies group with 3 updates ([c8a5482](https://www.github.com/JaCraig/Gestalt/commit/c8a5482095bb5b4bc602cb776705e56e2e801f05))
+* Bump the dependencies group with 3 updates ([fbe34e5](https://www.github.com/JaCraig/Gestalt/commit/fbe34e5f3890bd3e7f6278a1ff4dcd2d318561bc))
+* Bump the dependencies group with 6 updates ([6174580](https://www.github.com/JaCraig/Gestalt/commit/61745800a8aa2fe12fb33a03a50f435ca5908c7e))
+* Bump the dependencies group with 8 updates ([c2a5b4f](https://www.github.com/JaCraig/Gestalt/commit/c2a5b4f9ded5ad3e3ef205c57dc02f1ef1458a9c))
+
 <a name="2.4.1"></a>
 ## [2.4.1](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.1) (2026-03-31)
 
