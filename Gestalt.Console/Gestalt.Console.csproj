@@ -16,7 +16,7 @@
     <PackageId>Gestalt.Console</PackageId>
     <PackageTags>Gestalt;Modules;Console;Application Framework;Modular Design;Dependency
       Injection;Plugin;Reusable Components;Configuration</PackageTags>
-    <Version>2.4.2</Version>
+    <Version>2.4.3</Version>
     <Title>Gestalt.Console</Title>
   </PropertyGroup>
 

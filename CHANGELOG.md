@@ -1,5 +1,16 @@
 
 
+<a name="2.4.3"></a>
+## [2.4.3](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.3) (2026-04-22)
+
+### Bug Fixes
+
+* Bump the dependencies group with 7 updates ([5cabc0d](https://www.github.com/JaCraig/Gestalt/commit/5cabc0d7061d9f6dde5608c5194b5f5cb79ed21b))
+
+### Other
+
+* Merge pull request #693 from JaCraig/dependabot/nuget/dependencies-38ee8418fc ([483a9e6](https://www.github.com/JaCraig/Gestalt/commit/483a9e6498af7fb626be2037415a216722685c76))
+
 <a name="2.4.2"></a>
 ## [2.4.2](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.2) (2026-04-15)
 
