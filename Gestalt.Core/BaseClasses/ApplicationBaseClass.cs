@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using System.Reflection;
 
 namespace Gestalt.Core.BaseClasses
@@ -45,6 +46,8 @@ namespace Gestalt.Core.BaseClasses
             var EntryAssembly = Assembly.GetEntryAssembly();
             if (assemblies is null || assemblies.Length == 0)
                 assemblies = EntryAssembly.FindAssemblies();
+            if (!assemblies.Contains(typeof(ApplicationBaseClass).Assembly))
+                assemblies = [.. assemblies, typeof(ApplicationBaseClass).Assembly];
 
             InternalLogger?.LogInformation("Starting application {entryAssemblyName}", EntryAssembly?.GetName().Name);
             InternalLogger?.LogInformation("Assembly Count: {assemblyCount}", assemblies.Length);

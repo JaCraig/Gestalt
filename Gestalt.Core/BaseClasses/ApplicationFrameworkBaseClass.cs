@@ -128,7 +128,7 @@ namespace Gestalt.Core.BaseClasses
         public IServiceCollection? Configure(IApplicationModule?[]? modules, IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment)
         {
             modules ??= [];
-            ConfigureModules(modules.OfType<TModule>().ToArray(), services, configuration, environment);
+            ConfigureModules([.. modules.OfType<TModule>()], services, configuration, environment);
             return services;
         }
 

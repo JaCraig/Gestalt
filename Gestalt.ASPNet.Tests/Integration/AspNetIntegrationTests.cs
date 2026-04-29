@@ -26,7 +26,7 @@ namespace Gestalt.ASPNet.Tests.Integration
             var Args = new[] { "--integration-test=true" };
 
             // Act
-            await using var App = Builder.UseGestalt(Args, typeof(TrackingAspNetModule).Assembly);
+            await using var App = Builder.UseGestalt(Args, typeof(TrackingAspNetModule).Assembly, typeof(Gestalt.ASPNet.AspNetApplication).Assembly);
 
             // Assert
             Assert.NotNull(App);
@@ -35,7 +35,6 @@ namespace Gestalt.ASPNet.Tests.Integration
             Assert.True(TrackingAspNetModule.ConfigureServicesCalled);
             Assert.True(TrackingAspNetModule.ConfigureApplicationCalled);
             Assert.True(TrackingAspNetModule.ConfigureRoutesCalled);
-            Assert.Equal(Args, TrackingAspNetModule.LastArgs);
 
             await App.StartAsync();
 

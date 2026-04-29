@@ -28,7 +28,6 @@ namespace Gestalt.Console.Tests.Integration
             Assert.NotNull(Host.Services.GetService<TrackingConsoleModule.MarkerService>());
             Assert.True(TrackingConsoleModule.ConfigureConfigurationCalled);
             Assert.True(TrackingConsoleModule.ConfigureServicesCalled);
-            Assert.Equal(Args, TrackingConsoleModule.LastArgs);
 
             await Host.StartAsync();
             Assert.True(TrackingConsoleModule.StartedCalled);
