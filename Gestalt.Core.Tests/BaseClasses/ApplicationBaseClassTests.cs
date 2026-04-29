@@ -3,6 +3,7 @@ using Gestalt.Core.Interfaces;
 using Gestalt.Tests.Helpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.Metrics;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
@@ -109,6 +110,27 @@ namespace Gestalt.Core.Tests.BaseClasses
         }
 
         [Fact]
+        public void ConfigureServicesRegistersApplicationAndModuleServices()
+        {
+            // Arrange
+            TrackingApplicationModule.Reset();
+            var Environment = Substitute.For<IHostEnvironment>();
+            var Configuration = new ConfigurationBuilder().Build();
+            var Application = new TestApplicationBaseClass(Configuration, Environment, typeof(TrackingApplicationModule).Assembly);
+            var Services = new ServiceCollection();
+
+            // Act
+            _ = Application.ConfigureServices(Services);
+
+            // Assert
+            using var ServiceProvider = Services.BuildServiceProvider();
+            Assert.Same(Application, ServiceProvider.GetService<IApplication>());
+            Assert.NotNull(ServiceProvider.GetService<TrackingApplicationModule>());
+            Assert.NotNull(ServiceProvider.GetService<TrackingApplicationModule.MarkerService>());
+            Assert.True(TrackingApplicationModule.ConfigureServicesCalled);
+        }
+
+        [Fact]
         public void CanCallConfigureServicesWithNullServices() => _TestClass.ConfigureServices(default);
 
         [Fact]
@@ -149,6 +171,31 @@ namespace Gestalt.Core.Tests.BaseClasses
             public ILogger? PublicInternalLogger => base.InternalLogger;
 
             public IApplicationModule[] PublicModules => base.Modules;
+        }
+
+        public class TrackingApplicationModule : ApplicationModuleBaseClass<TrackingApplicationModule>
+        {
+            public static bool ConfigureServicesCalled { get; private set; }
+
+            public static void Reset() => ConfigureServicesCalled = false;
+
+            public override IConfigurationBuilder? ConfigureConfigurationSettings(IConfigurationBuilder? configuration, IHostEnvironment? environment, string?[]? args) => configuration;
+
+            public override IHostBuilder? ConfigureHostSettings(IHostBuilder? host, IConfiguration? configuration, IHostEnvironment? environment) => host;
+
+            public override ILoggingBuilder? ConfigureLoggingSettings(ILoggingBuilder? logging, IConfiguration? configuration, IHostEnvironment? environment) => logging;
+
+            public override IMetricsBuilder? ConfigureMetrics(IMetricsBuilder? metrics, IConfiguration? configuration, IHostEnvironment? environment) => metrics;
+
+            public override IServiceCollection? ConfigureServices(IServiceCollection? services, IConfiguration? configuration, IHostEnvironment? environment)
+            {
+                ConfigureServicesCalled = true;
+                return services?.AddSingleton<MarkerService>();
+            }
+
+            public class MarkerService
+            {
+            }
         }
     }
 }
