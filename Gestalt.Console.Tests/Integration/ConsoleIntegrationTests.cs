@@ -21,7 +21,7 @@ namespace Gestalt.Console.Tests.Integration
             var Args = new[] { "--integration-test=true" };
 
             // Act
-            await using var Host = Builder.UseGestalt(Args, typeof(TrackingConsoleModule).Assembly);
+            using var Host = Builder.UseGestalt(Args, typeof(TrackingConsoleModule).Assembly, typeof(InternalHostedService).Assembly);
 
             // Assert
             Assert.NotNull(Host);

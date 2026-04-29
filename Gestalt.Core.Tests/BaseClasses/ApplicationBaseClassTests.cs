@@ -23,13 +23,11 @@ namespace Gestalt.Core.Tests.BaseClasses
             _TestClass = new TestApplicationBaseClass(_Configuration, _Env, _Assemblies);
         }
 
-        protected override Type? ObjectType { get; set; } = typeof(TestApplicationBaseClass);
         private readonly Assembly?[] _Assemblies;
-
         private readonly IConfiguration _Configuration;
         private readonly IHostEnvironment _Env;
-
         private readonly TestApplicationBaseClass _TestClass;
+        protected override Type? ObjectType { get; set; } = typeof(TestApplicationBaseClass);
 
         [Fact]
         public void CanCallConfigureConfigurationSettings()
@@ -110,27 +108,6 @@ namespace Gestalt.Core.Tests.BaseClasses
         }
 
         [Fact]
-        public void ConfigureServicesRegistersApplicationAndModuleServices()
-        {
-            // Arrange
-            TrackingApplicationModule.Reset();
-            var Environment = Substitute.For<IHostEnvironment>();
-            var Configuration = new ConfigurationBuilder().Build();
-            var Application = new TestApplicationBaseClass(Configuration, Environment, typeof(TrackingApplicationModule).Assembly);
-            var Services = new ServiceCollection();
-
-            // Act
-            _ = Application.ConfigureServices(Services);
-
-            // Assert
-            using var ServiceProvider = Services.BuildServiceProvider();
-            Assert.Same(Application, ServiceProvider.GetService<IApplication>());
-            Assert.NotNull(ServiceProvider.GetService<TrackingApplicationModule>());
-            Assert.NotNull(ServiceProvider.GetService<TrackingApplicationModule.MarkerService>());
-            Assert.True(TrackingApplicationModule.ConfigureServicesCalled);
-        }
-
-        [Fact]
         public void CanCallConfigureServicesWithNullServices() => _TestClass.ConfigureServices(default);
 
         [Fact]
@@ -156,21 +133,25 @@ namespace Gestalt.Core.Tests.BaseClasses
             Assert.Equal("testhost", _TestClass.Name);
         }
 
-        private class TestApplicationBaseClass : ApplicationBaseClass
+        [Fact]
+        public void ConfigureServicesRegistersApplicationAndModuleServices()
         {
-            public TestApplicationBaseClass(IConfiguration? configuration, IHostEnvironment? env, params Assembly?[]? assemblies) : base(configuration, env, assemblies)
-            {
-            }
+            // Arrange
+            TrackingApplicationModule.Reset();
+            var Environment = Substitute.For<IHostEnvironment>();
+            var Configuration = new ConfigurationBuilder().Build();
+            var Application = new TestApplicationBaseClass(Configuration, Environment, typeof(TrackingApplicationModule).Assembly);
+            var Services = new ServiceCollection();
 
-            public IConfiguration? PublicConfiguration => base.Configuration;
+            // Act
+            _ = Application.ConfigureServices(Services);
 
-            public IHostEnvironment? PublicEnvironment => base.Environment;
-
-            public IApplicationFramework[] PublicFrameworks => base.Frameworks;
-
-            public ILogger? PublicInternalLogger => base.InternalLogger;
-
-            public IApplicationModule[] PublicModules => base.Modules;
+            // Assert
+            using var ServiceProvider = Services.BuildServiceProvider();
+            Assert.Same(Application, ServiceProvider.GetService<IApplication>());
+            Assert.NotNull(ServiceProvider.GetService<IApplicationModule>());
+            Assert.NotNull(ServiceProvider.GetService<TrackingApplicationModule.MarkerService>());
+            Assert.True(TrackingApplicationModule.ConfigureServicesCalled);
         }
 
         public class TrackingApplicationModule : ApplicationModuleBaseClass<TrackingApplicationModule>
@@ -196,6 +177,23 @@ namespace Gestalt.Core.Tests.BaseClasses
             public class MarkerService
             {
             }
+        }
+
+        private class TestApplicationBaseClass : ApplicationBaseClass
+        {
+            public TestApplicationBaseClass(IConfiguration? configuration, IHostEnvironment? env, params Assembly?[]? assemblies) : base(configuration, env, assemblies)
+            {
+            }
+
+            public IConfiguration? PublicConfiguration => base.Configuration;
+
+            public IHostEnvironment? PublicEnvironment => base.Environment;
+
+            public IApplicationFramework[] PublicFrameworks => base.Frameworks;
+
+            public ILogger? PublicInternalLogger => base.InternalLogger;
+
+            public IApplicationModule[] PublicModules => base.Modules;
         }
     }
 }
