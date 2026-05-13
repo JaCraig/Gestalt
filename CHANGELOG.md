@@ -1,5 +1,16 @@
 
 
+<a name="2.4.6"></a>
+## [2.4.6](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.6) (2026-05-13)
+
+### Bug Fixes
+
+* Bump Microsoft.Extensions.Hosting from 10.0.7 to 10.0.8 ([2db3e49](https://www.github.com/JaCraig/Gestalt/commit/2db3e498799d133331974acf0dd755e3d798b2f6))
+
+### Other
+
+* Merge pull request #730 from JaCraig/dependabot/nuget/Gestalt.Console/dependencies-efa61c3b96 ([3286404](https://www.github.com/JaCraig/Gestalt/commit/32864045cd39fc3eaa40e5548f15fa8b58820b99))
+
 <a name="2.4.5"></a>
 ## [2.4.5](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.5) (2026-05-13)
 

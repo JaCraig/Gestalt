@@ -16,7 +16,7 @@
     <PackageId>Gestalt.ASPNet.Controllers</PackageId>
     <PackageTags>Gestalt;Modules;ASP.Net;Controllers;Application Framework;Modular Design;Dependency
       Injection;Plugin;Reusable Components;Configuration</PackageTags>
-    <Version>2.4.5</Version>
+    <Version>2.4.6</Version>
     <Title>Gestalt.ASPNet.Controllers</Title>
   </PropertyGroup>
 
