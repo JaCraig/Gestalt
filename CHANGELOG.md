@@ -1,5 +1,49 @@
 
 
+<a name="2.4.5"></a>
+## [2.4.5](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.5) (2026-05-13)
+
+### Bug Fixes
+
+* Bump the dependencies group with 6 updates ([7644bbf](https://www.github.com/JaCraig/Gestalt/commit/7644bbf52c309d7e54c0a4a21cd253b95515f357))
+
+### Other
+
+* Merge pull request #701 from JaCraig/dependabot/nuget/dependencies-63e7edf327 ([bdc4c20](https://www.github.com/JaCraig/Gestalt/commit/bdc4c206052c7932f7233f1dcdb8bab15d7624e1))
+* Merge pull request #702 from JaCraig/dependabot/nuget/dependencies-0aae3be850 ([5155690](https://www.github.com/JaCraig/Gestalt/commit/5155690a14aca8681212f2d134403b000573cb40))
+* Merge pull request #703 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Controllers.Tests/dependencies-63c54f38bd ([6ce6414](https://www.github.com/JaCraig/Gestalt/commit/6ce64148416341902ae1d4cdc43e6f9f6ee5f6c2))
+* Merge pull request #704 from JaCraig/dependabot/nuget/Gestalt.Core/dependencies-0fdce48041 ([955c946](https://www.github.com/JaCraig/Gestalt/commit/955c946890cd6b30c84246c8d124912a5b8425bf))
+* Merge pull request #705 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-6e5cdf6ed5 ([9ba4b46](https://www.github.com/JaCraig/Gestalt/commit/9ba4b465ed13c81a2364a1c07b1a9ad71fa12e9a))
+* Merge pull request #706 from JaCraig/dependabot/nuget/Gestalt.Core/dependencies-18e4c83aaa ([b7b3ae8](https://www.github.com/JaCraig/Gestalt/commit/b7b3ae83f11928cb955d18df1ab5def427e497f3))
+* Merge pull request #707 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-fbff19ee6c ([b4ecdb1](https://www.github.com/JaCraig/Gestalt/commit/b4ecdb115242c26fd6d7f7f6ae79b0574a5b291f))
+* Merge pull request #714 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Controllers.Tests/dependencies-fbff19ee6c ([1cb6d04](https://www.github.com/JaCraig/Gestalt/commit/1cb6d040447b776379f61af743862db181f98d22))
+* Merge pull request #715 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Controllers.Tests/dependencies-04a05d6fce ([b190855](https://www.github.com/JaCraig/Gestalt/commit/b190855a71b2ad12dff9f9f28a11dab8122324fa))
+* Merge pull request #716 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-89e9299b9c ([2603440](https://www.github.com/JaCraig/Gestalt/commit/260344059892c8184d86f1b5fdd8935267f6dac2))
+* Merge pull request #717 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-89e9299b9c ([7977f5a](https://www.github.com/JaCraig/Gestalt/commit/7977f5afc0e5ee0c59db4c27ed73cc27f4ff00e9))
+* Merge pull request #718 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Tests/dependencies-51915b7198 ([a26c64d](https://www.github.com/JaCraig/Gestalt/commit/a26c64db4ff2331f754e794e912494b002cd7dfb))
+* Merge pull request #719 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Tests/dependencies-51915b7198 ([bc4a31d](https://www.github.com/JaCraig/Gestalt/commit/bc4a31d94e83c491e1454ff9c71a3da16f1f02b6))
+* Merge pull request #723 from JaCraig/dependabot/nuget/dependencies-3a1733dddb ([28f00de](https://www.github.com/JaCraig/Gestalt/commit/28f00de3b0c0461ae65d0090cb6a55362f9a77ea))
+* Merge pull request #729 from JaCraig/dependabot/nuget/dependencies-c4810bc2ad ([f312c86](https://www.github.com/JaCraig/Gestalt/commit/f312c861e886bd99b02b4f411ccb753186713a22))
+* Refactor commit-lint.csx for improved validation ([8ccc064](https://www.github.com/JaCraig/Gestalt/commit/8ccc06481dd43f4aea926160b2bd19390acd9221))
+* Bump BigBook and 4 others ([841afdb](https://www.github.com/JaCraig/Gestalt/commit/841afdb900902ab3f9b51d46c506d10627f80e81))
+* Bump BigBook from 6.2.7 to 6.2.8 ([04aa909](https://www.github.com/JaCraig/Gestalt/commit/04aa909d78701b0845e2e0aa235f017c7e127f21))
+* Bump the dependencies group with 1 update ([f593d46](https://www.github.com/JaCraig/Gestalt/commit/f593d46694581d9163676227d7ad5a397f552649))
+* Bump the dependencies group with 1 update ([6aa27c3](https://www.github.com/JaCraig/Gestalt/commit/6aa27c38495944ec4c8010d170388f689ac28990))
+* Bump the dependencies group with 1 update ([6df69a4](https://www.github.com/JaCraig/Gestalt/commit/6df69a4e439f6912a79e805a940903fc852c6b81))
+* Bump the dependencies group with 11 updates ([27cf418](https://www.github.com/JaCraig/Gestalt/commit/27cf4183f7f3add8a257df8566051ad7fb71547b))
+* Bump the dependencies group with 2 updates ([507d54e](https://www.github.com/JaCraig/Gestalt/commit/507d54e67370f807eaeac8a8963070e4adfa92d2))
+* Bump the dependencies group with 2 updates ([3fd85cf](https://www.github.com/JaCraig/Gestalt/commit/3fd85cfb9457f92f9341cbfb3cd1c603787eb6e3))
+* Bump the dependencies group with 3 updates ([3575e02](https://www.github.com/JaCraig/Gestalt/commit/3575e020faf5bace6667dba4b413ead8c23a0c1f))
+* Bump the dependencies group with 3 updates ([8cbd8ce](https://www.github.com/JaCraig/Gestalt/commit/8cbd8ceb43a7e0c1802a78a80bd3991a322ea28c))
+* Bump the dependencies group with 3 updates ([5698adc](https://www.github.com/JaCraig/Gestalt/commit/5698adc3e496996c27a3697aa14e00a713708fa5))
+* Bump the dependencies group with 3 updates ([e6ab90e](https://www.github.com/JaCraig/Gestalt/commit/e6ab90e37fa014573599adeca0e7d707dcd0d109))
+* Bump the dependencies group with 8 updates ([8a644b7](https://www.github.com/JaCraig/Gestalt/commit/8a644b70cdb0a578550fabeba6a5eb9019ae71a5))
+* Bump the dependencies group with 8 updates ([6ba1c45](https://www.github.com/JaCraig/Gestalt/commit/6ba1c45b368f80148eefa5abaa974415ad69b779))
+* **core,aspnet,console:** add integration & edge tests ([db5843b](https://www.github.com/JaCraig/Gestalt/commit/db5843b89a16be2eceeaf82da6f33daa14ebba3a))
+* **core,console:** refactor and enhance service tests ([07eb8b8](https://www.github.com/JaCraig/Gestalt/commit/07eb8b8258d45f0d74b000e9afee9c7b143d5292))
+* **husky:** update task runner configuration ([e9e3f29](https://www.github.com/JaCraig/Gestalt/commit/e9e3f2954bfb5e44d80442c8dd4d648de09b798f))
+* **tests:** add integration tests for ASPNET and Console ([6f9707d](https://www.github.com/JaCraig/Gestalt/commit/6f9707dd3270c9df4ea1518025777e5e1e08300d))
+
 <a name="2.4.4"></a>
 ## [2.4.4](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.4) (2026-04-22)
 

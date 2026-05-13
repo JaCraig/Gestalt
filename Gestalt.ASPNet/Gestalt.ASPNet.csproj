@@ -17,7 +17,7 @@
 		<AssemblyName>Gestalt.ASPNet</AssemblyName>
 		<PackageId>Gestalt.ASPNet</PackageId>
 		<PackageTags>Gestalt;Modules;ASP.Net;Application Framework;Modular Design;Dependency Injection;Plugin;Reusable Components;Configuration</PackageTags>
-		<Version>2.4.4</Version>
+		<Version>2.4.5</Version>
 		<Title>Gestalt.ASPNet</Title>
 	</PropertyGroup>
 

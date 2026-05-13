@@ -16,7 +16,7 @@
     <PackageId>Gestalt.ASPNet.SignalR</PackageId>
     <PackageTags>Gestalt;Modules;ASP.Net;SignalR;Application Framework;Modular Design;Dependency
       Injection;Plugin;Reusable Components;Configuration</PackageTags>
-    <Version>2.4.4</Version>
+    <Version>2.4.5</Version>
     <Title>Gestalt.ASPNet.SignalR</Title>
   </PropertyGroup>
 
