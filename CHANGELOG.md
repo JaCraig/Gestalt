@@ -1,5 +1,30 @@
 
 
+<a name="2.4.7"></a>
+## [2.4.7](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.7) (2026-05-27)
+
+### Bug Fixes
+
+* **workflows:** update dependencies for GitHub actions ([b430c70](https://www.github.com/JaCraig/Gestalt/commit/b430c70a94a44e97793b155e28def1b21d35ec2f))
+
+### Other
+
+* Merge pull request #732 from JaCraig/dependabot/nuget/Gestalt.Console/dependencies-efa61c3b96 ([7692945](https://www.github.com/JaCraig/Gestalt/commit/769294571aa56def5094a80a1452797049f1c059))
+* Merge pull request #733 from JaCraig/dependabot/nuget/Gestalt.Tests.Helpers/dependencies-f8829e08ff ([d478c4d](https://www.github.com/JaCraig/Gestalt/commit/d478c4d8f529b46efea1e721fa81aac2c929fe3d))
+* Merge pull request #735 from JaCraig/dependabot/nuget/Gestalt.Core.Tests/dependencies-f4f4107c92 ([e846fda](https://www.github.com/JaCraig/Gestalt/commit/e846fdacd2f7d31a4d5b14ec3680f56712fe67e6))
+* Merge pull request #737 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Tests/dependencies-f4f4107c92 ([91b876f](https://www.github.com/JaCraig/Gestalt/commit/91b876f8a9b7ae11d6d69df52f49629ff8519d4d))
+* Merge pull request #740 from JaCraig/dependabot/nuget/Gestalt.ASPNet.MVC.Tests/dependencies-f4f4107c92 ([2339ab5](https://www.github.com/JaCraig/Gestalt/commit/2339ab5a991873c5c5988ffb2d68762d91c03f0c))
+* Merge pull request #741 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Controllers.Tests/dependencies-f4f4107c92 ([0acc517](https://www.github.com/JaCraig/Gestalt/commit/0acc5175762b298f8ed5709a3acdc5ba2a38560f))
+* Merge pull request #742 from JaCraig/dependabot/nuget/Gestalt.ASPNet.Controllers.Tests/dependencies-6f10dedd3b ([e5f522b](https://www.github.com/JaCraig/Gestalt/commit/e5f522b801a34cda3576000bc8717c1c9c0bad10))
+* Bump Microsoft.Extensions.Hosting from 10.0.7 to 10.0.8 ([aa562c7](https://www.github.com/JaCraig/Gestalt/commit/aa562c7ad17ec08459b2cfbc7fa3501f3f988c12))
+* Bump the dependencies group with 4 updates ([49799ee](https://www.github.com/JaCraig/Gestalt/commit/49799eed2be59eb324c07ee29d84cf717249c435))
+* Bump the dependencies group with 4 updates ([287f29f](https://www.github.com/JaCraig/Gestalt/commit/287f29fd2910b5034e7108b086068229b2d97d7d))
+* Bump the dependencies group with 4 updates ([59c764d](https://www.github.com/JaCraig/Gestalt/commit/59c764d4ad2b290d9a092a879119a6eab28c2a6e))
+* Bump the dependencies group with 4 updates ([7f627be](https://www.github.com/JaCraig/Gestalt/commit/7f627bec644a43b164811852925a9e5baaba89ec))
+* Bump the dependencies group with 4 updates ([e695f96](https://www.github.com/JaCraig/Gestalt/commit/e695f965503d9ed068501b5d3b1428e12716b83e))
+* Bump the dependencies group with 4 updates ([aeb4568](https://www.github.com/JaCraig/Gestalt/commit/aeb4568989450a0831be1a71424904a830aaea00))
+* **copilot:** add instructions for commit message formatting ([2da4cf2](https://www.github.com/JaCraig/Gestalt/commit/2da4cf2a8bde6dbaa10d10ac270ca66f0b964245))
+
 <a name="2.4.6"></a>
 ## [2.4.6](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.6) (2026-05-13)
 
