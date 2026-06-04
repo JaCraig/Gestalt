@@ -22,7 +22,7 @@
 
 
   <ItemGroup>
-    <PackageReference Include="BigBook" Version="6.2.15" />
+    <PackageReference Include="BigBook" Version="6.2.16" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.8" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.8" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.8" />
