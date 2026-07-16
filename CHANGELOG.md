@@ -1,5 +1,21 @@
 
 
+<a name="2.4.9"></a>
+## [2.4.9](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.9) (2026-07-16)
+
+### Bug Fixes
+
+* Bump the dependencies group with 6 updates ([cb34be3](https://www.github.com/JaCraig/Gestalt/commit/cb34be324626234f5c2eb6124adb3e942d63eba1))
+* **deps:** update test project dependencies ([e82c591](https://www.github.com/JaCraig/Gestalt/commit/e82c591a32488b218adb4861c84a705eff6d9e30))
+
+### Other
+
+* Merge pull request #781 from JaCraig/dependabot/github_actions/dependencies-026f379d1f ([3289c79](https://www.github.com/JaCraig/Gestalt/commit/3289c79edfdbdc5bc48d749c2fe46cd90f86f345))
+* Merge pull request #784 from JaCraig/dependabot/nuget/dependencies-050175f538 ([18d9e79](https://www.github.com/JaCraig/Gestalt/commit/18d9e794c820b5245f681ecc3da236d1ec0be20d))
+* Merge pull request #793 from JaCraig/dependabot/nuget/dependencies-1f6afca749 ([fb28be8](https://www.github.com/JaCraig/Gestalt/commit/fb28be8652630c39fdd1bb5dade2fc1d484afa77))
+* Bump actions/setup-dotnet in the dependencies group ([b825ff5](https://www.github.com/JaCraig/Gestalt/commit/b825ff5c6763f9521ee24af9794705a2d682c406))
+* Bump the dependencies group with 7 updates ([ab56b8e](https://www.github.com/JaCraig/Gestalt/commit/ab56b8e5e923626684e975eabb6e442b726eb4ef))
+
 <a name="2.4.8"></a>
 ## [2.4.8](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.8) (2026-06-24)
 
