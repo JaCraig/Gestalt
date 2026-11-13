@@ -1,5 +1,21 @@
 
 
+<a name="3.0.0"></a>
+## [3.0.0](https://www.github.com/JaCraig/Gestalt/releases/tag/v3.0.0) (2026-11-13)
+
+### Features
+
+* **framework:** add .NET 11 support ([cfd737c](https://www.github.com/JaCraig/Gestalt/commit/cfd737c89bc4e141f8f20d4ff01cdca189adcd2b))
+
+### Breaking Changes
+
+* **framework:** add .NET 11 support ([cfd737c](https://www.github.com/JaCraig/Gestalt/commit/cfd737c89bc4e141f8f20d4ff01cdca189adcd2b))
+
+### Other
+
+* Merge pull request #885 from JaCraig/dependabot/github_actions/dependencies-39799580c0 ([39cc30e](https://www.github.com/JaCraig/Gestalt/commit/39cc30e08ba6b6db16124a5c8db9abea9f7e6f94))
+* Bump actions/setup-dotnet ([d2e6be5](https://www.github.com/JaCraig/Gestalt/commit/d2e6be5e7ba0671a6bc2131022b71cd33bad6f60))
+
 <a name="2.4.10"></a>
 ## [2.4.10](https://www.github.com/JaCraig/Gestalt/releases/tag/v2.4.10) (2026-11-08)
 
