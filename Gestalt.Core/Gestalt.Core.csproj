@@ -11,7 +11,7 @@
       modules and extensions. Whether you're developing a small-scale project or a large enterprise
       application, Gestalt provides the foundation for modular, extensible ASP.NET solutions.</Description>
     <AssemblyTitle>Gestalt.Core</AssemblyTitle>
-    <TargetFrameworks>net9.0;net8.0;net10.0</TargetFrameworks>
+    <TargetFrameworks>net10.0;net11.0</TargetFrameworks>
     <AssemblyName>Gestalt.Core</AssemblyName>
     <PackageId>Gestalt.Core</PackageId>
     <PackageTags>Gestalt;Modules;ASP.Net;Application Framework;Modular Design;Dependency
@@ -22,12 +22,18 @@
 
 
   <ItemGroup>
-    <PackageReference Include="BigBook" Version="6.2.17" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.14" />
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.14" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.14" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.14" />
+    <PackageReference Include="BigBook" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="11.0.0" />
 
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.CodeAnalysis.NetAnalyzers" Version="11.0.100" />
+    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="11.0.100" />
   </ItemGroup>
   <Target Name="Husky" BeforeTargets="Restore;CollectPackageReferences" Condition="'$(HUSKY)' != 0">
     <Exec Command="dotnet tool restore" StandardOutputImportance="Low" StandardErrorImportance="High" />

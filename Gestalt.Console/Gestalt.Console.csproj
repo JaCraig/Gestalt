@@ -11,7 +11,7 @@
       a small-scale project or a large enterprise application, Gestalt provides the foundation for
       modular, extensible solutions.</Description>
     <AssemblyTitle>Gestalt.Console</AssemblyTitle>
-    <TargetFrameworks>net9.0;net8.0;net10.0</TargetFrameworks>
+    <TargetFrameworks>net10.0;net11.0</TargetFrameworks>
     <AssemblyName>Gestalt.Console</AssemblyName>
     <PackageId>Gestalt.Console</PackageId>
     <PackageTags>Gestalt;Modules;Console;Application Framework;Modular Design;Dependency
@@ -22,12 +22,17 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.14" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="11.0.0" />
 
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Gestalt.Core\Gestalt.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.CodeAnalysis.NetAnalyzers" Version="11.0.100" />
+    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="11.0.100" />
   </ItemGroup>
 
 </Project>

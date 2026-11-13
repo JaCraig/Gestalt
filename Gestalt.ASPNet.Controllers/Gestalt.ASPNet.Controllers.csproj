@@ -11,7 +11,7 @@
       modules and extensions. Whether you're developing a small-scale project or a large enterprise
       application, Gestalt provides the foundation for modular, extensible solutions.</Description>
     <AssemblyTitle>Gestalt.ASPNet.Controllers</AssemblyTitle>
-    <TargetFrameworks>net9.0;net8.0;net10.0</TargetFrameworks>
+    <TargetFrameworks>net10.0;net11.0</TargetFrameworks>
     <AssemblyName>Gestalt.ASPNet.Controllers</AssemblyName>
     <PackageId>Gestalt.ASPNet.Controllers</PackageId>
     <PackageTags>Gestalt;Modules;ASP.Net;Controllers;Application Framework;Modular Design;Dependency
@@ -28,6 +28,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Gestalt.ASPNet\Gestalt.ASPNet.csproj" />
     <ProjectReference Include="..\Gestalt.Core\Gestalt.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.CodeAnalysis.NetAnalyzers" Version="11.0.100" />
+    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="11.0.100" />
   </ItemGroup>
 
 </Project>
